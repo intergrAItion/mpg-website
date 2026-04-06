@@ -21,7 +21,7 @@ export default function HomeHero() {
       style={{ minHeight: "100vh" }}
     >
       {/* Hero background image with parallax */}
-      {/* PLACEHOLDER: Place hero.jpg in /public/hero.jpg before deploying */}
+      {/* PLACEHOLDER: Place hero.jpg in /public/hero.jpeg before deploying */}
       <motion.div
         className="absolute inset-0 w-full h-full"
         style={{ y }}
@@ -29,7 +29,7 @@ export default function HomeHero() {
         <div
           className="absolute inset-0 w-full h-full bg-center bg-cover"
           style={{
-            backgroundImage: "url('/hero.jpg')",
+            backgroundImage: "url('/hero.jpeg')",
             filter: "grayscale(100%)",
             transform: "scale(1.1)",
           }}
