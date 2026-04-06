@@ -1,23 +1,13 @@
-@import "tailwindcss";
-
-@theme {
-  --color-mpg-navy: #0F1E3C;
-  --color-mpg-navy-mid: #1A2E5A;
-  --color-mpg-gold: #C9A84C;
-  --color-mpg-gold-light: #E8C96A;
-  --color-mpg-off-white: #F8F7F4;
-  --color-mpg-text-dark: #1A1A1A;
-  --color-mpg-text-muted: #6B7280;
-
-  --font-cormorant: var(--font-cormorant-garamond);
-  --font-dm: var(--font-dm-sans);
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --mpg-navy: #0F1E3C;
   --mpg-navy-mid: #1A2E5A;
   --mpg-gold: #C9A84C;
   --mpg-gold-light: #E8C96A;
+  --mpg-white: #FFFFFF;
   --mpg-off-white: #F8F7F4;
   --mpg-text-dark: #1A1A1A;
   --mpg-text-muted: #6B7280;
@@ -29,7 +19,7 @@ html {
 
 body {
   color: var(--mpg-text-dark);
-  background: #ffffff;
+  background: var(--mpg-white);
 }
 
 /* Gold shimmer CTA button animation */
@@ -48,10 +38,11 @@ body {
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.25),
     transparent
   );
   transform: skewX(-20deg);
+  transition: none;
 }
 
 .btn-gold:hover::after {
@@ -64,24 +55,24 @@ body {
 }
 
 /* WhatsApp pulse animation */
+@keyframes pulse-ring {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.15); opacity: 0.4; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
 .whatsapp-pulse {
   animation: pulse-ring 2.5s ease-in-out infinite;
 }
 
-@keyframes pulse-ring {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.08); }
-  100% { transform: scale(1); }
-}
-
 /* Scroll indicator bounce */
-.scroll-bounce {
-  animation: bounce-down 1.5s ease-in-out infinite;
-}
-
 @keyframes bounce-down {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(8px); }
+}
+
+.scroll-bounce {
+  animation: bounce-down 1.5s ease-in-out infinite;
 }
 
 /* Gold underline for section headings */
