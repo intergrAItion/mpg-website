@@ -83,7 +83,7 @@ export async function POST(request: NextRequest) {
     console.log(`[contact] Sending email for ${name} <${email}>`);
 
     const { data: emailData, error } = await resend.emails.send({
-      from: "MPG Website <onboarding@resend.dev>",
+      from: "MPG Website <noreply@updates.macfarlanepropertygroup.co.za>",
       to: ["dean@macfarlanepropertygroup.co.za"],
       subject: `New Enquiry from ${name} — MPG Website`,
       html: emailHtml,
