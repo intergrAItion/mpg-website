@@ -49,7 +49,7 @@ export default function LeadForm() {
       if (data.success) {
         setSubmitted(true);
       } else {
-        setError("Something went wrong. Please try again or contact us directly.");
+        setError(data.error || "Something went wrong. Please try again or contact us directly.");
       }
     } catch {
       setError("Something went wrong. Please try again or contact us directly.");

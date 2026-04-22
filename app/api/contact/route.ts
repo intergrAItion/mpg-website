@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-// Resend free tier supports 100 emails/day — sufficient for this stage.
-// To upgrade, visit https://resend.com and select a paid plan.
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: NextRequest) {
@@ -10,11 +8,19 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { name, email, phone, properties, location, mapsLink, challenges, message } = body;
 
-    // Basic validation — name, email, and phone are required
     if (!name || !email || !phone) {
       return NextResponse.json(
         { success: false, error: "Name, email, and phone are required." },
         { status: 400 }
+      );
+    }
+
+    if (!process.env.RESEND_API_KEY) {
+      console.error("[contact] RESEND_API_KEY is not set — email service unavailable");
+      console.log("[contact] Captured submission (no API key):", JSON.stringify({ name, email, phone, properties, location, challenges, message }));
+      return NextResponse.json(
+        { success: false, error: "Email service is not configured (RESEND_API_KEY missing). Please contact us directly." },
+        { status: 500 }
       );
     }
 
@@ -74,7 +80,9 @@ export async function POST(request: NextRequest) {
       </div>
     `;
 
-    const { error } = await resend.emails.send({
+    console.log(`[contact] Sending email for ${name} <${email}>`);
+
+    const { data: emailData, error } = await resend.emails.send({
       from: "MPG Website <onboarding@resend.dev>",
       to: ["dean@macfarlanepropertygroup.co.za"],
       subject: `New Enquiry from ${name} — MPG Website`,
@@ -83,18 +91,24 @@ export async function POST(request: NextRequest) {
     });
 
     if (error) {
-      console.error("Resend error:", error);
+      const reason = (error as { message?: string; name?: string } & object).message
+        ?? JSON.stringify(error);
+      console.error("[contact] Resend error:", JSON.stringify(error));
+      // Capture the submission so the lead isn't lost
+      console.log("[contact] Captured submission (email failed):", JSON.stringify({ name, email, phone, properties, location, challenges, message }));
       return NextResponse.json(
-        { success: false, error: "Failed to send email." },
+        { success: false, error: `Email delivery failed: ${reason}` },
         { status: 500 }
       );
     }
 
+    console.log("[contact] Email sent. ID:", emailData?.id);
     return NextResponse.json({ success: true });
   } catch (err) {
-    console.error("Contact route error:", err);
+    const reason = err instanceof Error ? err.message : String(err);
+    console.error("[contact] Unexpected error:", reason);
     return NextResponse.json(
-      { success: false, error: "An unexpected error occurred." },
+      { success: false, error: `Unexpected error: ${reason}` },
       { status: 500 }
     );
   }
