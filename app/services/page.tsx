@@ -6,11 +6,11 @@ import CTABanner from "@/components/ui/CTABanner";
 export const metadata: Metadata = {
   title: "Services | MacFarlane Property Group",
   description:
-    "End-to-end property management for Cape Town landlords. Tenant management, maintenance, lease administration, inspections, financial reporting, and legal compliance.",
+    "End-to-end property management for landlords across South Africa. Tenant management, maintenance, lease administration, inspections, financial reporting, and legal compliance.",
   openGraph: {
     title: "Services | MacFarlane Property Group",
     description:
-      "End-to-end property management for Cape Town landlords.",
+      "End-to-end property management for landlords across South Africa.",
     url: "https://macfarlanepropertygroup.co.za/services",
   },
   alternates: {
@@ -23,7 +23,7 @@ export default function ServicesPage() {
     <>
       <PageHero
         heading="Our Services"
-        subheading="End-to-end property management for Cape Town landlords."
+        subheading="End-to-end property management for landlords across South Africa."
       />
       <ServicesContent />
       <CTABanner

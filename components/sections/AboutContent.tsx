@@ -39,7 +39,7 @@ export default function AboutContent() {
           >
             MacFarlane Property Group is a modern property management company
             focused on delivering reliable, cost-effective solutions for
-            landlords across Cape Town. We combine deep industry knowledge with
+            landlords across South Africa. We combine deep industry knowledge with
             a hands-on, transparent approach — so your investment is protected
             and your tenants are well-managed.
           </motion.p>
@@ -107,8 +107,8 @@ export default function AboutContent() {
               every detail in between.
             </p>
             <p className="text-base md:text-lg leading-relaxed" style={{ color: "#6B7280" }}>
-              The business was established with a clear mission: to offer Cape
-              Town landlords a better alternative — one that is more affordable,
+              The business was established with a clear mission: to offer South
+              African landlords a better alternative — one that is more affordable,
               more responsive, and more transparent than the traditional agency
               model.
             </p>

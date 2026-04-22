@@ -7,13 +7,13 @@ import SwitchSection from "@/components/sections/SwitchSection";
 import HomeLeadSection from "@/components/sections/HomeLeadSection";
 
 export const metadata: Metadata = {
-  title: "MacFarlane Property Group | Cape Town Property Management",
+  title: "MacFarlane Property Group | South Africa Property Management",
   description:
-    "Cape Town's modern property management company. Lower fees, faster response, total transparency. Get a free rental assessment today.",
+    "South Africa's modern property management company. Lower fees, faster response, total transparency. Get a free rental assessment today.",
   openGraph: {
-    title: "MacFarlane Property Group | Cape Town Property Management",
+    title: "MacFarlane Property Group | South Africa Property Management",
     description:
-      "Cape Town's modern property management company. Lower fees, faster response, total transparency.",
+      "South Africa's modern property management company. Lower fees, faster response, total transparency.",
     url: "https://macfarlanepropertygroup.co.za",
     siteName: "MacFarlane Property Group",
     type: "website",

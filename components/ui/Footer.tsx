@@ -15,7 +15,7 @@ export default function Footer() {
               className="h-12 w-auto object-contain mb-4"
             />
             <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.6)" }}>
-              Cape Town's modern property management company. Lower fees, faster response, total transparency.
+              South Africa's modern property management company. Lower fees, faster response, total transparency.
             </p>
           </div>
 

@@ -24,7 +24,7 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "MacFarlane Property Group",
   description:
-    "Cape Town's modern property management company. Lower fees, faster response, total transparency.",
+    "South Africa's modern property management company. Lower fees, faster response, total transparency.",
   openGraph: {
     siteName: "MacFarlane Property Group",
     type: "website",

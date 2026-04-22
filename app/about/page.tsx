@@ -5,7 +5,7 @@ import AboutContent from "@/components/sections/AboutContent";
 export const metadata: Metadata = {
   title: "About | MacFarlane Property Group",
   description:
-    "Built on over a decade of industry experience, MacFarlane Property Group offers reliable, cost-effective property management for Cape Town landlords.",
+    "Built on over a decade of industry experience, MacFarlane Property Group offers reliable, cost-effective property management for landlords across South Africa.",
   openGraph: {
     title: "About | MacFarlane Property Group",
     description:

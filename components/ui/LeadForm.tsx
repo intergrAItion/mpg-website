@@ -206,7 +206,7 @@ export default function LeadForm() {
             (e.target as HTMLElement).style.borderColor = "#e5e7eb";
             (e.target as HTMLElement).style.boxShadow = "none";
           }}
-          placeholder="e.g. Observatory, Cape Town"
+          placeholder="e.g. Sandton, Johannesburg"
         />
       </div>
 
