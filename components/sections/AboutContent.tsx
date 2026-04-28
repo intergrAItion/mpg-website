@@ -18,7 +18,7 @@ const values = [
   {
     icon: Hand,
     heading: "Hands-On",
-    description: "Direct involvement at every stage — not managed from a distance.",
+    description: "Direct involvement at every stage, not managed from a distance.",
   },
 ];
 
@@ -40,8 +40,10 @@ export default function AboutContent() {
             MacFarlane Property Group is a modern property management company
             focused on delivering reliable, cost-effective solutions for
             landlords across South Africa. We combine deep industry knowledge with
-            a hands-on, transparent approach — so your investment is protected
-            and your tenants are well-managed.
+            a hands-on, transparent approach, so your investment is protected
+            and your tenants are well-managed. As a national company, we have
+            dedicated teams based in Cape Town, Nelspruit, and Johannesburg,
+            enabling us to serve landlords and properties right across the country.
           </motion.p>
         </div>
       </section>
@@ -78,7 +80,7 @@ export default function AboutContent() {
                 industry knowledge with a modern, responsive approach.
               </p>
               <p className="text-base leading-relaxed" style={{ color: "#6B7280" }}>
-                Our background spans the full spectrum of property management —
+                Our background spans the full spectrum of property management,
                 from lease creation and tenant placement, to maintenance
                 oversight, property inspections, health and safety compliance,
                 and legal adherence under the Rental Housing Act.
@@ -100,17 +102,25 @@ export default function AboutContent() {
             className="mt-6 space-y-4"
           >
             <p className="text-base md:text-lg leading-relaxed" style={{ color: "#6B7280" }}>
-              MacFarlane Property Group was founded by Dean MacFarlane, whose
-              career in property spans management, construction oversight,
-              health and safety compliance, and the full lifecycle of
-              residential tenancy — from finding the right tenant to managing
-              every detail in between.
+              Dean MacFarlane comes from a family with generations of involvement in property.
+              From his great-grandfather through to his grandfather, his father, and now himself,
+              property has always been at the heart of the MacFarlane family. This deep-rooted
+              connection to the industry shapes everything MacFarlane Property Group stands for today.
             </p>
             <p className="text-base md:text-lg leading-relaxed" style={{ color: "#6B7280" }}>
-              The business was established with a clear mission: to offer South
-              African landlords a better alternative — one that is more affordable,
-              more responsive, and more transparent than the traditional agency
-              model.
+              Dean has hands-on experience across multiple facets of the property industry,
+              including construction-side health and safety management and working alongside
+              his father in property management. This background spans the full spectrum of
+              residential and commercial property, from finding and placing tenants to managing
+              maintenance, conducting inspections, and ensuring legal compliance at every step.
+            </p>
+            <p className="text-base md:text-lg leading-relaxed" style={{ color: "#6B7280" }}>
+              What sets Dean apart is his recognition that property management as an industry has
+              remained largely unchanged for decades. MacFarlane Property Group was founded on
+              the belief that tech-enabled solutions can close compliance gaps, improve reporting
+              accuracy, reduce management costs, and give landlords the detailed visibility they
+              deserve over their investments. The goal is simple: better management, lower fees,
+              and total transparency.
             </p>
           </motion.div>
         </div>

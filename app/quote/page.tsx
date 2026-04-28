@@ -3,25 +3,25 @@ import PageHero from "@/components/sections/PageHero";
 import PricingContent from "@/components/sections/PricingContent";
 
 export const metadata: Metadata = {
-  title: "Pricing | MacFarlane Property Group",
+  title: "Request a Quote | MacFarlane Property Group",
   description:
     "Simple, transparent pricing. No hidden fees, no surprises. Our management fees are competitively priced below the industry standard of 10–12%.",
   openGraph: {
-    title: "Pricing | MacFarlane Property Group",
+    title: "Request a Quote | MacFarlane Property Group",
     description:
       "Simple, transparent pricing. No hidden fees. Below industry standard management fees.",
-    url: "https://macfarlanepropertygroup.co.za/pricing",
+    url: "https://macfarlanepropertygroup.co.za/quote",
   },
   alternates: {
-    canonical: "https://macfarlanepropertygroup.co.za/pricing",
+    canonical: "https://macfarlanepropertygroup.co.za/quote",
   },
 };
 
-export default function PricingPage() {
+export default function QuotePage() {
   return (
     <>
       <PageHero
-        heading="Simple, Transparent Pricing"
+        heading="Request a Quote"
         subheading="No hidden fees. No surprises. Just honest property management."
       />
       <PricingContent />

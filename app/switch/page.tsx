@@ -22,7 +22,7 @@ export default function SwitchPage() {
     <>
       <PageHero
         heading="Switch Property Managers Without the Hassle"
-        subheading="We make the transition seamless — so you can focus on what matters."
+        subheading="We make the transition seamless, so you can focus on what matters."
       />
       <SwitchContent />
     </>

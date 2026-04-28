@@ -1,18 +1,33 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Mail, MessageCircle } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer style={{ backgroundColor: "#0F1E3C" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+        <div className="mb-10">
+          <Image
+            src="/logo.jpeg"
+            alt="MacFarlane Property Group"
+            width={320}
+            height={80}
+            unoptimized
+            aria-hidden="true"
+            style={{objectFit: 'contain'}}
+          />
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Logo + tagline */}
-          {/* PLACEHOLDER: Place logo.png in /public/logo.jpeg before deploying */}
           <div className="lg:col-span-1">
-            <img
+            <Image
               src="/logo.jpeg"
               alt="MacFarlane Property Group"
-              className="h-12 w-auto object-contain mb-4"
+              width={160}
+              height={40}
+              unoptimized
+              className="mb-4"
+              style={{objectFit: 'contain'}}
             />
             <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.6)" }}>
               South Africa's modern property management company. Lower fees, faster response, total transparency.
@@ -32,7 +47,8 @@ export default function Footer() {
                 { href: "/", label: "Home" },
                 { href: "/about", label: "About" },
                 { href: "/services", label: "Services" },
-                { href: "/pricing", label: "Pricing" },
+                { href: "/blog", label: "Blog" },
+                { href: "/quote", label: "Get a Quote" },
                 { href: "/switch", label: "Switch to Us" },
                 { href: "/contact", label: "Contact" },
               ].map((link) => (

@@ -281,8 +281,8 @@ export default function LegalPage() {
                 4. Intellectual Property
               </h2>
               <p>
-                All content on this website — including text, images, logos,
-                design elements, and branding — is the intellectual property of
+                All content on this website, including text, images, logos,
+                design elements, and branding, is the intellectual property of
                 MacFarlane Property Group and is protected by applicable
                 copyright and trademark laws. You may not reproduce, distribute,
                 or use any content from this website without our prior written

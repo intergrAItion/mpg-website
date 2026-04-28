@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@plugin "@tailwindcss/typography";
 
 :root {
   --mpg-navy: #0F1E3C;
@@ -106,4 +107,8 @@ body {
 ::-webkit-scrollbar-thumb {
   background: var(--mpg-gold);
   border-radius: 3px;
+}
+
+.prose h2, .prose h3, .prose h4 {
+  color: #C9A84C !important;
 }

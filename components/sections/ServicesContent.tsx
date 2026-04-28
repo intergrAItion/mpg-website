@@ -16,37 +16,37 @@ const services = [
     icon: Users,
     heading: "Tenant Management",
     description:
-      "Tenant sourcing, screening, placement, and ongoing communication.",
+      "End-to-end tenant sourcing, screening, placement, and ongoing relationship management.",
   },
   {
     icon: Wrench,
     heading: "Maintenance Coordination",
     description:
-      "Logging, coordinating, and overseeing all maintenance and repair work.",
+      "Logging all maintenance requests, coordinating qualified contractors, and following up until issues are resolved.",
   },
   {
     icon: FileText,
     heading: "Lease Administration",
     description:
-      "Drafting, renewing, and managing lease agreements in line with the Rental Housing Act.",
+      "Drafting, renewing, and managing all lease agreements in full compliance with the Rental Housing Act.",
   },
   {
     icon: ClipboardList,
     heading: "Property Inspections",
     description:
-      "Move-in, move-out, and routine inspections — all documented.",
+      "Thorough move-in, move-out, and routine inspections, all formally documented.",
   },
   {
     icon: BarChart2,
     heading: "Financial Reporting",
     description:
-      "Monthly income and expense statements so you always know where you stand.",
+      "Monthly rental payment tracking, proactive arrears management, and clear financial statements for every property.",
   },
   {
     icon: Scale,
     heading: "Legal & Compliance",
     description:
-      "Ensuring your property and tenancy meets all relevant South African regulations, including POPIA and RHA requirements.",
+      "Comprehensive compliance management covering POPIA, the Rental Housing Act, and all applicable building regulations.",
   },
 ];
 
@@ -66,8 +66,9 @@ export default function ServicesContent() {
           className="text-base md:text-lg leading-relaxed mb-12 max-w-3xl"
           style={{ color: "#6B7280" }}
         >
-          We offer a complete property management service for residential
-          landlords. Whether you own one property or a growing portfolio, we
+          MPG provides full property management services for commercial buildings,
+          residential buildings, student accommodation, and blocks of flats across
+          South Africa. Whether you own one property or a growing portfolio, we
           handle every aspect of management so you don't have to.
         </motion.p>
 

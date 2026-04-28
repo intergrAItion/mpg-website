@@ -111,6 +111,10 @@ export default function ContactContent() {
             <p className="mt-6 text-sm" style={{ color: "#6B7280" }}>
               We typically respond within a few hours during business hours.
             </p>
+            <p className="mt-3 text-sm" style={{ color: "#6B7280" }}>
+              MacFarlane Property Group operates nationally, with teams based in
+              Cape Town, Nelspruit, and Johannesburg to serve landlords across South Africa.
+            </p>
           </motion.div>
 
           {/* Form */}

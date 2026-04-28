@@ -55,7 +55,7 @@ const switchSteps = [
   {
     num: "3",
     heading: "We Handle the Transition",
-    description: "We manage the handover process — professionally and efficiently.",
+    description: "We manage the handover process professionally and efficiently.",
   },
   {
     num: "4",
@@ -198,7 +198,7 @@ export default function SwitchContent() {
             transition={{ duration: 0.6 }}
           >
             <p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: "#6B7280" }}>
-              Switching property managers can feel daunting — but it doesn't
+              Switching property managers can feel daunting, but it doesn't
               have to be. We've designed our onboarding process to be as smooth
               and stress-free as possible. Most transitions are completed within
               48 hours.

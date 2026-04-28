@@ -5,11 +5,11 @@ import AboutContent from "@/components/sections/AboutContent";
 export const metadata: Metadata = {
   title: "About | MacFarlane Property Group",
   description:
-    "Built on over a decade of industry experience, MacFarlane Property Group offers reliable, cost-effective property management for landlords across South Africa.",
+    "Built on generations of property experience, MacFarlane Property Group offers reliable, cost-effective property management for landlords across South Africa, with teams in Cape Town, Nelspruit, and Johannesburg.",
   openGraph: {
     title: "About | MacFarlane Property Group",
     description:
-      "Built on over a decade of industry experience. Reliable, transparent, hands-on property management.",
+      "A national property management company with teams in Cape Town, Nelspruit, and Johannesburg. Reliable, transparent, hands-on management.",
     url: "https://macfarlanepropertygroup.co.za/about",
   },
   alternates: {
