@@ -25,6 +25,10 @@ export const metadata: Metadata = {
   title: "MacFarlane Property Group",
   description:
     "South Africa's modern property management company. Lower fees, faster response, total transparency.",
+  icons: {
+    icon: "/favicon.jpeg",
+    apple: "/favicon.jpeg",
+  },
   openGraph: {
     siteName: "MacFarlane Property Group",
     type: "website",
