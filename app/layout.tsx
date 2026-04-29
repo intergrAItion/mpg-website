@@ -26,8 +26,8 @@ export const metadata: Metadata = {
   description:
     "South Africa's modern property management company. Lower fees, faster response, total transparency.",
   icons: {
-    icon: "/favicon.jpeg",
-    apple: "/favicon.jpeg",
+    icon: "/favicon.png",
+    apple: "/favicon.png",
   },
   openGraph: {
     siteName: "MacFarlane Property Group",

@@ -6,28 +6,21 @@ export default function Footer() {
   return (
     <footer style={{ backgroundColor: "#0F1E3C" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <div className="mb-10">
-          <Image
-            src="/logo.jpeg"
-            alt="MacFarlane Property Group"
-            width={320}
-            height={80}
-            unoptimized
-            aria-hidden="true"
-            style={{objectFit: 'contain'}}
-          />
-        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Logo + tagline */}
           <div className="lg:col-span-1">
             <Image
               src="/logo.jpeg"
               alt="MacFarlane Property Group"
-              width={160}
-              height={40}
+              width={200}
+              height={60}
               unoptimized
               className="mb-4"
-              style={{objectFit: 'contain'}}
+              style={{
+                objectFit: 'contain',
+                mixBlendMode: 'screen',
+                backgroundColor: 'transparent',
+              }}
             />
             <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.6)" }}>
               South Africa's modern property management company. Lower fees, faster response, total transparency.

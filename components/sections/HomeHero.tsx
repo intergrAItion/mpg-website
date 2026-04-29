@@ -237,56 +237,6 @@ export default function HomeHero() {
         </div>
       </motion.div>
 
-      {/* ── Bottom-left trust badge — 7% fee stat ── */}
-      <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.85, duration: 0.55 }}
-        className="absolute bottom-8 right-6 sm:right-10 lg:right-16 z-10"
-      >
-        <div
-          className="flex items-center gap-4 px-5 py-3.5"
-          style={{
-            border: "1px solid rgba(201,168,76,0.22)",
-            backgroundColor: "rgba(15,30,60,0.55)",
-            backdropFilter: "blur(16px)",
-          }}
-        >
-          <span
-            style={{
-              fontFamily: "var(--font-cormorant-garamond), serif",
-              fontSize: "2rem",
-              fontWeight: 600,
-              color: "#C9A84C",
-              lineHeight: 1,
-            }}
-          >
-            7%
-          </span>
-          <div
-            style={{
-              width: "1px",
-              height: "32px",
-              backgroundColor: "rgba(201,168,76,0.25)",
-              flexShrink: 0,
-            }}
-          />
-          <span
-            style={{
-              fontFamily: "var(--font-dm-sans), sans-serif",
-              fontSize: "10px",
-              color: "rgba(255,255,255,0.60)",
-              letterSpacing: "0.10em",
-              textTransform: "uppercase",
-              lineHeight: 1.5,
-            }}
-          >
-            All-inclusive
-            <br />
-            management fee
-          </span>
-        </div>
-      </motion.div>
 
       {/* ── Bottom-left: editorial vertical scroll indicator ── */}
       <motion.div
