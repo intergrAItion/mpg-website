@@ -37,8 +37,8 @@ export default function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
       style={{
         backgroundColor: isScrolled
-          ? "rgba(15, 30, 60, 0.97)"
-          : "rgba(15, 30, 60, 1)",
+          ? "rgba(0, 0, 0, 0.97)"
+          : "rgba(0, 0, 0, 1)",
         backdropFilter: isScrolled ? "blur(8px)" : "none",
         borderBottom: "1px solid rgba(201, 168, 76, 0.2)",
       }}
@@ -89,7 +89,7 @@ export default function Navbar() {
               className="btn-gold inline-flex items-center px-5 py-2.5 rounded-md text-sm font-medium transition-colors duration-200"
               style={{
                 backgroundColor: "#C9A84C",
-                color: "#0F1E3C",
+                color: "#000000",
                 fontFamily: "var(--font-dm-sans), sans-serif",
                 letterSpacing: "0.05em",
               }}
@@ -119,7 +119,7 @@ export default function Navbar() {
       {isMenuOpen && (
         <div
           className="md:hidden fixed inset-0 top-24 z-40 flex flex-col px-6 py-8 gap-6"
-          style={{ backgroundColor: "#0F1E3C" }}
+          style={{ backgroundColor: "#000000" }}
         >
           {navLinks.map((link) => (
             <Link
@@ -139,7 +139,7 @@ export default function Navbar() {
             className="btn-gold inline-flex items-center justify-center px-5 py-3 rounded-md text-sm font-medium mt-4"
             style={{
               backgroundColor: "#C9A84C",
-              color: "#0F1E3C",
+              color: "#000000",
               fontFamily: "var(--font-dm-sans), sans-serif",
             }}
           >

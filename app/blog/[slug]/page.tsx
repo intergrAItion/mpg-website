@@ -31,7 +31,7 @@ export default async function PostPage({ params }: Props) {
   return (
     <>
       {/* Dark navy hero */}
-      <section className="bg-[#0F1E3C] py-24">
+      <section className="bg-[#000000] py-24">
         <div className="max-w-3xl mx-auto px-4">
           <a href="/blog" className="text-[#C9A84C] text-sm mb-6 block">
             Back to Blog

@@ -17,7 +17,7 @@ export default function CTABanner({
   buttonHref,
 }: CTABannerProps) {
   return (
-    <section style={{ backgroundColor: "#0F1E3C" }} className="py-20 px-4">
+    <section style={{ backgroundColor: "#000000" }} className="py-20 px-4">
       <div className="max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -39,7 +39,7 @@ export default function CTABanner({
             className="btn-gold inline-flex items-center px-8 py-4 rounded-md font-medium transition-colors duration-200"
             style={{
               backgroundColor: "#C9A84C",
-              color: "#0F1E3C",
+              color: "#000000",
               fontFamily: "var(--font-dm-sans), sans-serif",
               letterSpacing: "0.05em",
             }}

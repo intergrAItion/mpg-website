@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
 
     const emailHtml = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; color: #1A1A1A;">
-        <div style="background: #0F1E3C; padding: 24px; border-radius: 8px 8px 0 0;">
+        <div style="background: #000000; padding: 24px; border-radius: 8px 8px 0 0;">
           <h1 style="color: #C9A84C; margin: 0; font-size: 22px;">New Enquiry — MPG Website</h1>
         </div>
         <div style="background: #F8F7F4; padding: 24px; border-radius: 0 0 8px 8px;">

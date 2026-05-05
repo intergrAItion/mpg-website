@@ -10,7 +10,7 @@ export default async function BlogPage() {
   return (
     <>
       {/* Short dark navy hero */}
-      <section className="bg-[#0F1E3C] py-24">
+      <section className="bg-[#000000] py-24">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="font-cormorant text-5xl text-white">Our Blog</h1>
           <p className="text-white/70 mt-4">Insights for South African landlords</p>
@@ -28,7 +28,7 @@ export default async function BlogPage() {
                 <a key={post.slug} href={'/blog/' + post.slug}
                   className="bg-white border-t-2 border-[#C9A84C] p-6 hover:shadow-lg transition-shadow">
                   <p className="text-[#C9A84C] text-sm mb-2">{formatDate(post.date)}</p>
-                  <h2 className="font-cormorant text-xl text-[#0F1E3C] font-semibold mb-3">{post.title}</h2>
+                  <h2 className="font-cormorant text-xl text-[#000000] font-semibold mb-3">{post.title}</h2>
                   <p className="text-gray-500 text-sm mb-4">{post.excerpt}</p>
                   <span className="text-[#C9A84C] text-sm font-medium">Read More</span>
                 </a>

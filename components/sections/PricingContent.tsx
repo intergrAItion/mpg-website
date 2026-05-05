@@ -53,7 +53,7 @@ export default function PricingContent() {
             style={{ border: "1px solid #e5e7eb" }}
           >
             {/* Card header */}
-            <div className="p-8 md:p-10" style={{ backgroundColor: "#0F1E3C" }}>
+            <div className="p-8 md:p-10" style={{ backgroundColor: "#000000" }}>
               <p
                 className="text-xs font-semibold uppercase tracking-widest mb-3"
                 style={{ color: "#C9A84C", fontFamily: "var(--font-dm-sans), sans-serif" }}
@@ -108,7 +108,7 @@ export default function PricingContent() {
                 className="btn-gold inline-flex w-full items-center justify-center px-8 py-4 rounded-md font-medium text-sm transition-colors duration-200"
                 style={{
                   backgroundColor: "#C9A84C",
-                  color: "#0F1E3C",
+                  color: "#000000",
                   fontFamily: "var(--font-dm-sans), sans-serif",
                   letterSpacing: "0.05em",
                 }}
@@ -153,7 +153,7 @@ export default function PricingContent() {
               <div
                 className="p-4 text-center font-semibold text-sm"
                 style={{
-                  color: "#0F1E3C",
+                  color: "#000000",
                   borderLeft: "4px solid #C9A84C",
                   backgroundColor: "rgba(201,168,76,0.06)",
                 }}

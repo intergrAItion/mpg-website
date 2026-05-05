@@ -11,7 +11,7 @@ export default function PageHero({ heading, subheading }: PageHeroProps) {
   return (
     <section
       className="flex items-center justify-center px-4 pt-32 pb-20"
-      style={{ minHeight: "40vh", backgroundColor: "#0F1E3C" }}
+      style={{ minHeight: "40vh", backgroundColor: "#000000" }}
     >
       <div className="max-w-4xl mx-auto text-center">
         <motion.p
