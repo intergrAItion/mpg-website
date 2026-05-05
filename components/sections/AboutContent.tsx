@@ -39,11 +39,11 @@ export default function AboutContent() {
           >
             MacFarlane Property Group is a modern property management company
             focused on delivering reliable, cost-effective solutions for
-            landlords across South Africa. We combine deep industry knowledge with
+            landlords. We combine deep industry knowledge with
             a hands-on, transparent approach, so your investment is protected
-            and your tenants are well-managed. As a national company, we have
-            dedicated teams based in Cape Town, Nelspruit, and Johannesburg,
-            enabling us to serve landlords and properties right across the country.
+            and your tenants are well-managed. We have dedicated teams based in
+            Cape Town, Mbombela, and Johannesburg,
+            enabling us to serve landlords and properties across all three regions.
           </motion.p>
         </div>
       </section>

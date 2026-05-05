@@ -178,7 +178,7 @@ export default function HomeHero() {
                 marginBottom: "2.5rem",
               }}
             >
-              AI-assisted property management for landlords across South Africa.
+              Tech-driven property management for landlords in Cape Town, Mbombela, and Johannesburg.
               Lower fees, faster response, complete transparency.
             </motion.p>
 

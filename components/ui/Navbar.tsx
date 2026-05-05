@@ -44,20 +44,16 @@ export default function Navbar() {
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-28 md:h-32" style={{minHeight: '128px'}}>
+        <div className="flex items-center justify-between py-4" style={{minHeight: '100px'}}>
           {/* Logo */}
-          <Link href="/" className="flex items-center" style={{backgroundColor: 'transparent'}}>
+          <Link href="/" className="flex items-center" style={{background: 'none'}}>
             <Image
-              src="/logo.jpeg"
+              src="/logo-no-bg.png"
               alt="MacFarlane Property Group"
               width={320}
-              height={80}
+              height={90}
               unoptimized
-              style={{
-                objectFit: 'contain',
-                mixBlendMode: 'screen',
-                backgroundColor: 'transparent',
-              }}
+              style={{ objectFit: 'contain' }}
             />
           </Link>
 
@@ -122,7 +118,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div
-          className="md:hidden fixed inset-0 top-28 z-40 flex flex-col px-6 py-8 gap-6"
+          className="md:hidden fixed inset-0 top-24 z-40 flex flex-col px-6 py-8 gap-6"
           style={{ backgroundColor: "#0F1E3C" }}
         >
           {navLinks.map((link) => (

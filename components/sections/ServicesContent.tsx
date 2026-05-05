@@ -67,8 +67,8 @@ export default function ServicesContent() {
           style={{ color: "#6B7280" }}
         >
           MPG provides full property management services for commercial buildings,
-          residential buildings, student accommodation, and blocks of flats across
-          South Africa. Whether you own one property or a growing portfolio, we
+          residential buildings, student accommodation, and blocks of flats in
+          Cape Town, Mbombela, and Johannesburg. Whether you own one property or a growing portfolio, we
           handle every aspect of management so you don't have to.
         </motion.p>
 

@@ -10,20 +10,16 @@ export default function Footer() {
           {/* Logo + tagline */}
           <div className="lg:col-span-1">
             <Image
-              src="/logo.jpeg"
+              src="/logo-no-bg.png"
               alt="MacFarlane Property Group"
               width={200}
               height={60}
               unoptimized
               className="mb-4"
-              style={{
-                objectFit: 'contain',
-                mixBlendMode: 'screen',
-                backgroundColor: 'transparent',
-              }}
+              style={{ objectFit: 'contain' }}
             />
             <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.6)" }}>
-              South Africa's modern property management company. Lower fees, faster response, total transparency.
+              Tech-driven property management in Cape Town, Mbombela, and Johannesburg. Lower fees, faster response, total transparency.
             </p>
           </div>
 
