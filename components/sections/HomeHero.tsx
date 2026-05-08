@@ -36,14 +36,14 @@ export default function HomeHero() {
       {/* Base tint */}
       <div
         className="absolute inset-0"
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.45)" }}
+        style={{ backgroundColor: "rgba(15, 30, 60, 0.45)" }}
       />
       {/* Directional gradient — heavy left, fades right */}
       <div
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(105deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.80) 40%, rgba(0,0,0,0.30) 70%, rgba(0,0,0,0.10) 100%)",
+            "linear-gradient(105deg, rgba(15,30,60,0.95) 0%, rgba(15,30,60,0.80) 40%, rgba(15,30,60,0.30) 70%, rgba(15,30,60,0.10) 100%)",
         }}
       />
       {/* Bottom vignette */}
@@ -52,7 +52,7 @@ export default function HomeHero() {
         style={{
           height: "35vh",
           background:
-            "linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 100%)",
+            "linear-gradient(to top, rgba(15,30,60,0.85) 0%, transparent 100%)",
         }}
       />
       {/* Top vignette */}
@@ -61,7 +61,7 @@ export default function HomeHero() {
         style={{
           height: "20vh",
           background:
-            "linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, transparent 100%)",
+            "linear-gradient(to bottom, rgba(15,30,60,0.6) 0%, transparent 100%)",
         }}
       />
 
@@ -194,7 +194,7 @@ export default function HomeHero() {
                 className="btn-gold inline-flex items-center gap-2.5 px-8 py-4 rounded-md font-medium text-sm transition-colors duration-200"
                 style={{
                   backgroundColor: "#C9A84C",
-                  color: "#000000",
+                  color: "#0F1E3C",
                   fontFamily: "var(--font-dm-sans), sans-serif",
                   letterSpacing: "0.05em",
                   minHeight: "48px",

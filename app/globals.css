@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-mpg-navy: #000000;
-  --color-mpg-navy-mid: #000000;
+  --color-mpg-navy: #0F1E3C;
+  --color-mpg-navy-mid: #1A2E5A;
   --color-mpg-gold: #C9A84C;
   --color-mpg-gold-light: #E8C96A;
   --color-mpg-off-white: #F8F7F4;
@@ -14,8 +14,8 @@
 }
 
 :root {
-  --mpg-navy: #000000;
-  --mpg-navy-mid: #000000;
+  --mpg-navy: #0F1E3C;
+  --mpg-navy-mid: #1A2E5A;
   --mpg-gold: #C9A84C;
   --mpg-gold-light: #E8C96A;
   --mpg-off-white: #F8F7F4;

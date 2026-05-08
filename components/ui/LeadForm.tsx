@@ -294,7 +294,7 @@ export default function LeadForm() {
         className="btn-gold w-full py-4 rounded-md font-medium text-sm transition-all duration-200"
         style={{
           backgroundColor: isSubmitting ? "#b8973d" : "#C9A84C",
-          color: "#000000",
+          color: "#0F1E3C",
           fontFamily: "var(--font-dm-sans), sans-serif",
           letterSpacing: "0.05em",
           cursor: isSubmitting ? "not-allowed" : "pointer",

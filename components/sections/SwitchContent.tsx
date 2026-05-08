@@ -116,7 +116,7 @@ export default function SwitchContent() {
       </section>
 
       {/* How We Handle the Switch */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#000000" }}>
+      <section className="py-20 px-4" style={{ backgroundColor: "#0F1E3C" }}>
         <div className="max-w-5xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -171,7 +171,7 @@ export default function SwitchContent() {
               className="btn-gold inline-flex items-center px-8 py-4 rounded-md font-medium text-sm transition-colors duration-200"
               style={{
                 backgroundColor: "#C9A84C",
-                color: "#000000",
+                color: "#0F1E3C",
                 fontFamily: "var(--font-dm-sans), sans-serif",
                 letterSpacing: "0.05em",
               }}

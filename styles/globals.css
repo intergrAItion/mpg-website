@@ -4,8 +4,8 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-  --mpg-navy: #000000;
-  --mpg-navy-mid: #000000;
+  --mpg-navy: #0F1E3C;
+  --mpg-navy-mid: #1A2E5A;
   --mpg-gold: #C9A84C;
   --mpg-gold-light: #E8C96A;
   --mpg-white: #FFFFFF;
