@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { ArrowRight } from "lucide-react";
@@ -20,49 +21,48 @@ export default function HomeHero() {
       className="relative flex items-end overflow-hidden"
       style={{ minHeight: "100vh" }}
     >
+      <style>{`
+        .hero-bg-img {
+          object-fit: cover;
+          object-position: center right;
+        }
+        @media (max-width: 768px) {
+          .hero-bg-img {
+            object-position: center;
+          }
+        }
+        .hero-overlay {
+          background: linear-gradient(90deg, rgba(5,12,28,0.94) 0%, rgba(5,12,28,0.82) 36%, rgba(5,12,28,0.48) 68%, rgba(5,12,28,0.35) 100%);
+        }
+        @media (max-width: 1024px) {
+          .hero-overlay {
+            background: linear-gradient(90deg, rgba(5,12,28,0.92) 0%, rgba(5,12,28,0.75) 50%, rgba(5,12,28,0.50) 100%);
+          }
+        }
+        @media (max-width: 768px) {
+          .hero-overlay {
+            background: linear-gradient(180deg, rgba(5,12,28,0.85) 0%, rgba(5,12,28,0.75) 100%);
+          }
+        }
+      `}</style>
+
       {/* ── Background image with parallax ── */}
       <motion.div className="absolute inset-0 w-full h-full" style={{ y: imageY }}>
-        <div
-          className="absolute inset-0 w-full h-full bg-center bg-cover"
-          style={{
-            backgroundImage: "url('/hero.jpeg')",
-            filter: "grayscale(100%)",
-            transform: "scale(1.1)",
-          }}
+        <Image
+          src="/hero-nightscape.png"
+          alt="MacFarlane Property Group headquarters"
+          fill
+          priority
+          sizes="100vw"
+          className="hero-bg-img"
+          style={{ objectFit: "cover", objectPosition: "center right" }}
         />
       </motion.div>
 
-      {/* ── Layered overlays for depth and readability ── */}
-      {/* Base tint */}
+      {/* ── Gradient overlay ── */}
       <div
-        className="absolute inset-0"
-        style={{ backgroundColor: "rgba(15, 30, 60, 0.45)" }}
-      />
-      {/* Directional gradient — heavy left, fades right */}
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "linear-gradient(105deg, rgba(15,30,60,0.95) 0%, rgba(15,30,60,0.80) 40%, rgba(15,30,60,0.30) 70%, rgba(15,30,60,0.10) 100%)",
-        }}
-      />
-      {/* Bottom vignette */}
-      <div
-        className="absolute bottom-0 left-0 right-0"
-        style={{
-          height: "35vh",
-          background:
-            "linear-gradient(to top, rgba(15,30,60,0.85) 0%, transparent 100%)",
-        }}
-      />
-      {/* Top vignette */}
-      <div
-        className="absolute top-0 left-0 right-0"
-        style={{
-          height: "20vh",
-          background:
-            "linear-gradient(to bottom, rgba(15,30,60,0.6) 0%, transparent 100%)",
-        }}
+        className="absolute inset-0 hero-overlay"
+        style={{ zIndex: 1 }}
       />
 
       {/* ── Main content — left-anchored, bottom-positioned ── */}
@@ -236,7 +236,6 @@ export default function HomeHero() {
           </div>
         </div>
       </motion.div>
-
 
       {/* ── Bottom-left: editorial vertical scroll indicator ── */}
       <motion.div

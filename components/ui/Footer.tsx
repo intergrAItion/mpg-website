@@ -9,15 +9,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Logo + tagline */}
           <div className="lg:col-span-1">
-            <Image
-              src="/logo-no-bg.png"
-              alt="MacFarlane Property Group"
-              width={200}
-              height={60}
-              unoptimized
-              className="mb-4"
-              style={{ objectFit: 'contain' }}
-            />
+            <div className="mb-4">
+              <Image
+                src="/logo-no-bg.png"
+                alt="MacFarlane Property Group"
+                width={200}
+                height={60}
+                unoptimized
+                style={{ objectFit: 'contain' }}
+              />
+            </div>
             <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.6)" }}>
               Tech-driven property management in Cape Town, Mbombela, and Johannesburg. Lower fees, faster response, total transparency.
             </p>
