@@ -112,3 +112,8 @@ body {
 .prose h2, .prose h3, .prose h4 {
   color: #C9A84C !important;
 }
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

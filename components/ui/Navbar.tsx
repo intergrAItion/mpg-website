@@ -46,19 +46,19 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4" style={{minHeight: '100px'}}>
           {/* Logo */}
-          <Link href="/" className="flex items-center" style={{background: 'none'}}>
+          <Link href="/" className="flex items-center flex-shrink-0" style={{background: 'none'}}>
             <Image
               src="/logo-no-bg.png"
               alt="MacFarlane Property Group"
               width={320}
               height={90}
               unoptimized
-              style={{ objectFit: 'contain' }}
+              style={{ objectFit: 'contain', display: 'block', flexShrink: 0 }}
             />
           </Link>
 
           {/* Desktop Nav Links */}
-          <div className="hidden md:flex items-center gap-6 lg:gap-8">
+          <div className="hidden md:flex items-center gap-6 lg:gap-8 flex-nowrap overflow-x-auto">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -83,10 +83,10 @@ export default function Navbar() {
           </div>
 
           {/* Desktop CTA */}
-          <div className="hidden md:block">
+          <div className="hidden md:block flex-shrink-0">
             <Link
               href="/contact"
-              className="btn-gold inline-flex items-center px-5 py-2.5 rounded-md text-sm font-medium transition-colors duration-200"
+              className="btn-gold inline-flex items-center px-5 py-2.5 rounded-md text-sm font-medium transition-colors duration-200 whitespace-nowrap flex-shrink-0"
               style={{
                 backgroundColor: "#C9A84C",
                 color: "#0F1E3C",
