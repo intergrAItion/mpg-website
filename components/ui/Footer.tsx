@@ -9,14 +9,28 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Logo + tagline */}
           <div className="lg:col-span-1">
-            <div className="mb-4">
+            <div style={{
+              backgroundColor: '#0F1E3C',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '0px',
+              margin: '0px',
+              overflow: 'hidden',
+              borderRadius: '0',
+              flexShrink: 0,
+              marginBottom: '1rem'
+            }}>
               <Image
                 src="/logo-no-bg.png"
                 alt="MacFarlane Property Group"
                 width={200}
                 height={60}
                 unoptimized
-                style={{ objectFit: 'contain' }}
+                style={{
+                  objectFit: 'contain',
+                  display: 'block'
+                }}
               />
             </div>
             <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.6)" }}>

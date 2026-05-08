@@ -46,14 +46,27 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4" style={{minHeight: '100px'}}>
           {/* Logo */}
-          <Link href="/" className="flex items-center flex-shrink-0">
+          <Link href="/" style={{
+            backgroundColor: '#0F1E3C',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '0px',
+            margin: '0px',
+            overflow: 'hidden',
+            borderRadius: '0',
+            flexShrink: 0
+          }}>
             <Image
               src="/logo-no-bg.png"
               alt="MacFarlane Property Group"
-              width={320}
-              height={90}
+              width={300}
+              height={85}
               unoptimized
-              style={{ objectFit: 'contain' }}
+              style={{
+                objectFit: 'contain',
+                display: 'block'
+              }}
             />
           </Link>
 
