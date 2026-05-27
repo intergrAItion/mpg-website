@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation'
+import Link from 'next/link'
 import { getPostBySlug, getAllPosts, formatDate } from '@/lib/blog'
 import type { PostData } from '@/lib/blog'
 import BlogCover from '@/components/ui/BlogCover'
@@ -26,9 +27,36 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function PostPage({ params }: Props) {
   const { slug } = await params
-  const post = await getPostBySlug(slug)
+  const allPosts = await getAllPosts()
+  const post = allPosts.find(p => p.slug === slug) ?? null
   if (!post) notFound()
   const validPost = post as PostData
+
+  const relatedPosts = allPosts
+    .filter(p => p.slug !== slug)
+    .slice(0, 3)
+
+  const DmAvatar = (
+    <div style={{
+      width: '40px',
+      height: '40px',
+      backgroundColor: '#C9A55A',
+      borderRadius: '4px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexShrink: 0,
+    }}>
+      <span style={{
+        fontFamily: 'var(--font-dm-sans), sans-serif',
+        fontSize: '14px',
+        fontWeight: 600,
+        color: '#07341C',
+        letterSpacing: '0.05em',
+      }}>DM</span>
+    </div>
+  )
+
   return (
     <>
       {/* Dark green hero */}
@@ -52,9 +80,33 @@ export default async function PostPage({ params }: Props) {
           <h1 className="font-cormorant text-4xl md:text-5xl text-white font-semibold mb-4">
             {validPost.title}
           </h1>
-          <p className="text-white/50 text-sm">
-            {formatDate(validPost.date)} &middot; By {validPost.author}
-          </p>
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '12px',
+            marginTop: '16px',
+          }}>
+            {DmAvatar}
+            <div>
+              <p style={{
+                fontFamily: 'var(--font-dm-sans), sans-serif',
+                fontSize: '14px',
+                fontWeight: 500,
+                color: '#F5F0E8',
+                margin: 0,
+              }}>
+                {validPost.author}
+              </p>
+              <p style={{
+                fontFamily: 'var(--font-dm-sans), sans-serif',
+                fontSize: '13px',
+                color: 'rgba(245,240,232,0.65)',
+                margin: 0,
+              }}>
+                {formatDate(validPost.date)} · {validPost.readTime}
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -69,6 +121,145 @@ export default async function PostPage({ params }: Props) {
             dangerouslySetInnerHTML={{__html: validPost.content}}
           />
           {/* Content is owner-controlled */}
+
+          {/* Author bio */}
+          <section style={{
+            backgroundColor: '#F5F0E8',
+            borderTop: '1px solid rgba(201,165,90,0.2)',
+            padding: '48px 16px',
+          }}>
+            <div style={{
+              maxWidth: '672px',
+              margin: '0 auto',
+              display: 'flex',
+              alignItems: 'flex-start',
+              gap: '20px',
+            }}>
+              {DmAvatar}
+              <div>
+                <p style={{
+                  fontFamily: 'var(--font-dm-sans), sans-serif',
+                  fontSize: '14px',
+                  fontWeight: 600,
+                  color: '#07341C',
+                  margin: '0 0 6px 0',
+                  letterSpacing: '0.02em',
+                }}>
+                  {validPost.author}
+                </p>
+                <p style={{
+                  fontFamily: 'var(--font-dm-sans), sans-serif',
+                  fontSize: '14px',
+                  color: '#4B5563',
+                  margin: 0,
+                  lineHeight: '1.6',
+                }}>
+                  Dean MacFarlane is the founder of
+                  MacFarlane Property Group, with a
+                  background spanning property management,
+                  construction, and compliance across
+                  South Africa.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Related posts */}
+          {relatedPosts.length > 0 && (
+            <section style={{
+              backgroundColor: '#F5F0E8',
+              borderTop: '1px solid rgba(201,165,90,0.2)',
+              padding: '64px 16px',
+            }}>
+              <div style={{
+                maxWidth: '1152px',
+                margin: '0 auto',
+              }}>
+                <div style={{marginBottom: '40px'}}>
+                  <h2 style={{
+                    fontFamily: 'var(--font-cormorant-garamond), Georgia, serif',
+                    fontSize: '2rem',
+                    fontWeight: 500,
+                    color: '#07341C',
+                    margin: '0 0 8px 0',
+                  }}>
+                    More from the journal
+                  </h2>
+                  <div style={{
+                    width: '48px',
+                    height: '2px',
+                    backgroundColor: '#C9A55A',
+                  }} />
+                </div>
+
+                <div style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+                  gap: '24px',
+                }}>
+                  {relatedPosts.map(relatedPost => (
+                    <Link
+                      key={relatedPost.slug}
+                      href={`/blog/${relatedPost.slug}`}
+                      style={{
+                        display: 'block',
+                        backgroundColor: '#FFFFFF',
+                        borderTop: '2px solid #C9A55A',
+                        textDecoration: 'none',
+                        minWidth: 0,
+                        overflow: 'hidden',
+                      }}
+                    >
+                      <BlogCover
+                        slug={relatedPost.slug}
+                        category={relatedPost.category}
+                        variant="card"
+                      />
+                      <div style={{padding: '20px'}}>
+                        <p style={{
+                          fontFamily: 'var(--font-dm-sans), sans-serif',
+                          fontSize: '11px',
+                          color: '#C9A55A',
+                          letterSpacing: '0.15em',
+                          textTransform: 'uppercase',
+                          margin: '0 0 8px 0',
+                        }}>
+                          {relatedPost.category}
+                        </p>
+                        <h3 style={{
+                          fontFamily: 'var(--font-cormorant-garamond), Georgia, serif',
+                          fontSize: '1.2rem',
+                          fontWeight: 500,
+                          color: '#07341C',
+                          margin: '0 0 8px 0',
+                          lineHeight: '1.4',
+                        }}>
+                          {relatedPost.title}
+                        </h3>
+                        <p style={{
+                          fontFamily: 'var(--font-dm-sans), sans-serif',
+                          fontSize: '13px',
+                          color: '#6B7280',
+                          margin: '0 0 16px 0',
+                          lineHeight: '1.6',
+                        }}>
+                          {relatedPost.excerpt}
+                        </p>
+                        <span style={{
+                          fontFamily: 'var(--font-dm-sans), sans-serif',
+                          fontSize: '13px',
+                          color: '#C9A55A',
+                          fontWeight: 500,
+                        }}>
+                          Read more
+                        </span>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </section>
+          )}
 
           {/* CTA Banner */}
           <div className="mt-16 p-8 bg-[#07341C] rounded-lg text-center">
@@ -91,10 +282,6 @@ export default async function PostPage({ params }: Props) {
               Get a free assessment
             </a>
           </div>
-
-          {/* TODO Phase 2: Add author bio block below article */}
-          {/* TODO Phase 2: Add related posts section */}
-          {/* TODO Phase 2: Add DM monogram avatar to byline */}
 
           <a href="/blog"
             className="inline-block mt-8 text-[#C9A55A] font-medium">
