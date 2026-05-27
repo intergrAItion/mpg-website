@@ -53,16 +53,16 @@ export default function PricingContent() {
             style={{ border: "1px solid #e5e7eb" }}
           >
             {/* Card header */}
-            <div className="p-8 md:p-10" style={{ backgroundColor: "#0F1E3C" }}>
+            <div className="p-8 md:p-10" style={{ backgroundColor: "#07341C" }}>
               <p
                 className="text-xs font-semibold uppercase tracking-widest mb-3"
-                style={{ color: "#C9A84C", fontFamily: "var(--font-dm-sans), sans-serif" }}
+                style={{ color: "#C9A55A", fontFamily: "var(--font-dm-sans), sans-serif" }}
               >
                 Monthly Management Fee
               </p>
               <div
                 className="text-3xl md:text-4xl font-semibold"
-                style={{ fontFamily: "var(--font-cormorant-garamond), serif", color: "#C9A84C" }}
+                style={{ fontFamily: "var(--font-cormorant-garamond), serif", color: "#C9A55A" }}
               >
                 Below Industry Standard
               </div>
@@ -73,7 +73,7 @@ export default function PricingContent() {
             </div>
 
             {/* Card body */}
-            <div className="p-8 md:p-10" style={{ backgroundColor: "#F8F7F4" }}>
+            <div className="p-8 md:p-10" style={{ backgroundColor: "#F5F0E8" }}>
               <p
                 className="text-sm font-semibold uppercase tracking-wide mb-5"
                 style={{ color: "#1A1A1A", fontFamily: "var(--font-dm-sans), sans-serif" }}
@@ -83,7 +83,7 @@ export default function PricingContent() {
               <ul className="space-y-3 mb-8">
                 {included.map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <Check size={16} style={{ color: "#C9A84C", flexShrink: 0, marginTop: 2 }} />
+                    <Check size={16} style={{ color: "#C9A55A", flexShrink: 0, marginTop: 2 }} />
                     <span className="text-sm leading-relaxed" style={{ color: "#6B7280" }}>
                       {item}
                     </span>
@@ -107,16 +107,16 @@ export default function PricingContent() {
                 href="/contact"
                 className="btn-gold inline-flex w-full items-center justify-center px-8 py-4 rounded-md font-medium text-sm transition-colors duration-200"
                 style={{
-                  backgroundColor: "#C9A84C",
-                  color: "#0F1E3C",
+                  backgroundColor: "#C9A55A",
+                  color: "#07341C",
                   fontFamily: "var(--font-dm-sans), sans-serif",
                   letterSpacing: "0.05em",
                 }}
                 onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.backgroundColor = "#E8C96A";
+                  (e.currentTarget as HTMLElement).style.backgroundColor = "#E0C078";
                 }}
                 onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLElement).style.backgroundColor = "#C9A84C";
+                  (e.currentTarget as HTMLElement).style.backgroundColor = "#C9A55A";
                 }}
               >
                 Request a Quote
@@ -127,7 +127,7 @@ export default function PricingContent() {
       </section>
 
       {/* Comparison */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#F8F7F4" }}>
+      <section className="py-20 px-4" style={{ backgroundColor: "#F5F0E8" }}>
         <div className="max-w-4xl mx-auto">
           <div className="mb-10">
             <SectionHeading title="Why We're Different" centered />
@@ -153,8 +153,8 @@ export default function PricingContent() {
               <div
                 className="p-4 text-center font-semibold text-sm"
                 style={{
-                  color: "#0F1E3C",
-                  borderLeft: "4px solid #C9A84C",
+                  color: "#07341C",
+                  borderLeft: "4px solid #C9A55A",
                   backgroundColor: "rgba(201,168,76,0.06)",
                 }}
               >
@@ -167,7 +167,7 @@ export default function PricingContent() {
                 key={row.feature}
                 className="grid grid-cols-3"
                 style={{
-                  backgroundColor: i % 2 === 0 ? "#F8F7F4" : "white",
+                  backgroundColor: i % 2 === 0 ? "#F5F0E8" : "white",
                   borderTop: "1px solid #e5e7eb",
                 }}
               >
@@ -186,8 +186,8 @@ export default function PricingContent() {
                 <div
                   className="p-4 text-sm text-center font-medium"
                   style={{
-                    color: "#C9A84C",
-                    borderLeft: "4px solid #C9A84C",
+                    color: "#C9A55A",
+                    borderLeft: "4px solid #C9A55A",
                     backgroundColor: "rgba(201,168,76,0.04)",
                   }}
                 >

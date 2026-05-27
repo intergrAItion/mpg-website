@@ -4,33 +4,19 @@ import { Phone, Mail, MessageCircle } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: "#0F1E3C" }}>
+    <footer style={{ backgroundColor: "#07341C" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Logo + tagline */}
           <div className="lg:col-span-1">
-            <div style={{
-              backgroundColor: '#0F1E3C',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              padding: '0px',
-              margin: '0px',
-              overflow: 'hidden',
-              borderRadius: '0',
-              flexShrink: 0,
-              marginBottom: '1rem'
-            }}>
+            <div style={{ marginBottom: '1rem' }}>
               <Image
-                src="/logo-no-bg.png"
+                src="/logo-green.png"
                 alt="MacFarlane Property Group"
-                width={200}
-                height={60}
+                width={400}
+                height={126}
                 unoptimized
-                style={{
-                  objectFit: 'contain',
-                  display: 'block'
-                }}
+                style={{objectFit: 'contain'}}
               />
             </div>
             <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.6)" }}>
@@ -42,7 +28,7 @@ export default function Footer() {
           <div>
             <h3
               className="text-sm font-semibold mb-4 uppercase tracking-widest"
-              style={{ color: "#C9A84C", fontFamily: "var(--font-dm-sans), sans-serif" }}
+              style={{ color: "#C9A55A", fontFamily: "var(--font-dm-sans), sans-serif" }}
             >
               Quick Links
             </h3>
@@ -73,7 +59,7 @@ export default function Footer() {
           <div>
             <h3
               className="text-sm font-semibold mb-4 uppercase tracking-widest"
-              style={{ color: "#C9A84C", fontFamily: "var(--font-dm-sans), sans-serif" }}
+              style={{ color: "#C9A55A", fontFamily: "var(--font-dm-sans), sans-serif" }}
             >
               Services
             </h3>
@@ -103,7 +89,7 @@ export default function Footer() {
           <div>
             <h3
               className="text-sm font-semibold mb-4 uppercase tracking-widest"
-              style={{ color: "#C9A84C", fontFamily: "var(--font-dm-sans), sans-serif" }}
+              style={{ color: "#C9A55A", fontFamily: "var(--font-dm-sans), sans-serif" }}
             >
               Contact Us
             </h3>

@@ -21,7 +21,7 @@ const steps = [
 
 export default function SwitchSection() {
   return (
-    <section className="py-24 px-4" style={{ backgroundColor: "#0F1E3C" }}>
+    <section className="py-24 px-4" style={{ backgroundColor: "#07341C" }}>
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -55,7 +55,7 @@ export default function SwitchSection() {
                 className="flex items-center gap-3 p-4 rounded-lg"
                 style={{ backgroundColor: "rgba(255,255,255,0.06)" }}
               >
-                <Icon size={18} style={{ color: "#C9A84C", flexShrink: 0 }} />
+                <Icon size={18} style={{ color: "#C9A55A", flexShrink: 0 }} />
                 <span className="text-sm" style={{ color: "rgba(255,255,255,0.8)" }}>
                   {item.label}
                 </span>
@@ -79,8 +79,8 @@ export default function SwitchSection() {
                   <span
                     className="w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0"
                     style={{
-                      backgroundColor: "#C9A84C",
-                      color: "#0F1E3C",
+                      backgroundColor: "#C9A55A",
+                      color: "#07341C",
                       fontFamily: "var(--font-dm-sans), sans-serif",
                     }}
                   >
@@ -108,16 +108,16 @@ export default function SwitchSection() {
             href="/contact"
             className="btn-gold inline-flex items-center px-8 py-4 rounded-md font-medium text-sm transition-colors duration-200"
             style={{
-              backgroundColor: "#C9A84C",
-              color: "#0F1E3C",
+              backgroundColor: "#C9A55A",
+              color: "#07341C",
               fontFamily: "var(--font-dm-sans), sans-serif",
               letterSpacing: "0.05em",
             }}
             onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.backgroundColor = "#E8C96A";
+              (e.currentTarget as HTMLElement).style.backgroundColor = "#E0C078";
             }}
             onMouseLeave={(e) => {
-              (e.currentTarget as HTMLElement).style.backgroundColor = "#C9A84C";
+              (e.currentTarget as HTMLElement).style.backgroundColor = "#C9A55A";
             }}
           >
             Start Your Switch Today

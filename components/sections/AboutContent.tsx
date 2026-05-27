@@ -49,7 +49,7 @@ export default function AboutContent() {
       </section>
 
       {/* Experience Block */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#F8F7F4" }}>
+      <section className="py-20 px-4" style={{ backgroundColor: "#F5F0E8" }}>
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -61,7 +61,7 @@ export default function AboutContent() {
             <div className="flex-shrink-0 text-center md:text-left">
               <div
                 className="text-5xl md:text-6xl font-semibold"
-                style={{ fontFamily: "var(--font-cormorant-garamond), serif", color: "#C9A84C" }}
+                style={{ fontFamily: "var(--font-cormorant-garamond), serif", color: "#C9A55A" }}
               >
                 10+
               </div>
@@ -127,7 +127,7 @@ export default function AboutContent() {
       </section>
 
       {/* Our Approach */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#F8F7F4" }}>
+      <section className="py-20 px-4" style={{ backgroundColor: "#F5F0E8" }}>
         <div className="max-w-4xl mx-auto">
           <SectionHeading title="Our Approach" />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
@@ -141,13 +141,13 @@ export default function AboutContent() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   className="bg-white p-8 rounded-lg shadow-sm"
-                  style={{ borderTop: "2px solid #C9A84C" }}
+                  style={{ borderTop: "2px solid #C9A55A" }}
                 >
                   <div
                     className="w-10 h-10 rounded-md flex items-center justify-center mb-4"
                     style={{ backgroundColor: "rgba(201,168,76,0.1)" }}
                   >
-                    <Icon size={20} style={{ color: "#C9A84C" }} />
+                    <Icon size={20} style={{ color: "#C9A55A" }} />
                   </div>
                   <h3
                     className="text-xl font-semibold mb-2"

@@ -86,15 +86,15 @@ export default function SwitchContent() {
                   transition={{ duration: 0.5, delay: i * 0.08 }}
                   className="p-6 rounded-lg"
                   style={{
-                    backgroundColor: "#F8F7F4",
-                    borderTop: "2px solid #C9A84C",
+                    backgroundColor: "#F5F0E8",
+                    borderTop: "2px solid #C9A55A",
                   }}
                 >
                   <div
                     className="w-9 h-9 rounded-md flex items-center justify-center mb-3"
                     style={{ backgroundColor: "rgba(201,168,76,0.1)" }}
                   >
-                    <Icon size={18} style={{ color: "#C9A84C" }} />
+                    <Icon size={18} style={{ color: "#C9A55A" }} />
                   </div>
                   <h3
                     className="text-lg font-semibold mb-1"
@@ -116,7 +116,7 @@ export default function SwitchContent() {
       </section>
 
       {/* How We Handle the Switch */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#0F1E3C" }}>
+      <section className="py-20 px-4" style={{ backgroundColor: "#07341C" }}>
         <div className="max-w-5xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -147,7 +147,7 @@ export default function SwitchContent() {
                   className="text-4xl md:text-5xl font-semibold mb-3"
                   style={{
                     fontFamily: "var(--font-cormorant-garamond), serif",
-                    color: "#C9A84C",
+                    color: "#C9A55A",
                   }}
                 >
                   {step.num}
@@ -170,16 +170,16 @@ export default function SwitchContent() {
               href="/contact"
               className="btn-gold inline-flex items-center px-8 py-4 rounded-md font-medium text-sm transition-colors duration-200"
               style={{
-                backgroundColor: "#C9A84C",
-                color: "#0F1E3C",
+                backgroundColor: "#C9A55A",
+                color: "#07341C",
                 fontFamily: "var(--font-dm-sans), sans-serif",
                 letterSpacing: "0.05em",
               }}
               onMouseEnter={(e) => {
-                (e.currentTarget as HTMLElement).style.backgroundColor = "#E8C96A";
+                (e.currentTarget as HTMLElement).style.backgroundColor = "#E0C078";
               }}
               onMouseLeave={(e) => {
-                (e.currentTarget as HTMLElement).style.backgroundColor = "#C9A84C";
+                (e.currentTarget as HTMLElement).style.backgroundColor = "#C9A55A";
               }}
             >
               Start Your Switch Today
@@ -209,14 +209,14 @@ export default function SwitchContent() {
               rel="noopener noreferrer"
               className="inline-flex items-center text-sm font-medium underline transition-colors duration-200"
               style={{
-                color: "#C9A84C",
+                color: "#C9A55A",
                 fontFamily: "var(--font-dm-sans), sans-serif",
               }}
               onMouseEnter={(e) => {
-                (e.currentTarget as HTMLElement).style.color = "#E8C96A";
+                (e.currentTarget as HTMLElement).style.color = "#E0C078";
               }}
               onMouseLeave={(e) => {
-                (e.currentTarget as HTMLElement).style.color = "#C9A84C";
+                (e.currentTarget as HTMLElement).style.color = "#C9A55A";
               }}
             >
               Have questions? WhatsApp us directly

@@ -29,7 +29,7 @@ export default function HowItWorks() {
     <section
       id="how-it-works"
       className="py-24 px-4"
-      style={{ backgroundColor: "#F8F7F4" }}
+      style={{ backgroundColor: "#F5F0E8" }}
     >
       <div className="max-w-6xl mx-auto">
         <div className="mb-14">
@@ -56,7 +56,7 @@ export default function HowItWorks() {
                 className="inline-block text-5xl md:text-6xl font-semibold mb-4 relative z-10"
                 style={{
                   fontFamily: "var(--font-cormorant-garamond), serif",
-                  color: "#C9A84C",
+                  color: "#C9A55A",
                 }}
               >
                 {step.number}

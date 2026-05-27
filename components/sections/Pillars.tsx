@@ -26,7 +26,7 @@ const pillars = [
 
 export default function Pillars() {
   return (
-    <section className="py-20 px-4" style={{ backgroundColor: "#F8F7F4" }}>
+    <section className="py-20 px-4" style={{ backgroundColor: "#F5F0E8" }}>
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
           {pillars.map((pillar, i) => {
@@ -39,13 +39,13 @@ export default function Pillars() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="bg-white p-8 rounded-lg shadow-sm"
-                style={{ borderTop: "2px solid #C9A84C" }}
+                style={{ borderTop: "2px solid #C9A55A" }}
               >
                 <div
                   className="w-10 h-10 rounded-md flex items-center justify-center mb-5"
                   style={{ backgroundColor: "rgba(201,168,76,0.1)" }}
                 >
-                  <Icon size={20} style={{ color: "#C9A84C" }} />
+                  <Icon size={20} style={{ color: "#C9A55A" }} />
                 </div>
                 <h3
                   className="text-xl font-semibold mb-3"

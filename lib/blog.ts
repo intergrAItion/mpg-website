@@ -13,6 +13,9 @@ export interface PostData {
   slug: string
   excerpt: string
   content: string
+  category: string
+  readTime: string
+  author: string
 }
 
 export function formatDate(dateString: string): string {
@@ -46,7 +49,10 @@ export async function getAllPosts(): Promise<PostData[]> {
           date: data.date,
           slug: data.slug,
           excerpt: data.excerpt,
-          content: processed.toString()
+          content: processed.toString(),
+          category: data.category || 'General',
+          readTime: data.readTime || '5 min read',
+          author: data.author || 'Dean MacFarlane',
         } as PostData
       })
     )

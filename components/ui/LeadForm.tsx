@@ -62,11 +62,11 @@ export default function LeadForm() {
     return (
       <div
         className="text-center py-12 px-6 rounded-lg"
-        style={{ backgroundColor: "#F8F7F4" }}
+        style={{ backgroundColor: "#F5F0E8" }}
       >
         <div
           className="text-4xl mb-4"
-          style={{ color: "#C9A84C", fontFamily: "var(--font-cormorant-garamond), serif" }}
+          style={{ color: "#C9A55A", fontFamily: "var(--font-cormorant-garamond), serif" }}
         >
           Thank you!
         </div>
@@ -82,7 +82,7 @@ export default function LeadForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label className="block text-sm font-medium mb-1.5" style={{ color: "#1A1A1A" }}>
-            Name <span style={{ color: "#C9A84C" }}>*</span>
+            Name <span style={{ color: "#C9A55A" }}>*</span>
           </label>
           <input
             type="text"
@@ -95,7 +95,7 @@ export default function LeadForm() {
               fontFamily: "var(--font-dm-sans), sans-serif",
             }}
             onFocus={(e) => {
-              (e.target as HTMLElement).style.borderColor = "#C9A84C";
+              (e.target as HTMLElement).style.borderColor = "#C9A55A";
               (e.target as HTMLElement).style.boxShadow = "0 0 0 3px rgba(201,168,76,0.15)";
             }}
             onBlur={(e) => {
@@ -107,7 +107,7 @@ export default function LeadForm() {
         </div>
         <div>
           <label className="block text-sm font-medium mb-1.5" style={{ color: "#1A1A1A" }}>
-            Email <span style={{ color: "#C9A84C" }}>*</span>
+            Email <span style={{ color: "#C9A55A" }}>*</span>
           </label>
           <input
             type="email"
@@ -120,7 +120,7 @@ export default function LeadForm() {
               fontFamily: "var(--font-dm-sans), sans-serif",
             }}
             onFocus={(e) => {
-              (e.target as HTMLElement).style.borderColor = "#C9A84C";
+              (e.target as HTMLElement).style.borderColor = "#C9A55A";
               (e.target as HTMLElement).style.boxShadow = "0 0 0 3px rgba(201,168,76,0.15)";
             }}
             onBlur={(e) => {
@@ -135,7 +135,7 @@ export default function LeadForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label className="block text-sm font-medium mb-1.5" style={{ color: "#1A1A1A" }}>
-            Phone <span style={{ color: "#C9A84C" }}>*</span>
+            Phone <span style={{ color: "#C9A55A" }}>*</span>
           </label>
           <input
             type="tel"
@@ -148,7 +148,7 @@ export default function LeadForm() {
               fontFamily: "var(--font-dm-sans), sans-serif",
             }}
             onFocus={(e) => {
-              (e.target as HTMLElement).style.borderColor = "#C9A84C";
+              (e.target as HTMLElement).style.borderColor = "#C9A55A";
               (e.target as HTMLElement).style.boxShadow = "0 0 0 3px rgba(201,168,76,0.15)";
             }}
             onBlur={(e) => {
@@ -160,7 +160,7 @@ export default function LeadForm() {
         </div>
         <div>
           <label className="block text-sm font-medium mb-1.5" style={{ color: "#1A1A1A" }}>
-            Number of Properties <span style={{ color: "#C9A84C" }}>*</span>
+            Number of Properties <span style={{ color: "#C9A55A" }}>*</span>
           </label>
           <input
             type="text"
@@ -173,7 +173,7 @@ export default function LeadForm() {
               fontFamily: "var(--font-dm-sans), sans-serif",
             }}
             onFocus={(e) => {
-              (e.target as HTMLElement).style.borderColor = "#C9A84C";
+              (e.target as HTMLElement).style.borderColor = "#C9A55A";
               (e.target as HTMLElement).style.boxShadow = "0 0 0 3px rgba(201,168,76,0.15)";
             }}
             onBlur={(e) => {
@@ -199,7 +199,7 @@ export default function LeadForm() {
             fontFamily: "var(--font-dm-sans), sans-serif",
           }}
           onFocus={(e) => {
-            (e.target as HTMLElement).style.borderColor = "#C9A84C";
+            (e.target as HTMLElement).style.borderColor = "#C9A55A";
             (e.target as HTMLElement).style.boxShadow = "0 0 0 3px rgba(201,168,76,0.15)";
           }}
           onBlur={(e) => {
@@ -224,7 +224,7 @@ export default function LeadForm() {
             fontFamily: "var(--font-dm-sans), sans-serif",
           }}
           onFocus={(e) => {
-            (e.target as HTMLElement).style.borderColor = "#C9A84C";
+            (e.target as HTMLElement).style.borderColor = "#C9A55A";
             (e.target as HTMLElement).style.boxShadow = "0 0 0 3px rgba(201,168,76,0.15)";
           }}
           onBlur={(e) => {
@@ -247,7 +247,7 @@ export default function LeadForm() {
                 checked={formData.challenges.includes(option)}
                 onChange={() => handleCheckbox(option)}
                 className="rounded"
-                style={{ accentColor: "#C9A84C" }}
+                style={{ accentColor: "#C9A55A" }}
               />
               <span className="text-sm" style={{ color: "#6B7280" }}>
                 {option}
@@ -271,7 +271,7 @@ export default function LeadForm() {
             fontFamily: "var(--font-dm-sans), sans-serif",
           }}
           onFocus={(e) => {
-            (e.target as HTMLElement).style.borderColor = "#C9A84C";
+            (e.target as HTMLElement).style.borderColor = "#C9A55A";
             (e.target as HTMLElement).style.boxShadow = "0 0 0 3px rgba(201,168,76,0.15)";
           }}
           onBlur={(e) => {
@@ -293,8 +293,8 @@ export default function LeadForm() {
         disabled={isSubmitting}
         className="btn-gold w-full py-4 rounded-md font-medium text-sm transition-all duration-200"
         style={{
-          backgroundColor: isSubmitting ? "#b8973d" : "#C9A84C",
-          color: "#0F1E3C",
+          backgroundColor: isSubmitting ? "#b8973d" : "#C9A55A",
+          color: "#07341C",
           fontFamily: "var(--font-dm-sans), sans-serif",
           letterSpacing: "0.05em",
           cursor: isSubmitting ? "not-allowed" : "pointer",
@@ -310,7 +310,7 @@ export default function LeadForm() {
           target="_blank"
           rel="noopener noreferrer"
           className="underline transition-colors duration-200"
-          style={{ color: "#C9A84C" }}
+          style={{ color: "#C9A55A" }}
         >
           WhatsApp us
         </a>{" "}
@@ -318,7 +318,7 @@ export default function LeadForm() {
         <a
           href="tel:+27711720480"
           className="underline transition-colors duration-200"
-          style={{ color: "#C9A84C" }}
+          style={{ color: "#C9A55A" }}
         >
           071 172 0480
         </a>

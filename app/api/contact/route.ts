@@ -29,10 +29,10 @@ export async function POST(request: NextRequest) {
 
     const emailHtml = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; color: #1A1A1A;">
-        <div style="background: #0F1E3C; padding: 24px; border-radius: 8px 8px 0 0;">
-          <h1 style="color: #C9A84C; margin: 0; font-size: 22px;">New Enquiry — MPG Website</h1>
+        <div style="background: #07341C; padding: 24px; border-radius: 8px 8px 0 0;">
+          <h1 style="color: #C9A55A; margin: 0; font-size: 22px;">New Enquiry — MPG Website</h1>
         </div>
-        <div style="background: #F8F7F4; padding: 24px; border-radius: 0 0 8px 8px;">
+        <div style="background: #F5F0E8; padding: 24px; border-radius: 0 0 8px 8px;">
           <table style="width: 100%; border-collapse: collapse;">
             <tr>
               <td style="padding: 8px 0; font-weight: bold; width: 40%; color: #6B7280;">Name</td>
@@ -40,11 +40,11 @@ export async function POST(request: NextRequest) {
             </tr>
             <tr>
               <td style="padding: 8px 0; font-weight: bold; color: #6B7280;">Email</td>
-              <td style="padding: 8px 0;"><a href="mailto:${email}" style="color: #C9A84C;">${email}</a></td>
+              <td style="padding: 8px 0;"><a href="mailto:${email}" style="color: #C9A55A;">${email}</a></td>
             </tr>
             <tr>
               <td style="padding: 8px 0; font-weight: bold; color: #6B7280;">Phone</td>
-              <td style="padding: 8px 0;"><a href="tel:${phone}" style="color: #C9A84C;">${phone}</a></td>
+              <td style="padding: 8px 0;"><a href="tel:${phone}" style="color: #C9A55A;">${phone}</a></td>
             </tr>
             <tr>
               <td style="padding: 8px 0; font-weight: bold; color: #6B7280;">Properties</td>
@@ -58,7 +58,7 @@ export async function POST(request: NextRequest) {
               <td style="padding: 8px 0; font-weight: bold; color: #6B7280;">Maps Link</td>
               <td style="padding: 8px 0;">${
                 mapsLink
-                  ? `<a href="${mapsLink}" style="color: #C9A84C;">${mapsLink}</a>`
+                  ? `<a href="${mapsLink}" style="color: #C9A55A;">${mapsLink}</a>`
                   : "—"
               }</td>
             </tr>

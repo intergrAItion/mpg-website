@@ -11,7 +11,7 @@ export default function PageHero({ heading, subheading }: PageHeroProps) {
   return (
     <section
       className="flex items-center justify-center px-4 pt-32 pb-20"
-      style={{ minHeight: "40vh", backgroundColor: "#0F1E3C" }}
+      style={{ minHeight: "40vh", backgroundColor: "#07341C" }}
     >
       <div className="max-w-4xl mx-auto text-center">
         <motion.p
@@ -19,7 +19,7 @@ export default function PageHero({ heading, subheading }: PageHeroProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-xs font-semibold uppercase tracking-widest mb-4"
-          style={{ color: "#C9A84C", fontFamily: "var(--font-dm-sans), sans-serif" }}
+          style={{ color: "#C9A55A", fontFamily: "var(--font-dm-sans), sans-serif" }}
         >
           MacFarlane Property Group
         </motion.p>

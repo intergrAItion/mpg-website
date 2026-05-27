@@ -27,19 +27,19 @@ export default function ContactContent() {
               <a
                 href="tel:+27711720480"
                 className="flex items-center gap-4 p-4 rounded-lg transition-colors duration-200 group"
-                style={{ backgroundColor: "#F8F7F4" }}
+                style={{ backgroundColor: "#F5F0E8" }}
                 onMouseEnter={(e) => {
                   (e.currentTarget as HTMLElement).style.backgroundColor = "rgba(201,168,76,0.08)";
                 }}
                 onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLElement).style.backgroundColor = "#F8F7F4";
+                  (e.currentTarget as HTMLElement).style.backgroundColor = "#F5F0E8";
                 }}
               >
                 <div
                   className="w-10 h-10 rounded-md flex items-center justify-center flex-shrink-0"
                   style={{ backgroundColor: "rgba(201,168,76,0.15)" }}
                 >
-                  <Phone size={18} style={{ color: "#C9A84C" }} />
+                  <Phone size={18} style={{ color: "#C9A55A" }} />
                 </div>
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-wide mb-0.5" style={{ color: "#6B7280" }}>
@@ -56,12 +56,12 @@ export default function ContactContent() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 rounded-lg transition-colors duration-200"
-                style={{ backgroundColor: "#F8F7F4" }}
+                style={{ backgroundColor: "#F5F0E8" }}
                 onMouseEnter={(e) => {
                   (e.currentTarget as HTMLElement).style.backgroundColor = "rgba(201,168,76,0.08)";
                 }}
                 onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLElement).style.backgroundColor = "#F8F7F4";
+                  (e.currentTarget as HTMLElement).style.backgroundColor = "#F5F0E8";
                 }}
               >
                 <div
@@ -83,19 +83,19 @@ export default function ContactContent() {
               <a
                 href="mailto:dean@macfarlanepropertygroup.co.za"
                 className="flex items-center gap-4 p-4 rounded-lg transition-colors duration-200"
-                style={{ backgroundColor: "#F8F7F4" }}
+                style={{ backgroundColor: "#F5F0E8" }}
                 onMouseEnter={(e) => {
                   (e.currentTarget as HTMLElement).style.backgroundColor = "rgba(201,168,76,0.08)";
                 }}
                 onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLElement).style.backgroundColor = "#F8F7F4";
+                  (e.currentTarget as HTMLElement).style.backgroundColor = "#F5F0E8";
                 }}
               >
                 <div
                   className="w-10 h-10 rounded-md flex items-center justify-center flex-shrink-0"
                   style={{ backgroundColor: "rgba(201,168,76,0.15)" }}
                 >
-                  <Mail size={18} style={{ color: "#C9A84C" }} />
+                  <Mail size={18} style={{ color: "#C9A55A" }} />
                 </div>
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-wide mb-0.5" style={{ color: "#6B7280" }}>

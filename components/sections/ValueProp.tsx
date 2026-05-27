@@ -33,15 +33,15 @@ export default function ValueProp() {
             href="/services"
             className="inline-flex items-center text-sm font-medium transition-colors duration-200"
             style={{
-              color: "#C9A84C",
+              color: "#C9A55A",
               fontFamily: "var(--font-dm-sans), sans-serif",
               letterSpacing: "0.05em",
             }}
             onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.color = "#E8C96A";
+              (e.currentTarget as HTMLElement).style.color = "#E0C078";
             }}
             onMouseLeave={(e) => {
-              (e.currentTarget as HTMLElement).style.color = "#C9A84C";
+              (e.currentTarget as HTMLElement).style.color = "#C9A55A";
             }}
           >
             Learn About Our Services →

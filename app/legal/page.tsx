@@ -18,7 +18,7 @@ export default function LegalPage() {
           <a
             href="#privacy"
             className="underline transition-colors duration-200"
-            style={{ color: "#C9A84C" }}
+            style={{ color: "#C9A55A" }}
           >
             Privacy Policy
           </a>
@@ -26,7 +26,7 @@ export default function LegalPage() {
           <a
             href="#terms"
             className="underline transition-colors duration-200"
-            style={{ color: "#C9A84C" }}
+            style={{ color: "#C9A55A" }}
           >
             Terms of Service
           </a>
@@ -161,7 +161,7 @@ export default function LegalPage() {
                 <a
                   href="mailto:dean@macfarlanepropertygroup.co.za"
                   className="underline"
-                  style={{ color: "#C9A84C" }}
+                  style={{ color: "#C9A55A" }}
                 >
                   dean@macfarlanepropertygroup.co.za
                 </a>
@@ -196,7 +196,7 @@ export default function LegalPage() {
                 <a
                   href="mailto:dean@macfarlanepropertygroup.co.za"
                   className="underline"
-                  style={{ color: "#C9A84C" }}
+                  style={{ color: "#C9A55A" }}
                 >
                   dean@macfarlanepropertygroup.co.za
                 </a>
@@ -348,7 +348,7 @@ export default function LegalPage() {
                 <a
                   href="mailto:dean@macfarlanepropertygroup.co.za"
                   className="underline"
-                  style={{ color: "#C9A84C" }}
+                  style={{ color: "#C9A55A" }}
                 >
                   dean@macfarlanepropertygroup.co.za
                 </a>

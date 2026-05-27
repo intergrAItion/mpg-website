@@ -32,16 +32,21 @@ export default function HomeHero() {
           }
         }
         .hero-overlay {
-          background: linear-gradient(90deg, rgba(5,12,28,0.94) 0%, rgba(5,12,28,0.82) 36%, rgba(5,12,28,0.48) 68%, rgba(5,12,28,0.35) 100%);
+          background: linear-gradient(
+            95deg,
+            rgba(4,22,15,0.94) 0%,
+            rgba(7,52,28,0.78) 38%,
+            rgba(7,52,28,0.35) 100%
+          );
         }
         @media (max-width: 1024px) {
           .hero-overlay {
-            background: linear-gradient(90deg, rgba(5,12,28,0.92) 0%, rgba(5,12,28,0.75) 50%, rgba(5,12,28,0.50) 100%);
+            background: linear-gradient(95deg, rgba(4,22,15,0.92) 0%, rgba(7,52,28,0.75) 50%, rgba(7,52,28,0.40) 100%);
           }
         }
         @media (max-width: 768px) {
           .hero-overlay {
-            background: linear-gradient(180deg, rgba(5,12,28,0.85) 0%, rgba(5,12,28,0.75) 100%);
+            background: linear-gradient(180deg, rgba(4,22,15,0.85) 0%, rgba(7,52,28,0.75) 100%);
           }
         }
       `}</style>
@@ -84,13 +89,13 @@ export default function HomeHero() {
                 style={{
                   width: "36px",
                   height: "1px",
-                  backgroundColor: "#C9A84C",
+                  backgroundColor: "#C9A55A",
                   flexShrink: 0,
                 }}
               />
               <span
                 style={{
-                  color: "#C9A84C",
+                  color: "#C9A55A",
                   fontFamily: "var(--font-dm-sans), sans-serif",
                   fontSize: "10.5px",
                   letterSpacing: "0.22em",
@@ -118,7 +123,7 @@ export default function HomeHero() {
                   display: "block",
                   fontSize: "clamp(3.75rem, 9.5vw, 8.5rem)",
                   fontWeight: 600,
-                  color: "#FFFFFF",
+                  color: "rgba(255,255,255,0.9)",
                   letterSpacing: "-0.015em",
                 }}
               >
@@ -130,7 +135,7 @@ export default function HomeHero() {
                   fontSize: "clamp(3.75rem, 9.5vw, 8.5rem)",
                   fontWeight: 600,
                   fontStyle: "italic",
-                  color: "#C9A84C",
+                  color: "#C9A55A",
                   letterSpacing: "-0.015em",
                 }}
               >
@@ -157,7 +162,7 @@ export default function HomeHero() {
               transition={{ duration: 0.55, delay: 0.55, ease: "easeOut" }}
               style={{
                 height: "1px",
-                backgroundColor: "#C9A84C",
+                backgroundColor: "#C9A55A",
                 marginTop: "2rem",
                 marginBottom: "2rem",
                 overflow: "hidden",
@@ -193,17 +198,17 @@ export default function HomeHero() {
                 href="/contact"
                 className="btn-gold inline-flex items-center gap-2.5 px-8 py-4 rounded-md font-medium text-sm transition-colors duration-200"
                 style={{
-                  backgroundColor: "#C9A84C",
-                  color: "#0F1E3C",
+                  backgroundColor: "#C9A55A",
+                  color: "#07341C",
                   fontFamily: "var(--font-dm-sans), sans-serif",
                   letterSpacing: "0.05em",
                   minHeight: "48px",
                 }}
                 onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.backgroundColor = "#E8C96A";
+                  (e.currentTarget as HTMLElement).style.backgroundColor = "#E0C078";
                 }}
                 onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLElement).style.backgroundColor = "#C9A84C";
+                  (e.currentTarget as HTMLElement).style.backgroundColor = "#C9A55A";
                 }}
               >
                 Get a Free Assessment
@@ -214,7 +219,7 @@ export default function HomeHero() {
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-md font-medium text-sm transition-all duration-200 border"
                 style={{
                   borderColor: "rgba(201,168,76,0.5)",
-                  color: "#C9A84C",
+                  color: "#C9A55A",
                   fontFamily: "var(--font-dm-sans), sans-serif",
                   letterSpacing: "0.05em",
                   minHeight: "48px",
@@ -222,7 +227,7 @@ export default function HomeHero() {
                 onMouseEnter={(e) => {
                   (e.currentTarget as HTMLElement).style.backgroundColor =
                     "rgba(201,168,76,0.08)";
-                  (e.currentTarget as HTMLElement).style.borderColor = "#C9A84C";
+                  (e.currentTarget as HTMLElement).style.borderColor = "#C9A55A";
                 }}
                 onMouseLeave={(e) => {
                   (e.currentTarget as HTMLElement).style.backgroundColor = "transparent";

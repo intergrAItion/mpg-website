@@ -34,39 +34,33 @@ export default function Navbar() {
 
   return (
     <nav
-      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 min-h-[113px] md:min-h-[164px]"
       style={{
         backgroundColor: isScrolled
-          ? "rgba(15, 30, 60, 0.97)"
-          : "rgba(15, 30, 60, 1)",
+          ? "rgba(7, 52, 28, 0.97)"
+          : "rgba(7, 52, 28, 1)",
         backdropFilter: isScrolled ? "blur(8px)" : "none",
-        borderBottom: "1px solid rgba(201, 168, 76, 0.2)",
+        borderBottom: "1px solid rgba(201, 165, 90, 0.2)",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between py-4" style={{minHeight: '100px'}}>
+        <div className="flex items-center justify-between py-4 min-h-[113px] md:min-h-[164px]">
           {/* Logo */}
           <Link href="/" style={{
-            backgroundColor: '#0F1E3C',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             padding: '0px',
             margin: '0px',
-            overflow: 'hidden',
-            borderRadius: '0',
             flexShrink: 0
           }}>
             <Image
-              src="/logo-no-bg.png"
+              src="/logo-green.png"
               alt="MacFarlane Property Group"
-              width={300}
-              height={85}
+              width={265}
+              height={136}
               unoptimized
-              style={{
-                objectFit: 'contain',
-                display: 'block'
-              }}
+              style={{objectFit: 'contain'}}
             />
           </Link>
 
@@ -80,14 +74,14 @@ export default function Navbar() {
                 style={{
                   fontFamily: "var(--font-dm-sans), sans-serif",
                   letterSpacing: "0.05em",
-                  color: pathname === link.href ? "#C9A84C" : "rgba(255,255,255,0.85)",
+                  color: pathname === link.href ? "#C9A55A" : "rgba(255,255,255,0.85)",
                 }}
                 onMouseEnter={(e) => {
-                  (e.target as HTMLElement).style.color = "#C9A84C";
+                  (e.target as HTMLElement).style.color = "#C9A55A";
                 }}
                 onMouseLeave={(e) => {
                   (e.target as HTMLElement).style.color =
-                    pathname === link.href ? "#C9A84C" : "rgba(255,255,255,0.85)";
+                    pathname === link.href ? "#C9A55A" : "rgba(255,255,255,0.85)";
                 }}
               >
                 {link.label}
@@ -101,16 +95,16 @@ export default function Navbar() {
               href="/contact"
               className="btn-gold inline-flex items-center px-5 py-2.5 rounded-md text-sm font-medium transition-colors duration-200 whitespace-nowrap flex-shrink-0"
               style={{
-                backgroundColor: "#C9A84C",
-                color: "#0F1E3C",
+                backgroundColor: "#C9A55A",
+                color: "#07341C",
                 fontFamily: "var(--font-dm-sans), sans-serif",
                 letterSpacing: "0.05em",
               }}
               onMouseEnter={(e) => {
-                (e.currentTarget as HTMLElement).style.backgroundColor = "#E8C96A";
+                (e.currentTarget as HTMLElement).style.backgroundColor = "#E0C078";
               }}
               onMouseLeave={(e) => {
-                (e.currentTarget as HTMLElement).style.backgroundColor = "#C9A84C";
+                (e.currentTarget as HTMLElement).style.backgroundColor = "#C9A55A";
               }}
             >
               Get a Free Assessment
@@ -131,8 +125,8 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div
-          className="md:hidden fixed inset-0 top-24 z-40 flex flex-col px-6 py-8 gap-6"
-          style={{ backgroundColor: "#0F1E3C" }}
+          className="md:hidden fixed inset-0 top-[113px] z-40 flex flex-col px-6 py-8 gap-6"
+          style={{ backgroundColor: "#07341C" }}
         >
           {navLinks.map((link) => (
             <Link
@@ -141,7 +135,7 @@ export default function Navbar() {
               className="text-lg font-medium transition-colors duration-200"
               style={{
                 fontFamily: "var(--font-dm-sans), sans-serif",
-                color: pathname === link.href ? "#C9A84C" : "rgba(255,255,255,0.9)",
+                color: pathname === link.href ? "#C9A55A" : "rgba(255,255,255,0.9)",
               }}
             >
               {link.label}
@@ -151,8 +145,8 @@ export default function Navbar() {
             href="/contact"
             className="btn-gold inline-flex items-center justify-center px-5 py-3 rounded-md text-sm font-medium mt-4"
             style={{
-              backgroundColor: "#C9A84C",
-              color: "#0F1E3C",
+              backgroundColor: "#C9A55A",
+              color: "#07341C",
               fontFamily: "var(--font-dm-sans), sans-serif",
             }}
           >

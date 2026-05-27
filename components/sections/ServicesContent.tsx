@@ -84,15 +84,15 @@ export default function ServicesContent() {
                 transition={{ duration: 0.5, delay: i * 0.08 }}
                 className="p-8 rounded-lg"
                 style={{
-                  backgroundColor: "#F8F7F4",
-                  borderTop: "2px solid #C9A84C",
+                  backgroundColor: "#F5F0E8",
+                  borderTop: "2px solid #C9A55A",
                 }}
               >
                 <div
                   className="w-10 h-10 rounded-md flex items-center justify-center mb-4"
                   style={{ backgroundColor: "rgba(201,168,76,0.12)" }}
                 >
-                  <Icon size={20} style={{ color: "#C9A84C" }} />
+                  <Icon size={20} style={{ color: "#C9A55A" }} />
                 </div>
                 <h3
                   className="text-xl font-semibold mb-2"
