@@ -1,6 +1,7 @@
+import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { getPostBySlug, getAllPosts, formatDate } from '@/lib/blog'
+import { getAllPosts, formatDate } from '@/lib/blog'
 import type { PostData } from '@/lib/blog'
 import BlogCover from '@/components/ui/BlogCover'
 
@@ -15,13 +16,16 @@ export async function generateStaticParams() {
   } catch { return [] }
 }
 
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata(
+  { params }: Props
+): Promise<Metadata> {
   const { slug } = await params
-  const post = await getPostBySlug(slug)
+  const posts = await getAllPosts()
+  const post = posts.find(p => p.slug === slug) ?? null
   if (!post) return {}
   return {
     title: post.title + ' | MacFarlane Property Group',
-    description: post.excerpt
+    description: post.excerpt,
   }
 }
 

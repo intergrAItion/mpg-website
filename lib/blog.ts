@@ -64,12 +64,3 @@ export async function getAllPosts(): Promise<PostData[]> {
   }
 }
 
-export async function getPostBySlug(
-  slug: string): Promise<PostData | null> {
-  try {
-    const posts = await getAllPosts()
-    return posts.find(p => p.slug === slug) ?? null
-  } catch {
-    return null
-  }
-}
