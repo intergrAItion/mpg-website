@@ -24,9 +24,11 @@ const dmSans = DM_Sans({
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
+  themeColor: "#07341C",
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.macfarlanepropertygroup.co.za"),
   title: "MacFarlane Property Group",
   description:
     "Tech-driven property management in Cape Town, Mbombela, and Johannesburg. Lower fees, faster response, total transparency.",
@@ -35,9 +37,28 @@ export const metadata: Metadata = {
     apple: "/favicon-no-bg.png",
   },
   openGraph: {
+    title: "MacFarlane Property Group",
+    description:
+      "Tech-driven property management in Cape Town, Mbombela, and Johannesburg. Lower fees, faster response, total transparency.",
+    url: "https://www.macfarlanepropertygroup.co.za",
     siteName: "MacFarlane Property Group",
-    type: "website",
+    images: [
+      {
+        url: "/logo-green.png",
+        width: 1200,
+        height: 630,
+        alt: "MacFarlane Property Group",
+      },
+    ],
     locale: "en_ZA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MacFarlane Property Group",
+    description:
+      "Tech-driven property management in Cape Town, Mbombela, and Johannesburg. Lower fees, faster response, total transparency.",
+    images: ["/logo-green.png"],
   },
 };
 

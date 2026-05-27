@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { getAllPosts, formatDate } from '@/lib/blog'
 import BlogCover from '@/components/ui/BlogCover'
 
@@ -26,7 +27,7 @@ export default async function BlogPage() {
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {posts.map(post => (
-                <a key={post.slug} href={'/blog/' + post.slug}
+                <Link key={post.slug} href={`/blog/${post.slug}`}
                   className="min-w-0 bg-white hover:shadow-lg transition-shadow overflow-hidden">
                   <BlogCover slug={post.slug} category={post.category} variant="card"/>
                   <div className="p-6">
@@ -50,7 +51,7 @@ export default async function BlogPage() {
                       <span className="text-gray-400 text-xs">{post.readTime}</span>
                     </div>
                   </div>
-                </a>
+                </Link>
               ))}
             </div>
           )}
