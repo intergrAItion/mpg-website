@@ -109,6 +109,7 @@ export default function HomeHero() {
 
             {/* H1 — cinematic multi-line, word-breaks as design */}
             <motion.h1
+              aria-label="Property Management Done Right"
               initial={{ opacity: 0, y: 44 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.75, delay: 0.12, ease: [0.16, 1, 0.3, 1] }}
@@ -119,6 +120,7 @@ export default function HomeHero() {
               }}
             >
               <span
+                aria-hidden="true"
                 style={{
                   display: "block",
                   fontSize: "clamp(3.75rem, 9.5vw, 8.5rem)",
@@ -130,6 +132,7 @@ export default function HomeHero() {
                 Property
               </span>
               <span
+                aria-hidden="true"
                 style={{
                   display: "block",
                   fontSize: "clamp(3.75rem, 9.5vw, 8.5rem)",
@@ -142,6 +145,7 @@ export default function HomeHero() {
                 Management
               </span>
               <span
+                aria-hidden="true"
                 style={{
                   display: "block",
                   fontSize: "clamp(2.25rem, 5.5vw, 5rem)",

@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
+import JsonLd from "@/components/seo/JsonLd";
 
 const GA_MEASUREMENT_ID = "G-1T14DW2GGH";
 
@@ -32,6 +33,9 @@ export const metadata: Metadata = {
   title: "MacFarlane Property Group",
   description:
     "Tech-driven property management in Cape Town, Mbombela, and Johannesburg. Lower fees, faster response, total transparency.",
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: "/favicon-no-bg.png",
     apple: "/favicon-no-bg.png",
@@ -44,7 +48,7 @@ export const metadata: Metadata = {
     siteName: "MacFarlane Property Group",
     images: [
       {
-        url: "/logo-green.png",
+        url: "/og-card.png",
         width: 1200,
         height: 630,
         alt: "MacFarlane Property Group",
@@ -58,7 +62,35 @@ export const metadata: Metadata = {
     title: "MacFarlane Property Group",
     description:
       "Tech-driven property management in Cape Town, Mbombela, and Johannesburg. Lower fees, faster response, total transparency.",
-    images: ["/logo-green.png"],
+    images: ["/og-card.png"],
+  },
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "@id": "https://www.macfarlanepropertygroup.co.za/#organization",
+  name: "MacFarlane Property Group",
+  url: "https://www.macfarlanepropertygroup.co.za",
+  logo: "https://www.macfarlanepropertygroup.co.za/logo-green.png",
+  description:
+    "Tech-driven property management in Cape Town, Mbombela, and Johannesburg. Lower fees, faster response, total transparency.",
+  telephone: "+27711720480",
+  email: "dean@macfarlanepropertygroup.co.za",
+  founder: { "@type": "Person", name: "Dean MacFarlane" },
+  areaServed: [
+    { "@type": "City", name: "Cape Town" },
+    { "@type": "City", name: "Mbombela" },
+    { "@type": "City", name: "Johannesburg" },
+  ],
+  priceRange: "Below 10% of monthly rent",
+  // TODO: add LinkedIn/Facebook URLs
+  sameAs: [],
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+27711720480",
+    email: "dean@macfarlanepropertygroup.co.za",
+    contactType: "customer service",
   },
 };
 
@@ -73,6 +105,7 @@ export default function RootLayout({
       className={`${cormorantGaramond.variable} ${dmSans.variable}`}
     >
       <body className="min-h-full flex flex-col antialiased" style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}>
+        <JsonLd data={organizationSchema} />
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           strategy="afterInteractive"

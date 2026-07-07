@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Privacy Policy and Terms of Service for MacFarlane Property Group. POPIA-compliant data handling.",
   alternates: {
-    canonical: "https://macfarlanepropertygroup.co.za/legal",
+    canonical: "https://www.macfarlanepropertygroup.co.za/legal",
   },
 };
 

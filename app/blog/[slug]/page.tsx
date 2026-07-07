@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { getAllPosts, formatDate } from '@/lib/blog'
 import type { PostData } from '@/lib/blog'
 import BlogCover from '@/components/ui/BlogCover'
+import JsonLd from '@/components/seo/JsonLd'
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -40,6 +41,31 @@ export default async function PostPage({ params }: Props) {
     .filter(p => p.slug !== slug)
     .slice(0, 3)
 
+  const postUrl = `https://www.macfarlanepropertygroup.co.za/blog/${validPost.slug}`
+
+  const blogPostingSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: validPost.title,
+    description: validPost.excerpt,
+    datePublished: validPost.date,
+    dateModified: validPost.date,
+    author: { '@type': 'Person', name: validPost.author },
+    publisher: { '@id': 'https://www.macfarlanepropertygroup.co.za/#organization' },
+    mainEntityOfPage: postUrl,
+    articleSection: validPost.category,
+  }
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.macfarlanepropertygroup.co.za' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.macfarlanepropertygroup.co.za/blog' },
+      { '@type': 'ListItem', position: 3, name: validPost.title, item: postUrl },
+    ],
+  }
+
   const DmAvatar = (
     <div style={{
       width: '40px',
@@ -63,6 +89,8 @@ export default async function PostPage({ params }: Props) {
 
   return (
     <>
+      <JsonLd data={blogPostingSchema} />
+      <JsonLd data={breadcrumbSchema} />
       {/* Dark green hero */}
       <section className="bg-[#07341C] py-24">
         <div className="max-w-3xl mx-auto px-4">

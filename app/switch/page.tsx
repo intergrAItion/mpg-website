@@ -3,17 +3,17 @@ import PageHero from "@/components/sections/PageHero";
 import SwitchContent from "@/components/sections/SwitchContent";
 
 export const metadata: Metadata = {
-  title: "Switch to Us | MacFarlane Property Group",
+  title: "Switch Property Managers in 48 Hours | MacFarlane Property Group",
   description:
-    "Tired of your current property manager? We make switching seamless — handling the transition professionally so you can focus on what matters.",
+    "Unhappy with your current property manager? We handle the entire switch in four steps, typically within 48 hours, with zero disruption to your tenants.",
   openGraph: {
-    title: "Switch to Us | MacFarlane Property Group",
+    title: "Switch Property Managers in 48 Hours | MacFarlane Property Group",
     description:
-      "We make the transition seamless — so you can focus on what matters.",
-    url: "https://macfarlanepropertygroup.co.za/switch",
+      "Unhappy with your current property manager? We handle the entire switch in four steps, typically within 48 hours, with zero disruption to your tenants.",
+    url: "https://www.macfarlanepropertygroup.co.za/switch",
   },
   alternates: {
-    canonical: "https://macfarlanepropertygroup.co.za/switch",
+    canonical: "https://www.macfarlanepropertygroup.co.za/switch",
   },
 };
 

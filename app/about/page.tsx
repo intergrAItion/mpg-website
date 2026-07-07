@@ -3,17 +3,17 @@ import PageHero from "@/components/sections/PageHero";
 import AboutContent from "@/components/sections/AboutContent";
 
 export const metadata: Metadata = {
-  title: "About | MacFarlane Property Group",
+  title: "About MacFarlane Property Group | Generations of Property Experience",
   description:
-    "Built on generations of property experience, MacFarlane Property Group offers reliable, cost-effective property management for landlords, with teams in Cape Town, Mbombela, and Johannesburg.",
+    "Founded by Dean MacFarlane on generations of family property experience. Modern, transparent property management for South African landlords.",
   openGraph: {
-    title: "About | MacFarlane Property Group",
+    title: "About MacFarlane Property Group | Generations of Property Experience",
     description:
-      "Property management with teams in Cape Town, Mbombela, and Johannesburg. Reliable, transparent, hands-on management.",
-    url: "https://macfarlanepropertygroup.co.za/about",
+      "Founded by Dean MacFarlane on generations of family property experience. Modern, transparent property management for South African landlords.",
+    url: "https://www.macfarlanepropertygroup.co.za/about",
   },
   alternates: {
-    canonical: "https://macfarlanepropertygroup.co.za/about",
+    canonical: "https://www.macfarlanepropertygroup.co.za/about",
   },
 };
 

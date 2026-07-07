@@ -151,6 +151,9 @@ export default function BlogCover({ slug, variant }: BlogCoverProps) {
   return (
     <div className={`relative overflow-hidden w-full ${isCard ? 'aspect-[16/10]' : 'aspect-[16/9]'}`}>
       <svg
+        role="img"
+        aria-hidden="true"
+        focusable="false"
         width="100%"
         height="100%"
         viewBox={viewBox}

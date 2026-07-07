@@ -3,17 +3,17 @@ import PageHero from "@/components/sections/PageHero";
 import PricingContent from "@/components/sections/PricingContent";
 
 export const metadata: Metadata = {
-  title: "Request a Quote | MacFarlane Property Group",
+  title: "Property Management Fees & Quotes | Below Industry Standard | MPG",
   description:
-    "Simple, transparent pricing. No hidden fees, no surprises. Our management fees are competitively priced below the industry standard of 10–12%.",
+    "How much does property management cost in South Africa? Our management fees sit below the 10–12% industry standard. Request a free, no-obligation quote.",
   openGraph: {
-    title: "Request a Quote | MacFarlane Property Group",
+    title: "Property Management Fees & Quotes | Below Industry Standard | MPG",
     description:
-      "Simple, transparent pricing. No hidden fees. Below industry standard management fees.",
-    url: "https://macfarlanepropertygroup.co.za/quote",
+      "How much does property management cost in South Africa? Our management fees sit below the 10–12% industry standard. Request a free, no-obligation quote.",
+    url: "https://www.macfarlanepropertygroup.co.za/quote",
   },
   alternates: {
-    canonical: "https://macfarlanepropertygroup.co.za/quote",
+    canonical: "https://www.macfarlanepropertygroup.co.za/quote",
   },
 };
 

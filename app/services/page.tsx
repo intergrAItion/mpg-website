@@ -2,25 +2,54 @@ import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
 import ServicesContent from "@/components/sections/ServicesContent";
 import CTABanner from "@/components/ui/CTABanner";
+import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Services | MacFarlane Property Group",
+  title: "Property Management Services | Tenant Placement, Rent Collection & Maintenance | MPG",
   description:
-    "Full property management services for commercial buildings, residential buildings, student accommodation, and blocks of flats. Teams in Cape Town, Mbombela, and Johannesburg.",
+    "Full-service residential and commercial property management: tenant vetting, rent collection, maintenance coordination, inspections and legal compliance across South Africa.",
   openGraph: {
-    title: "Services | MacFarlane Property Group",
+    title: "Property Management Services | Tenant Placement, Rent Collection & Maintenance | MPG",
     description:
-      "Full property management services with teams in Cape Town, Mbombela, and Johannesburg.",
-    url: "https://macfarlanepropertygroup.co.za/services",
+      "Full-service residential and commercial property management: tenant vetting, rent collection, maintenance coordination, inspections and legal compliance across South Africa.",
+    url: "https://www.macfarlanepropertygroup.co.za/services",
   },
   alternates: {
-    canonical: "https://macfarlanepropertygroup.co.za/services",
+    canonical: "https://www.macfarlanepropertygroup.co.za/services",
+  },
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  serviceType: "Property Management",
+  provider: { "@id": "https://www.macfarlanepropertygroup.co.za/#organization" },
+  areaServed: [
+    { "@type": "City", name: "Cape Town" },
+    { "@type": "City", name: "Mbombela" },
+    { "@type": "City", name: "Johannesburg" },
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Property Management Services",
+    itemListElement: [
+      "Tenant Management",
+      "Maintenance Coordination",
+      "Lease Administration",
+      "Property Inspections",
+      "Financial Reporting",
+      "Legal & Compliance",
+    ].map((name) => ({
+      "@type": "Offer",
+      itemOffered: { "@type": "Service", name },
+    })),
   },
 };
 
 export default function ServicesPage() {
   return (
     <>
+      <JsonLd data={serviceSchema} />
       <PageHero
         heading="Our Services"
         subheading="End-to-end property management for landlords in Cape Town, Mbombela, and Johannesburg."
