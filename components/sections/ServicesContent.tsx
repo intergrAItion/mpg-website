@@ -90,7 +90,7 @@ export default function ServicesContent() {
               >
                 <div
                   className="w-10 h-10 rounded-md flex items-center justify-center mb-4"
-                  style={{ backgroundColor: "rgba(201,168,76,0.12)" }}
+                  style={{ backgroundColor: "rgba(201,165,90,0.12)" }}
                 >
                   <Icon size={20} style={{ color: "#C9A55A" }} />
                 </div>

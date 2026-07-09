@@ -155,7 +155,7 @@ export default function PricingContent() {
                 style={{
                   color: "#07341C",
                   borderLeft: "4px solid #C9A55A",
-                  backgroundColor: "rgba(201,168,76,0.06)",
+                  backgroundColor: "rgba(201,165,90,0.06)",
                 }}
               >
                 MacFarlane Property Group
@@ -188,7 +188,7 @@ export default function PricingContent() {
                   style={{
                     color: "#C9A55A",
                     borderLeft: "4px solid #C9A55A",
-                    backgroundColor: "rgba(201,168,76,0.04)",
+                    backgroundColor: "rgba(201,165,90,0.04)",
                   }}
                 >
                   {row.mpg}

@@ -29,7 +29,7 @@ export default function ContactContent() {
                 className="flex items-center gap-4 p-4 rounded-lg transition-colors duration-200 group"
                 style={{ backgroundColor: "#F5F0E8" }}
                 onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.backgroundColor = "rgba(201,168,76,0.08)";
+                  (e.currentTarget as HTMLElement).style.backgroundColor = "rgba(201,165,90,0.08)";
                 }}
                 onMouseLeave={(e) => {
                   (e.currentTarget as HTMLElement).style.backgroundColor = "#F5F0E8";
@@ -37,7 +37,7 @@ export default function ContactContent() {
               >
                 <div
                   className="w-10 h-10 rounded-md flex items-center justify-center flex-shrink-0"
-                  style={{ backgroundColor: "rgba(201,168,76,0.15)" }}
+                  style={{ backgroundColor: "rgba(201,165,90,0.15)" }}
                 >
                   <Phone size={18} style={{ color: "#C9A55A" }} />
                 </div>
@@ -58,7 +58,7 @@ export default function ContactContent() {
                 className="flex items-center gap-4 p-4 rounded-lg transition-colors duration-200"
                 style={{ backgroundColor: "#F5F0E8" }}
                 onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.backgroundColor = "rgba(201,168,76,0.08)";
+                  (e.currentTarget as HTMLElement).style.backgroundColor = "rgba(201,165,90,0.08)";
                 }}
                 onMouseLeave={(e) => {
                   (e.currentTarget as HTMLElement).style.backgroundColor = "#F5F0E8";
@@ -85,7 +85,7 @@ export default function ContactContent() {
                 className="flex items-center gap-4 p-4 rounded-lg transition-colors duration-200"
                 style={{ backgroundColor: "#F5F0E8" }}
                 onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.backgroundColor = "rgba(201,168,76,0.08)";
+                  (e.currentTarget as HTMLElement).style.backgroundColor = "rgba(201,165,90,0.08)";
                 }}
                 onMouseLeave={(e) => {
                   (e.currentTarget as HTMLElement).style.backgroundColor = "#F5F0E8";
@@ -93,7 +93,7 @@ export default function ContactContent() {
               >
                 <div
                   className="w-10 h-10 rounded-md flex items-center justify-center flex-shrink-0"
-                  style={{ backgroundColor: "rgba(201,168,76,0.15)" }}
+                  style={{ backgroundColor: "rgba(201,165,90,0.15)" }}
                 >
                   <Mail size={18} style={{ color: "#C9A55A" }} />
                 </div>

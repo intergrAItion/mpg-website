@@ -40,6 +40,7 @@ export default function Footer() {
                 { href: "/blog", label: "Blog" },
                 { href: "/quote", label: "Get a Quote" },
                 { href: "/switch", label: "Switch to Us" },
+                { href: "/faq", label: "FAQ" },
                 { href: "/contact", label: "Contact" },
               ].map((link) => (
                 <li key={link.href}>
@@ -126,6 +127,33 @@ export default function Footer() {
                   dean@macfarlanepropertygroup.co.za
                 </a>
               </li>
+            </ul>
+          </div>
+
+          {/* Service Areas */}
+          <div>
+            <h3
+              className="text-sm font-semibold mb-4 uppercase tracking-widest"
+              style={{ color: "#C9A55A", fontFamily: "var(--font-dm-sans), sans-serif" }}
+            >
+              Service Areas
+            </h3>
+            <ul className="space-y-2">
+              {[
+                { href: "/property-management-cape-town", label: "Cape Town" },
+                { href: "/property-management-johannesburg", label: "Johannesburg" },
+                { href: "/property-management-mbombela", label: "Mbombela" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm transition-colors duration-200 hover:text-yellow-400"
+                    style={{ color: "rgba(255,255,255,0.7)" }}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

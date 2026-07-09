@@ -187,7 +187,10 @@ export default function HomeHero() {
                 marginBottom: "2.5rem",
               }}
             >
-              Tech-driven property management for landlords in Cape Town, Mbombela, and Johannesburg.
+              Tech-driven property management for landlords in{" "}
+              <Link href="/property-management-cape-town" style={{ color: "inherit", textDecoration: "underline", textUnderlineOffset: "2px" }}>Cape Town</Link>,{" "}
+              <Link href="/property-management-mbombela" style={{ color: "inherit", textDecoration: "underline", textUnderlineOffset: "2px" }}>Mbombela</Link>, and{" "}
+              <Link href="/property-management-johannesburg" style={{ color: "inherit", textDecoration: "underline", textUnderlineOffset: "2px" }}>Johannesburg</Link>.
               Lower fees, faster response, complete transparency.
             </motion.p>
 
@@ -222,7 +225,7 @@ export default function HomeHero() {
                 href="#how-it-works"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-md font-medium text-sm transition-all duration-200 border"
                 style={{
-                  borderColor: "rgba(201,168,76,0.5)",
+                  borderColor: "rgba(201,165,90,0.5)",
                   color: "#C9A55A",
                   fontFamily: "var(--font-dm-sans), sans-serif",
                   letterSpacing: "0.05em",
@@ -230,13 +233,13 @@ export default function HomeHero() {
                 }}
                 onMouseEnter={(e) => {
                   (e.currentTarget as HTMLElement).style.backgroundColor =
-                    "rgba(201,168,76,0.08)";
+                    "rgba(201,165,90,0.08)";
                   (e.currentTarget as HTMLElement).style.borderColor = "#C9A55A";
                 }}
                 onMouseLeave={(e) => {
                   (e.currentTarget as HTMLElement).style.backgroundColor = "transparent";
                   (e.currentTarget as HTMLElement).style.borderColor =
-                    "rgba(201,168,76,0.5)";
+                    "rgba(201,165,90,0.5)";
                 }}
               >
                 How It Works
@@ -273,7 +276,7 @@ export default function HomeHero() {
             width: "1px",
             height: "48px",
             background:
-              "linear-gradient(to bottom, rgba(201,168,76,0.6) 0%, rgba(201,168,76,0.05) 100%)",
+              "linear-gradient(to bottom, rgba(201,165,90,0.6) 0%, rgba(201,165,90,0.05) 100%)",
             transformOrigin: "top",
           }}
         />

@@ -40,7 +40,7 @@ export default function HowItWorks() {
           {/* Connecting line (desktop only) */}
           <div
             className="hidden md:block absolute top-10 left-[16.67%] right-[16.67%] h-px"
-            style={{ backgroundColor: "rgba(201,168,76,0.3)" }}
+            style={{ backgroundColor: "rgba(201,165,90,0.3)" }}
           />
 
           {steps.map((step, i) => (

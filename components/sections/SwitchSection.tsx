@@ -93,7 +93,7 @@ export default function SwitchSection() {
                 {i < steps.length - 1 && (
                   <span
                     className="hidden sm:block text-lg mx-2"
-                    style={{ color: "rgba(201,168,76,0.5)" }}
+                    style={{ color: "rgba(201,165,90,0.5)" }}
                   >
                     →
                   </span>
