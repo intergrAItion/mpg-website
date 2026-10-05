@@ -16,37 +16,37 @@ const services = [
     icon: Users,
     heading: "Tenant Management",
     description:
-      "End-to-end tenant sourcing, screening, placement, and ongoing relationship management.",
+      "Tenant sourcing and assessment, recommendations for your decision, and communication throughout the tenancy.",
   },
   {
     icon: Wrench,
     heading: "Maintenance Coordination",
     description:
-      "Logging all maintenance requests, coordinating qualified contractors, and following up until issues are resolved.",
+      "Contractor communication and follow-up, with clear updates about work that needs attention.",
   },
   {
     icon: FileText,
     heading: "Lease Administration",
     description:
-      "Drafting, renewing, and managing all lease agreements in full compliance with the Rental Housing Act.",
+      "Lease preparation, signing coordination and renewals, with organised tenancy records.",
   },
   {
     icon: ClipboardList,
     heading: "Property Inspections",
     description:
-      "Thorough move-in, move-out, and routine inspections, all formally documented.",
+      "Documented move-in and move-out inspections to help you keep a clear record of the property’s condition.",
   },
   {
     icon: BarChart2,
     heading: "Financial Reporting",
     description:
-      "Monthly rental payment tracking, proactive arrears management, and clear financial statements for every property.",
+      "Monthly financial reporting and payment updates, so you can keep a clear view of your rental.",
   },
   {
     icon: Scale,
-    heading: "Legal & Compliance",
+    heading: "Tenancy & Compliance Administration",
     description:
-      "Comprehensive compliance management covering POPIA, the Rental Housing Act, and all applicable building regulations.",
+      "Organised tenancy records and compliance-related paperwork, with clear information for landlord decisions.",
   },
 ];
 
@@ -59,17 +59,17 @@ export default function ServicesContent() {
         </div>
 
         <motion.p
-          initial={{ opacity: 0, y: 16 }}
+          initial={false}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
           className="text-base md:text-lg leading-relaxed mb-12 max-w-3xl"
-          style={{ color: "#6B7280" }}
+          style={{ color: "#5B6470" }}
         >
-          MPG provides full property management services for commercial buildings,
-          residential buildings, student accommodation, and blocks of flats in
-          Cape Town, Mbombela, and Johannesburg. Whether you own one property or a growing portfolio, we
-          handle every aspect of management so you don't have to.
+          MPG helps landlords in Cape Town, Mbombela and Johannesburg bring the everyday running
+          of a rental into one organised management relationship. From tenant assessment and lease
+          arrangements to maintenance coordination and reporting, we take the administration off
+          your shoulders and keep you informed.
         </motion.p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -78,7 +78,7 @@ export default function ServicesContent() {
             return (
               <motion.div
                 key={service.heading}
-                initial={{ opacity: 0, y: 30 }}
+                initial={false}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
@@ -103,7 +103,7 @@ export default function ServicesContent() {
                 >
                   {service.heading}
                 </h3>
-                <p className="text-sm leading-relaxed" style={{ color: "#6B7280" }}>
+                <p className="text-sm leading-relaxed" style={{ color: "#5B6470" }}>
                   {service.description}
                 </p>
               </motion.div>

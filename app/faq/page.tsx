@@ -6,16 +6,16 @@ import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title: "Property Management FAQ | Fees, Switching & Tenant Vetting | MPG",
-  description:
-    "Answers to the questions South African landlords ask most: management fees, switching managers, tenant vetting, maintenance and legal compliance.",
+  description: "Answers to the questions South African landlords ask most: management fees, switching managers, tenant vetting, maintenance and legal compliance.",
+  alternates: { canonical: "https://www.macfarlanepropertygroup.co.za/faq" },
   openGraph: {
-    title: "Property Management FAQ | Fees, Switching & Tenant Vetting | MPG",
-    description:
-      "Answers to the questions South African landlords ask most: management fees, switching managers, tenant vetting, maintenance and legal compliance.",
-    url: "https://www.macfarlanepropertygroup.co.za/faq",
+    title: "Property Management FAQ | Fees, Switching & Tenant Vetting | MPG", description: "Answers to the questions South African landlords ask most: management fees, switching managers, tenant vetting, maintenance and legal compliance.", url: "https://www.macfarlanepropertygroup.co.za/faq",
+    siteName: "MacFarlane Property Group", locale: "en_ZA", type: "website",
+    images: [{ url: "https://www.macfarlanepropertygroup.co.za/og-card.png", width: 1200, height: 630, alt: "MacFarlane Property Group" }],
   },
-  alternates: {
-    canonical: "https://www.macfarlanepropertygroup.co.za/faq",
+  twitter: {
+    card: "summary_large_image", title: "Property Management FAQ | Fees, Switching & Tenant Vetting | MPG", description: "Answers to the questions South African landlords ask most: management fees, switching managers, tenant vetting, maintenance and legal compliance.",
+    images: [{ url: "https://www.macfarlanepropertygroup.co.za/og-card.png", alt: "MacFarlane Property Group" }],
   },
 };
 
@@ -47,13 +47,13 @@ const faqs: { q: string; a: string; extra?: React.ReactNode }[] = [
     q: "Which areas does MPG serve?",
     a: `MPG serves landlords in Cape Town, Johannesburg and Mbombela. Explore the city pages below for an overview of our service, or get in touch to discuss your property's location and what you need from a manager. We would be happy to talk through how we can help with your rental.`,
     extra: (
-      <p className="text-sm" style={{ color: "#6B7280", fontFamily: "var(--font-dm-sans), sans-serif" }}>
+      <p className="text-sm" style={{ color: "#5B6470", fontFamily: "var(--font-dm-sans), sans-serif" }}>
         Explore local pages:{" "}
-        <Link href="/property-management-cape-town" className="underline" style={{ color: "#C9A55A" }}>Cape Town</Link>
+        <Link href="/property-management-cape-town" className="underline" style={{ color: "#876628" }}>Cape Town</Link>
         {" · "}
-        <Link href="/property-management-johannesburg" className="underline" style={{ color: "#C9A55A" }}>Johannesburg</Link>
+        <Link href="/property-management-johannesburg" className="underline" style={{ color: "#876628" }}>Johannesburg</Link>
         {" · "}
-        <Link href="/property-management-mbombela" className="underline" style={{ color: "#C9A55A" }}>Mbombela</Link>
+        <Link href="/property-management-mbombela" className="underline" style={{ color: "#876628" }}>Mbombela</Link>
       </p>
     ),
   },
@@ -73,7 +73,7 @@ const faqs: { q: string; a: string; extra?: React.ReactNode }[] = [
     q: "How do I get started?",
     a: `Get in touch and tell us about your property. You can call or WhatsApp us on 071 172 0480, email dean@macfarlanepropertygroup.co.za, or use the enquiry form. We will discuss what you need, explain how MPG can help and put together a quote for your rental. We look forward to hearing from you.`,
     extra: (
-      <Link href="/contact" className="underline" style={{ color: "#C9A55A", fontWeight: 600, fontFamily: "var(--font-dm-sans), sans-serif" }}>
+      <Link href="/contact" className="underline" style={{ color: "#876628", fontWeight: 600, fontFamily: "var(--font-dm-sans), sans-serif" }}>
         Get in touch →
       </Link>
     ),
@@ -110,7 +110,7 @@ export default function FaqPage() {
               </h2>
               <p
                 className="mt-5 text-base leading-relaxed"
-                style={{ color: "#6B7280", fontFamily: "var(--font-dm-sans), sans-serif" }}
+                style={{ color: "#5B6470", fontFamily: "var(--font-dm-sans), sans-serif" }}
               >
                 {f.a}
               </p>

@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
 import { useRef } from "react";
 import { ArrowRight } from "lucide-react";
 
 export default function HomeHero() {
+  const reducedMotion = useReducedMotion();
   const ref = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -18,8 +19,8 @@ export default function HomeHero() {
   return (
     <section
       ref={ref}
-      className="relative flex items-end overflow-hidden"
-      style={{ minHeight: "100vh" }}
+      className="home-hero relative flex items-end overflow-hidden"
+      style={{ minHeight: "100vh", paddingTop: "calc(var(--header-height) + 2.5rem)" }}
     >
       <style>{`
         .hero-bg-img {
@@ -52,10 +53,10 @@ export default function HomeHero() {
       `}</style>
 
       {/* ── Background image with parallax ── */}
-      <motion.div className="absolute inset-0 w-full h-full" style={{ y: imageY }}>
+      <motion.div className="absolute inset-0 w-full h-full" style={{ y: reducedMotion ? 0 : imageY }}>
         <Image
           src="/hero-nightscape.png"
-          alt="MacFarlane Property Group headquarters"
+          alt=""
           fill
           priority
           sizes="100vw"
@@ -73,14 +74,14 @@ export default function HomeHero() {
       {/* ── Main content — left-anchored, bottom-positioned ── */}
       <motion.div
         className="relative z-10 w-full"
-        style={{ y: contentY, paddingBottom: "9vh" }}
+        style={{ y: reducedMotion ? 0 : contentY, paddingBottom: "9vh" }}
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
           <div className="max-w-3xl">
 
             {/* Overline with horizontal accent line */}
             <motion.div
-              initial={{ opacity: 0, x: -24 }}
+              initial={false}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.55, ease: "easeOut" }}
               className="flex items-center gap-4 mb-10"
@@ -110,7 +111,7 @@ export default function HomeHero() {
             {/* H1 — cinematic multi-line, word-breaks as design */}
             <motion.h1
               aria-label="Property Management Done Right"
-              initial={{ opacity: 0, y: 44 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.75, delay: 0.12, ease: [0.16, 1, 0.3, 1] }}
               style={{
@@ -123,7 +124,7 @@ export default function HomeHero() {
                 aria-hidden="true"
                 style={{
                   display: "block",
-                  fontSize: "clamp(3.75rem, 9.5vw, 8.5rem)",
+                  fontSize: "clamp(2.65rem, 9.5vw, 8.5rem)",
                   fontWeight: 600,
                   color: "rgba(255,255,255,0.9)",
                   letterSpacing: "-0.015em",
@@ -135,7 +136,7 @@ export default function HomeHero() {
                 aria-hidden="true"
                 style={{
                   display: "block",
-                  fontSize: "clamp(3.75rem, 9.5vw, 8.5rem)",
+                  fontSize: "clamp(2.65rem, 9.5vw, 8.5rem)",
                   fontWeight: 600,
                   fontStyle: "italic",
                   color: "#C9A55A",
@@ -161,7 +162,7 @@ export default function HomeHero() {
 
             {/* Animated gold rule */}
             <motion.div
-              initial={{ width: 0 }}
+              initial={false}
               animate={{ width: "72px" }}
               transition={{ duration: 0.55, delay: 0.55, ease: "easeOut" }}
               style={{
@@ -175,7 +176,7 @@ export default function HomeHero() {
 
             {/* Subtitle */}
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.65, delay: 0.40 }}
               style={{
@@ -187,16 +188,16 @@ export default function HomeHero() {
                 marginBottom: "2.5rem",
               }}
             >
-              Tech-driven property management for landlords in{" "}
+              Hands-on property management for landlords in{" "}
               <Link href="/property-management-cape-town" style={{ color: "inherit", textDecoration: "underline", textUnderlineOffset: "2px" }}>Cape Town</Link>,{" "}
               <Link href="/property-management-mbombela" style={{ color: "inherit", textDecoration: "underline", textUnderlineOffset: "2px" }}>Mbombela</Link>, and{" "}
               <Link href="/property-management-johannesburg" style={{ color: "inherit", textDecoration: "underline", textUnderlineOffset: "2px" }}>Johannesburg</Link>.
-              Lower fees, faster response, complete transparency.
+              Take the everyday administration off your shoulders, with clear updates and fees tailored to your property.
             </motion.p>
 
             {/* CTA buttons — left-aligned, not centred */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.65, delay: 0.52 }}
               className="flex flex-col sm:flex-row items-start gap-3"
@@ -251,10 +252,11 @@ export default function HomeHero() {
 
       {/* ── Bottom-left: editorial vertical scroll indicator ── */}
       <motion.div
-        initial={{ opacity: 0 }}
+        initial={false}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.1, duration: 0.6 }}
-        className="absolute bottom-8 left-6 sm:left-10 lg:left-16 z-10 flex flex-col items-center gap-3"
+        aria-hidden="true"
+        className="absolute bottom-8 left-6 sm:left-10 lg:left-16 z-10 hidden lg:flex flex-col items-center gap-3"
       >
         <span
           style={{

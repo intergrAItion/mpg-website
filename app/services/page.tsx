@@ -5,17 +5,17 @@ import CTABanner from "@/components/ui/CTABanner";
 import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Property Management Services | Tenant Placement, Rent Collection & Maintenance | MPG",
-  description:
-    "Full-service residential and commercial property management: tenant vetting, rent collection, maintenance coordination, inspections and legal compliance across South Africa.",
+  title: "Property Management Services | Tenants, Leases & Maintenance | MPG",
+  description: "Property management in Cape Town, Mbombela and Johannesburg: tenant assessment, lease administration, maintenance coordination, documented inspections and monthly financial reporting.",
+  alternates: { canonical: "https://www.macfarlanepropertygroup.co.za/services" },
   openGraph: {
-    title: "Property Management Services | Tenant Placement, Rent Collection & Maintenance | MPG",
-    description:
-      "Full-service residential and commercial property management: tenant vetting, rent collection, maintenance coordination, inspections and legal compliance across South Africa.",
-    url: "https://www.macfarlanepropertygroup.co.za/services",
+    title: "Property Management Services | Tenants, Leases & Maintenance | MPG", description: "Property management in Cape Town, Mbombela and Johannesburg: tenant assessment, lease administration, maintenance coordination, documented inspections and monthly financial reporting.", url: "https://www.macfarlanepropertygroup.co.za/services",
+    siteName: "MacFarlane Property Group", locale: "en_ZA", type: "website",
+    images: [{ url: "https://www.macfarlanepropertygroup.co.za/og-card.png", width: 1200, height: 630, alt: "MacFarlane Property Group" }],
   },
-  alternates: {
-    canonical: "https://www.macfarlanepropertygroup.co.za/services",
+  twitter: {
+    card: "summary_large_image", title: "Property Management Services | Tenants, Leases & Maintenance | MPG", description: "Property management in Cape Town, Mbombela and Johannesburg: tenant assessment, lease administration, maintenance coordination, documented inspections and monthly financial reporting.",
+    images: [{ url: "https://www.macfarlanepropertygroup.co.za/og-card.png", alt: "MacFarlane Property Group" }],
   },
 };
 
@@ -38,7 +38,7 @@ const serviceSchema = {
       "Lease Administration",
       "Property Inspections",
       "Financial Reporting",
-      "Legal & Compliance",
+      "Tenancy & Compliance Administration",
     ].map((name) => ({
       "@type": "Offer",
       itemOffered: { "@type": "Service", name },
@@ -57,7 +57,7 @@ export default function ServicesPage() {
       <ServicesContent />
       <CTABanner
         heading="Ready to hand over the keys?"
-        subheading="Let us handle the management while you enjoy the returns."
+        subheading="Bring the everyday administration into one clear management relationship."
         buttonLabel="Get a Free Assessment"
         buttonHref="/contact"
       />

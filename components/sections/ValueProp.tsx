@@ -8,7 +8,7 @@ export default function ValueProp() {
     <section className="py-24 px-4 bg-white">
       <div className="max-w-3xl mx-auto text-center">
         <motion.blockquote
-          initial={{ opacity: 0, y: 24 }}
+          initial={false}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
@@ -19,12 +19,11 @@ export default function ValueProp() {
             color: "#1A1A1A",
           }}
         >
-          "We help landlords reduce management costs while improving
-          communication, response time, and overall visibility — so you earn
-          more and worry less."
+          We take care of the everyday management details and keep you informed,
+          giving you more time for your priorities and a clearer view of your rental.
         </motion.blockquote>
         <motion.div
-          initial={{ opacity: 0, y: 16 }}
+          initial={false}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -33,15 +32,15 @@ export default function ValueProp() {
             href="/services"
             className="inline-flex items-center text-sm font-medium transition-colors duration-200"
             style={{
-              color: "#C9A55A",
+              color: "#876628",
               fontFamily: "var(--font-dm-sans), sans-serif",
               letterSpacing: "0.05em",
             }}
             onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.color = "#E0C078";
+              (e.currentTarget as HTMLElement).style.color = "#07341C";
             }}
             onMouseLeave={(e) => {
-              (e.currentTarget as HTMLElement).style.color = "#C9A55A";
+              (e.currentTarget as HTMLElement).style.color = "#876628";
             }}
           >
             Learn About Our Services →

@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer style={{ backgroundColor: "#07341C" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1fr_0.75fr_1fr_max-content_0.75fr] gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-[1fr_0.75fr_1fr_1.25fr_0.75fr] gap-10">
           {/* Logo + tagline */}
           <div className="lg:col-span-1">
             <div style={{ marginBottom: '1rem' }}>
@@ -14,24 +14,24 @@ export default function Footer() {
                 src="/logo-green.png"
                 alt="MacFarlane Property Group"
                 width={400}
-                height={126}
+                height={205}
                 unoptimized
-                style={{objectFit: 'contain'}}
+                style={{objectFit: 'contain', width: '100%', height: 'auto', maxWidth: '265px'}}
               />
             </div>
-            <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.6)" }}>
-              Tech-driven property management in Cape Town, Mbombela, and Johannesburg. Lower fees, faster response, total transparency.
+            <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.7)" }}>
+              Hands-on property management in Cape Town, Mbombela and Johannesburg. Competitive fees tailored to your property, clear communication and organised rental administration.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3
+            <h2
               className="text-sm font-semibold mb-4 uppercase tracking-widest"
               style={{ color: "#C9A55A", fontFamily: "var(--font-dm-sans), sans-serif" }}
             >
               Quick Links
-            </h3>
+            </h2>
             <ul className="space-y-2">
               {[
                 { href: "/", label: "Home" },
@@ -58,12 +58,12 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3
+            <h2
               className="text-sm font-semibold mb-4 uppercase tracking-widest"
               style={{ color: "#C9A55A", fontFamily: "var(--font-dm-sans), sans-serif" }}
             >
               Services
-            </h3>
+            </h2>
             <ul className="space-y-2">
               {[
                 "Tenant Management",
@@ -71,7 +71,7 @@ export default function Footer() {
                 "Lease Administration",
                 "Property Inspections",
                 "Financial Reporting",
-                "Legal & Compliance",
+                "Tenancy & Compliance Administration",
               ].map((service) => (
                 <li key={service}>
                   <Link
@@ -88,17 +88,17 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3
+            <h2
               className="text-sm font-semibold mb-4 uppercase tracking-widest"
               style={{ color: "#C9A55A", fontFamily: "var(--font-dm-sans), sans-serif" }}
             >
               Contact Us
-            </h3>
+            </h2>
             <ul className="space-y-3">
               <li>
                 <a
                   href="tel:+27711720480"
-                  className="flex items-center gap-2 text-sm transition-colors duration-200 hover:text-yellow-400"
+                  className="flex items-start gap-2 text-sm wrap-anywhere transition-colors duration-200 hover:text-yellow-400"
                   style={{ color: "rgba(255,255,255,0.7)" }}
                 >
                   <Phone size={14} />
@@ -110,7 +110,7 @@ export default function Footer() {
                   href="https://wa.me/27711720480"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm transition-colors duration-200 hover:text-yellow-400"
+                  className="flex items-start gap-2 text-sm wrap-anywhere transition-colors duration-200 hover:text-yellow-400"
                   style={{ color: "rgba(255,255,255,0.7)" }}
                 >
                   <MessageCircle size={14} />
@@ -120,7 +120,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:dean@macfarlanepropertygroup.co.za"
-                  className="flex items-center gap-2 text-sm transition-colors duration-200 hover:text-yellow-400"
+                  className="flex items-start gap-2 text-sm wrap-anywhere transition-colors duration-200 hover:text-yellow-400"
                   style={{ color: "rgba(255,255,255,0.7)" }}
                 >
                   <Mail size={14} />
@@ -132,12 +132,12 @@ export default function Footer() {
 
           {/* Service Areas */}
           <div>
-            <h3
+            <h2
               className="text-sm font-semibold mb-4 uppercase tracking-widest"
               style={{ color: "#C9A55A", fontFamily: "var(--font-dm-sans), sans-serif" }}
             >
               Service Areas
-            </h3>
+            </h2>
             <ul className="space-y-2">
               {[
                 { href: "/property-management-cape-town", label: "Cape Town" },
@@ -163,21 +163,21 @@ export default function Footer() {
           className="mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4"
           style={{ borderTop: "1px solid rgba(255,255,255,0.1)" }}
         >
-          <p className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>
-            © 2025 MacFarlane Property Group. All rights reserved.
+          <p className="text-xs" style={{ color: "rgba(255,255,255,0.7)" }}>
+            © 2026 MacFarlane Property Group. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <Link
               href="/legal#privacy"
               className="text-xs transition-colors duration-200 hover:text-yellow-400"
-              style={{ color: "rgba(255,255,255,0.5)" }}
+              style={{ color: "rgba(255,255,255,0.7)" }}
             >
               Privacy Policy
             </Link>
             <Link
               href="/legal#terms"
               className="text-xs transition-colors duration-200 hover:text-yellow-400"
-              style={{ color: "rgba(255,255,255,0.5)" }}
+              style={{ color: "rgba(255,255,255,0.7)" }}
             >
               Terms of Service
             </Link>

@@ -7,16 +7,16 @@ import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title: "Property Management in Johannesburg | MacFarlane Property Group",
-  description:
-    "Property management in Johannesburg that brings tenant selection, lease administration and reporting together. Competitive management fees, tailored to your property.",
+  description: "Property management in Johannesburg that brings tenant selection, lease administration and reporting together. Competitive management fees, tailored to your property.",
+  alternates: { canonical: "https://www.macfarlanepropertygroup.co.za/property-management-johannesburg" },
   openGraph: {
-    title: "Property Management in Johannesburg | MacFarlane Property Group",
-    description:
-      "Property management in Johannesburg that brings tenant selection, lease administration and reporting together. Competitive management fees, tailored to your property.",
-    url: "https://www.macfarlanepropertygroup.co.za/property-management-johannesburg",
+    title: "Property Management in Johannesburg | MacFarlane Property Group", description: "Property management in Johannesburg that brings tenant selection, lease administration and reporting together. Competitive management fees, tailored to your property.", url: "https://www.macfarlanepropertygroup.co.za/property-management-johannesburg",
+    siteName: "MacFarlane Property Group", locale: "en_ZA", type: "website",
+    images: [{ url: "https://www.macfarlanepropertygroup.co.za/og-card.png", width: 1200, height: 630, alt: "MacFarlane Property Group" }],
   },
-  alternates: {
-    canonical: "https://www.macfarlanepropertygroup.co.za/property-management-johannesburg",
+  twitter: {
+    card: "summary_large_image", title: "Property Management in Johannesburg | MacFarlane Property Group", description: "Property management in Johannesburg that brings tenant selection, lease administration and reporting together. Competitive management fees, tailored to your property.",
+    images: [{ url: "https://www.macfarlanepropertygroup.co.za/og-card.png", alt: "MacFarlane Property Group" }],
   },
 };
 
@@ -35,7 +35,7 @@ const citySchema = {
 };
 
 const heading = { fontFamily: "var(--font-cormorant-garamond), serif", color: "#07341C" };
-const body = { color: "#6B7280", fontFamily: "var(--font-dm-sans), sans-serif" };
+const body = { color: "#5B6470", fontFamily: "var(--font-dm-sans), sans-serif" };
 
 export default function JohannesburgPage() {
   return (
@@ -114,9 +114,9 @@ export default function JohannesburgPage() {
       <section className="py-10 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center text-sm" style={body}>
           Also serving landlords in{" "}
-          <Link href="/property-management-cape-town" className="underline" style={{ color: "#C9A55A" }}>Cape Town</Link>
+          <Link href="/property-management-cape-town" className="underline" style={{ color: "#876628" }}>Cape Town</Link>
           {" and "}
-          <Link href="/property-management-mbombela" className="underline" style={{ color: "#C9A55A" }}>Mbombela</Link>.
+          <Link href="/property-management-mbombela" className="underline" style={{ color: "#876628" }}>Mbombela</Link>.
         </div>
       </section>
     </>

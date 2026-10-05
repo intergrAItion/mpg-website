@@ -11,10 +11,8 @@ type Props = {
 }
 
 export async function generateStaticParams() {
-  try {
-    const posts = await getAllPosts()
-    return posts.map(p => ({ slug: p.slug }))
-  } catch { return [] }
+  const posts = await getAllPosts()
+  return posts.map(p => ({ slug: p.slug }))
 }
 
 export async function generateMetadata(
@@ -27,6 +25,18 @@ export async function generateMetadata(
   return {
     title: post.title + ' | MacFarlane Property Group',
     description: post.excerpt,
+    alternates: { canonical: `https://www.macfarlanepropertygroup.co.za/blog/${post.slug}` },
+    openGraph: {
+      title: post.title + ' | MacFarlane Property Group', description: post.excerpt,
+      url: `https://www.macfarlanepropertygroup.co.za/blog/${post.slug}`, type: 'article',
+      siteName: 'MacFarlane Property Group', locale: 'en_ZA',
+      publishedTime: post.date, modifiedTime: post.updated ?? post.date,
+      images: [{ url: 'https://www.macfarlanepropertygroup.co.za/og-card.png', width: 1200, height: 630, alt: 'MacFarlane Property Group' }],
+    },
+    twitter: {
+      card: 'summary_large_image', title: post.title + ' | MacFarlane Property Group', description: post.excerpt,
+      images: [{ url: 'https://www.macfarlanepropertygroup.co.za/og-card.png', alt: 'MacFarlane Property Group' }],
+    },
   }
 }
 
@@ -49,7 +59,7 @@ export default async function PostPage({ params }: Props) {
     headline: validPost.title,
     description: validPost.excerpt,
     datePublished: validPost.date,
-    dateModified: validPost.date,
+    dateModified: validPost.updated ?? validPost.date,
     author: { '@type': 'Person', name: validPost.author },
     publisher: { '@id': 'https://www.macfarlanepropertygroup.co.za/#organization' },
     mainEntityOfPage: postUrl,
@@ -92,11 +102,11 @@ export default async function PostPage({ params }: Props) {
       <JsonLd data={blogPostingSchema} />
       <JsonLd data={breadcrumbSchema} />
       {/* Dark green hero */}
-      <section className="bg-[#07341C] py-24">
+      <section className="blog-hero bg-[#07341C] pb-16">
         <div className="max-w-3xl mx-auto px-4">
-          <a href="/blog" className="text-[#C9A55A] text-sm mb-6 block">
+          <Link href="/blog" className="text-[#C9A55A] text-sm mb-6 block">
             Back to Blog
-          </a>
+          </Link>
           <p
             className="uppercase mb-2"
             style={{
@@ -135,7 +145,8 @@ export default async function PostPage({ params }: Props) {
                 color: 'rgba(245,240,232,0.65)',
                 margin: 0,
               }}>
-                {formatDate(validPost.date)} · {validPost.readTime}
+                Published {formatDate(validPost.date)} · {validPost.readTime}
+                {validPost.updated && <> · Updated {formatDate(validPost.updated)}</>}
               </p>
             </div>
           </div>
@@ -149,7 +160,7 @@ export default async function PostPage({ params }: Props) {
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4">
           <div
-            className="prose prose-lg prose-headings:text-[#C9A55A] prose-a:text-[#C9A55A] max-w-none"
+            className="prose prose-lg prose-headings:text-[#07341C] prose-a:text-[#876628] max-w-none"
             dangerouslySetInnerHTML={{__html: validPost.content}}
           />
           {/* Content is owner-controlled */}
@@ -187,10 +198,10 @@ export default async function PostPage({ params }: Props) {
                   lineHeight: '1.6',
                 }}>
                   Dean MacFarlane is the founder of
-                  MacFarlane Property Group, with a
-                  background spanning property management,
-                  construction, and compliance across
-                  South Africa.
+                  MacFarlane Property Group. His hands-on approach brings
+                  tenant assessment, rental administration and clear
+                  communication together for landlords in Cape Town,
+                  Mbombela and Johannesburg.
                 </p>
               </div>
             </div>
@@ -226,7 +237,7 @@ export default async function PostPage({ params }: Props) {
 
                 <div style={{
                   display: 'grid',
-                  gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+                  gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 280px), 1fr))',
                   gap: '24px',
                 }}>
                   {relatedPosts.map(relatedPost => (
@@ -251,7 +262,7 @@ export default async function PostPage({ params }: Props) {
                         <p style={{
                           fontFamily: 'var(--font-dm-sans), sans-serif',
                           fontSize: '11px',
-                          color: '#C9A55A',
+                          color: '#876628',
                           letterSpacing: '0.15em',
                           textTransform: 'uppercase',
                           margin: '0 0 8px 0',
@@ -271,7 +282,7 @@ export default async function PostPage({ params }: Props) {
                         <p style={{
                           fontFamily: 'var(--font-dm-sans), sans-serif',
                           fontSize: '13px',
-                          color: '#6B7280',
+                          color: '#5B6470',
                           margin: '0 0 16px 0',
                           lineHeight: '1.6',
                         }}>
@@ -280,7 +291,7 @@ export default async function PostPage({ params }: Props) {
                         <span style={{
                           fontFamily: 'var(--font-dm-sans), sans-serif',
                           fontSize: '13px',
-                          color: '#C9A55A',
+                          color: '#876628',
                           fontWeight: 500,
                         }}>
                           Read more
@@ -301,7 +312,7 @@ export default async function PostPage({ params }: Props) {
             <p className="text-white/70 text-sm mb-6">
               Free assessment, honest numbers, no obligation.
             </p>
-            <a
+            <Link
               href="/quote"
               className="inline-flex items-center px-6 py-3 rounded-md text-sm font-medium transition-colors duration-200"
               style={{
@@ -312,13 +323,13 @@ export default async function PostPage({ params }: Props) {
               }}
             >
               Get a free assessment
-            </a>
+            </Link>
           </div>
 
-          <a href="/blog"
-            className="inline-block mt-8 text-[#C9A55A] font-medium">
+          <Link href="/blog"
+            className="inline-block mt-8 text-[#876628] font-medium">
             Back to Blog
-          </a>
+          </Link>
         </div>
       </section>
     </>

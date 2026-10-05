@@ -30,39 +30,17 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.macfarlanepropertygroup.co.za"),
-  title: "MacFarlane Property Group",
-  description:
-    "Tech-driven property management in Cape Town, Mbombela, and Johannesburg. Lower fees, faster response, total transparency.",
-  alternates: {
-    canonical: "/",
-  },
-  icons: {
-    icon: "/favicon-no-bg.png",
-    apple: "/favicon-no-bg.png",
-  },
+  title: "MacFarlane Property Group", description: "Hands-on property management in Cape Town, Mbombela and Johannesburg. Competitive fees tailored to your property, clear communication and organised rental administration.",
+  alternates: { canonical: "https://www.macfarlanepropertygroup.co.za" },
+  icons: { icon: "/favicon-no-bg.png", apple: "/favicon-no-bg.png" },
   openGraph: {
-    title: "MacFarlane Property Group",
-    description:
-      "Tech-driven property management in Cape Town, Mbombela, and Johannesburg. Lower fees, faster response, total transparency.",
-    url: "https://www.macfarlanepropertygroup.co.za",
-    siteName: "MacFarlane Property Group",
-    images: [
-      {
-        url: "/og-card.png",
-        width: 1200,
-        height: 630,
-        alt: "MacFarlane Property Group",
-      },
-    ],
-    locale: "en_ZA",
-    type: "website",
+    title: "MacFarlane Property Group", description: "Hands-on property management in Cape Town, Mbombela and Johannesburg. Competitive fees tailored to your property, clear communication and organised rental administration.", url: "https://www.macfarlanepropertygroup.co.za",
+    siteName: "MacFarlane Property Group", locale: "en_ZA", type: "website",
+    images: [{ url: "https://www.macfarlanepropertygroup.co.za/og-card.png", width: 1200, height: 630, alt: "MacFarlane Property Group" }],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "MacFarlane Property Group",
-    description:
-      "Tech-driven property management in Cape Town, Mbombela, and Johannesburg. Lower fees, faster response, total transparency.",
-    images: ["/og-card.png"],
+    card: "summary_large_image", title: "MacFarlane Property Group", description: "Hands-on property management in Cape Town, Mbombela and Johannesburg. Competitive fees tailored to your property, clear communication and organised rental administration.",
+    images: [{ url: "https://www.macfarlanepropertygroup.co.za/og-card.png", alt: "MacFarlane Property Group" }],
   },
 };
 
@@ -74,7 +52,7 @@ const organizationSchema = {
   url: "https://www.macfarlanepropertygroup.co.za",
   logo: "https://www.macfarlanepropertygroup.co.za/logo-green.png",
   description:
-    "Tech-driven property management in Cape Town, Mbombela, and Johannesburg. Lower fees, faster response, total transparency.",
+    "Hands-on property management in Cape Town, Mbombela and Johannesburg. Competitive fees tailored to your property, clear communication and organised rental administration.",
   telephone: "+27711720480",
   email: "dean@macfarlanepropertygroup.co.za",
   founder: { "@type": "Person", name: "Dean MacFarlane" },
@@ -118,9 +96,11 @@ export default function RootLayout({
           `}
         </Script>
         <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <WhatsAppButton />
+        <div id="site-content" className="flex flex-1 flex-col">
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <WhatsAppButton />
+        </div>
       </body>
     </html>
   );

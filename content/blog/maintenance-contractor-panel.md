@@ -1,38 +1,40 @@
 ---
-title: "Building a contractor panel that actually shows up."
+title: "Keeping rental maintenance on track."
 date: "2026-01-19"
 slug: "maintenance-contractor-panel"
-excerpt: "Why we vet our contractors quarterly, and what we look for."
+excerpt: "Contractor communication, follow-up and clear updates help landlords manage work that needs attention."
 category: "Maintenance"
-readTime: "5 min read"
+readTime: "2 min read"
 author: "Dean MacFarlane"
+updated: "2026-10-05"
 ---
 
-*Why we vet our contractors quarterly, and what we look for.*
+*Contractor communication, follow-up and clear updates help landlords manage work that needs attention.*
 
-A property management firm is, in many practical respects, a contractor-coordination business. We are only as good as the plumbers, electricians, painters, and handymen we send through your door. The single biggest operational difference between a good agency and a bad one is not software. It is whether the contractor panel is curated, vetted, and pruned regularly. Most are not.
+Maintenance can involve several conversations before a landlord has a clear view of the next step. Good coordination brings the details together: what has been reported, who needs access, what work is proposed and which decision is still outstanding.
 
-## Why contractor panels rot
+## Start with a useful description
 
-A panel that worked well two years ago will be 30% dead weight today. Contractors get busy and stop replying. Their teams turn over and quality drops. They move out of your service area. They pick up larger commercial accounts and deprioritise residential work. None of this is malicious. It is entropy. The agency that does not audit for it ends up with a list of names that looks like a panel and behaves like a guessing game.
+Keep the relevant property and tenancy details with the report. A clear description of the issue and suitable photographs can help the discussion, where they can be obtained safely. For an immediate danger, the priority is appropriate urgent assistance rather than gathering pictures.
 
-## How we vet, on intake
+Record when the issue was raised and what has already been tried or arranged. That context helps avoid starting the same conversation again with each person involved.
 
-Before a contractor joins our panel, we check registration, insurance, references, and a sample of recent work. Then we run them on three low-stakes jobs. We watch for: response time on first contact, willingness to give a written quote, accuracy of that quote against actual invoice, and willingness to send progress photos without being asked. Any contractor who cannot do all four within a fortnight is filtered out.
+## Understand the proposed work
 
-> Your contractor panel is your reputation, twice removed. You cannot manage what you do not measure, and most agencies measure nothing.
+A written quote gives you something concrete to discuss. Check what work it covers, what is excluded and which costs or further investigations might need approval. For specialist work, ask about the relevant qualifications and supporting documentation rather than treating a name on a list as enough information.
 
-## The quarterly review
+The cheapest headline quote may describe a different scope. Compare what each proposal actually includes and clarify assumptions before making a decision. Keep the approval with the maintenance record.
 
-Every three months, every contractor on the panel gets graded on the same metrics:
+## Coordinate access and updates
 
-- **Callback rate.** Of jobs done in the quarter, how many required a second contractor visit? Anything above 5% is a yellow flag.
-- **Quote-to-invoice variance.** Average overrun against quoted price. Anything above 12% is a yellow flag.
-- **Average response time** on first contact.
-- **Tenant satisfaction** via a one-line WhatsApp survey sent after each job.
+Agree how an appointment will be arranged with the tenant and what access information the contractor needs. Share only the details needed for the job. If plans change, a clear update helps the people involved understand the new arrangement.
 
-Two consecutive yellow flags means a conversation. Three means off the panel.
+Contractor communication and follow-up take time. Bringing them into one management relationship means you have fewer individual conversations to manage yourself, while remaining involved in decisions about the work and cost.
 
-## The number that matters
+## Keep a record of completion and follow-up
 
-If we had to track one number and only one, it would be callback rate. A contractor who gets the job done in one visit, every time, is worth two who are cheaper but require a second appointment. We optimise for first-visit completion, and our panel is shorter and more reliable as a result.
+Keep the quote, approval, invoice and useful completion information together. If an issue returns or a further visit is needed, that record makes the outstanding matter easier to explain. A completion message is also a useful point to check whether the reported issue has been addressed.
+
+Reviewing past work can help you decide what questions to ask next time. The aim is clear information and dependable coordination, rather than a promised review timetable or a fixed score that every job must meet.
+
+MPG helps coordinate rental maintenance and tenant communication, taking everyday follow-up off your shoulders. [Talk to us about your property](/contact) and the support you need.

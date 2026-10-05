@@ -11,6 +11,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async headers() {
+    return [{
+      source: "/:path*",
+      headers: [
+        { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+        { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
+      ],
+    }];
+  },
   async redirects() {
     return [
       { source: '/pricing', destination: '/quote', permanent: true }

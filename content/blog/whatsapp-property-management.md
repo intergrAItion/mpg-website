@@ -1,39 +1,40 @@
 ---
-title: "Why we run property management on WhatsApp — and why it works."
+title: "Clearer tenant communication with WhatsApp."
 date: "2026-02-20"
 slug: "whatsapp-property-management"
-excerpt: "Tenants reply to WhatsApp. They don't reply to email. The numbers are not close."
+excerpt: "A convenient way to start a conversation, alongside clear updates and organised tenancy records."
 category: "Operations"
-readTime: "4 min read"
+readTime: "2 min read"
 author: "Dean MacFarlane"
+updated: "2026-10-05"
 ---
 
-*Tenants reply to WhatsApp. They don't reply to email. The numbers are not close.*
+*A convenient way to start a conversation, alongside clear updates and organised tenancy records.*
 
-When we started thinking carefully about how we communicate with tenants, the data made the decision for us. Email open rates in property management are low, and response rates are lower still. WhatsApp messages are read within minutes. The platform that tenants use every day for their personal lives is the platform where professional communication actually works.
+Good tenant communication gives people a clear way to raise a question and understand the next step. WhatsApp can be a convenient channel for everyday conversations. The useful part is how the conversation is handled and connected to the records and decisions behind it.
 
-## Why WhatsApp wins in the South African context
+## Keep messages clear and specific
 
-South Africa has one of the highest WhatsApp adoption rates in the world. It is the primary communication channel for a large proportion of working adults across all income brackets. When a tenant receives a maintenance update, a payment reminder, or a lease renewal notice via WhatsApp, they see it. When the same message arrives by email, it may not be opened for days, if at all.
+Begin with the relevant property or tenancy reference and one clear question or update. For maintenance, explain the issue and what information is needed next. A short, specific message is easier to follow than several unrelated matters in one conversation.
 
-This is not a technology preference. It is a behaviour pattern. Property managers who ignore it are choosing to communicate on a channel that tenants have effectively abandoned for everyday use.
+When a discussion moves forward, summarise the agreed action and who will follow up. Keep related updates together so people can understand which matter is being discussed without piecing together several conversations.
 
-## How we structure the WhatsApp workflow
+## Choose a channel that suits the information
 
-Our WhatsApp communication follows a clear protocol. Tenants have a direct line to a named contact at MPG, not a generic agency number. Every maintenance job generates a WhatsApp thread: acknowledgement of the request, contractor booking confirmation, completion note, and a one-question satisfaction check. Tenants know where the conversation is and can pick it up at any point.
+A quick message can help arrange a conversation or clarify an appointment. Signed leases, inspection records, statements and important approvals still need organised administration. Agree where those records will be kept and how the people who need them will receive them.
 
-For landlord updates, we send a monthly WhatsApp summary covering: rent received, any maintenance jobs completed, and any items outstanding. This replaces the long monthly report that most landlords do not read in full.
+Discuss preferred contact details and communication arrangements at the start of the tenancy. An app should make communication more convenient, while leaving a clear way to contact the manager when another channel is more suitable.
 
-## Response time improvements
+## Protect personal details
 
-When we moved to WhatsApp as the primary tenant channel, average response time on tenant queries dropped significantly. The reason is simple: tenants who receive a message on a channel they use every day respond on that channel. The feedback loop between tenant query and resolution tightened because the communication itself became faster.
+Share the information needed for the particular conversation. Avoid putting tenant documents, bank information or private landlord details into a broad group chat. Verify unexpected changes to payment instructions through a trusted contact before acting on them.
 
-## Practical advice for landlords
+A useful record of an important decision should be easy to find later. Do not assume a message buried in a long conversation will serve the same purpose as an organised tenancy record.
 
-Whether you use MPG or manage your property yourself, three adjustments will improve your tenant communication immediately:
+## Look beyond the app
 
-1. Use WhatsApp for time-sensitive communications: maintenance confirmations, rent reminders, inspection scheduling.
-2. Keep messages short and specific. Tenants respond better to a two-sentence message with a clear request than a paragraph with multiple items.
-3. Acknowledge quickly, even if the resolution takes time. A message that says "received, we are on it" stops the follow-up chain before it starts.
+Communication needs follow-up: a maintenance report has to reach the right person, a landlord decision has to be recorded and an outstanding question has to remain visible. Discuss how those steps fit together when choosing a property manager.
 
-The channel is not the point. Reliability is. Tenants who know their messages are being received and acted on are more cooperative, more communicative, and less likely to escalate small issues into large ones.
+The channel alone cannot promise a reply time or an outcome. Clear updates and organised financial reporting help landlords keep a view of the rental, with less everyday administration to manage themselves.
+
+You can [contact MPG on WhatsApp](https://wa.me/27711720480), call 071 172 0480 or [send an enquiry](/contact). Tell us about your property and how you would like to stay informed.

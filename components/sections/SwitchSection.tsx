@@ -16,7 +16,7 @@ const steps = [
   { num: "1", label: "You contact us" },
   { num: "2", label: "We review your setup" },
   { num: "3", label: "We handle the transition" },
-  { num: "4", label: "You relax" },
+  { num: "4", label: "You stay informed" },
 ];
 
 export default function SwitchSection() {
@@ -24,7 +24,7 @@ export default function SwitchSection() {
     <section className="py-24 px-4" style={{ backgroundColor: "#07341C" }}>
       <div className="max-w-6xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
+          initial={false}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
@@ -37,7 +37,7 @@ export default function SwitchSection() {
             Switch Property Managers Without the Hassle
           </h2>
           <p className="text-base md:text-lg mt-6" style={{ color: "rgba(255,255,255,0.7)" }}>
-            Tired of your current property manager? You're not alone.
+            Looking for clearer communication and more organised support?
           </p>
         </motion.div>
 
@@ -48,7 +48,7 @@ export default function SwitchSection() {
             return (
               <motion.div
                 key={item.label}
-                initial={{ opacity: 0, y: 20 }}
+                initial={false}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.08 }}
@@ -66,7 +66,7 @@ export default function SwitchSection() {
 
         {/* Process flow */}
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
+          initial={false}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}

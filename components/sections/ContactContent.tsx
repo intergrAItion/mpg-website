@@ -11,7 +11,8 @@ export default function ContactContent() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Contact Details */}
           <motion.div
-            initial={{ opacity: 0, x: -24 }}
+            className="min-w-0"
+            initial={false}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
@@ -41,11 +42,11 @@ export default function ContactContent() {
                 >
                   <Phone size={18} style={{ color: "#C9A55A" }} />
                 </div>
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-wide mb-0.5" style={{ color: "#6B7280" }}>
+                <div className="min-w-0">
+                  <p className="text-xs font-semibold uppercase tracking-wide mb-0.5" style={{ color: "#5B6470" }}>
                     Phone
                   </p>
-                  <p className="text-base font-medium" style={{ color: "#1A1A1A" }}>
+                  <p className="text-base font-medium wrap-anywhere" style={{ color: "#1A1A1A" }}>
                     071 172 0480
                   </p>
                 </div>
@@ -70,11 +71,11 @@ export default function ContactContent() {
                 >
                   <MessageCircle size={18} style={{ color: "#25D366" }} />
                 </div>
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-wide mb-0.5" style={{ color: "#6B7280" }}>
+                <div className="min-w-0">
+                  <p className="text-xs font-semibold uppercase tracking-wide mb-0.5" style={{ color: "#5B6470" }}>
                     WhatsApp
                   </p>
-                  <p className="text-base font-medium" style={{ color: "#1A1A1A" }}>
+                  <p className="text-base font-medium wrap-anywhere" style={{ color: "#1A1A1A" }}>
                     071 172 0480
                   </p>
                 </div>
@@ -97,28 +98,29 @@ export default function ContactContent() {
                 >
                   <Mail size={18} style={{ color: "#C9A55A" }} />
                 </div>
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-wide mb-0.5" style={{ color: "#6B7280" }}>
+                <div className="min-w-0">
+                  <p className="text-xs font-semibold uppercase tracking-wide mb-0.5" style={{ color: "#5B6470" }}>
                     Email
                   </p>
-                  <p className="text-base font-medium" style={{ color: "#1A1A1A" }}>
+                  <p className="text-base font-medium wrap-anywhere" style={{ color: "#1A1A1A" }}>
                     dean@macfarlanepropertygroup.co.za
                   </p>
                 </div>
               </a>
             </div>
 
-            <p className="mt-6 text-sm" style={{ color: "#6B7280" }}>
-              We typically respond within a few hours during business hours.
+            <p className="mt-6 text-sm" style={{ color: "#5B6470" }}>
+              Tell us what you need from a property manager. Send an enquiry, call us or start a conversation on WhatsApp.
             </p>
-            <p className="mt-3 text-sm" style={{ color: "#6B7280" }}>
-              MacFarlane Property Group has dedicated teams in Cape Town, Mbombela, and Johannesburg.
+            <p className="mt-3 text-sm" style={{ color: "#5B6470" }}>
+              We support landlords in Cape Town, Mbombela and Johannesburg.
             </p>
           </motion.div>
 
           {/* Form */}
           <motion.div
-            initial={{ opacity: 0, x: 24 }}
+            className="min-w-0"
+            initial={false}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}

@@ -15,7 +15,7 @@ const painPoints = [
   {
     icon: TrendingDown,
     heading: "High Fees",
-    description: "Paying 10–12% but not seeing the value?",
+    description: "Unsure whether your management fee reflects the service you receive?",
   },
   {
     icon: MessageSquareOff,
@@ -59,9 +59,9 @@ const switchSteps = [
   },
   {
     num: "4",
-    heading: "You Relax",
+    heading: "Stay Informed",
     description:
-      "Your property is now fully managed. We handle everything from here.",
+      "We take care of the day-to-day administration and keep you involved in important decisions.",
   },
 ];
 
@@ -80,7 +80,7 @@ export default function SwitchContent() {
               return (
                 <motion.div
                   key={item.heading}
-                  initial={{ opacity: 0, y: 24 }}
+                  initial={false}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.08 }}
@@ -105,7 +105,7 @@ export default function SwitchContent() {
                   >
                     {item.heading}
                   </h3>
-                  <p className="text-sm leading-relaxed" style={{ color: "#6B7280" }}>
+                  <p className="text-sm leading-relaxed" style={{ color: "#5B6470" }}>
                     {item.description}
                   </p>
                 </motion.div>
@@ -119,7 +119,7 @@ export default function SwitchContent() {
       <section className="py-20 px-4" style={{ backgroundColor: "#07341C" }}>
         <div className="max-w-5xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
@@ -129,7 +129,7 @@ export default function SwitchContent() {
               className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white gold-underline-center"
               style={{ fontFamily: "var(--font-cormorant-garamond), serif" }}
             >
-              Here's How It Works
+              Here’s How It Works
             </h2>
           </motion.div>
 
@@ -137,7 +137,7 @@ export default function SwitchContent() {
             {switchSteps.map((step, i) => (
               <motion.div
                 key={step.num}
-                initial={{ opacity: 0, y: 24 }}
+                initial={false}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
@@ -192,16 +192,15 @@ export default function SwitchContent() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: "#6B7280" }}>
-              Switching property managers can feel daunting, but it doesn't
-              have to be. We've designed our onboarding process to be as smooth
-              and stress-free as possible. Most transitions are completed within
-              48 hours.
+            <p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: "#5B6470" }}>
+              Switching managers starts with understanding your current arrangements.
+              We coordinate the handover, bring the relevant records together and keep you informed,
+              so you can make the change with confidence. Tell us about your property and we’ll talk through the next steps.
             </p>
             <a
               href="https://wa.me/27711720480"
@@ -209,14 +208,14 @@ export default function SwitchContent() {
               rel="noopener noreferrer"
               className="inline-flex items-center text-sm font-medium underline transition-colors duration-200"
               style={{
-                color: "#C9A55A",
+                color: "#876628",
                 fontFamily: "var(--font-dm-sans), sans-serif",
               }}
               onMouseEnter={(e) => {
-                (e.currentTarget as HTMLElement).style.color = "#E0C078";
+                (e.currentTarget as HTMLElement).style.color = "#07341C";
               }}
               onMouseLeave={(e) => {
-                (e.currentTarget as HTMLElement).style.color = "#C9A55A";
+                (e.currentTarget as HTMLElement).style.color = "#876628";
               }}
             >
               Have questions? WhatsApp us directly

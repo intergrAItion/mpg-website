@@ -11,12 +11,12 @@ export default function HomeLeadSection() {
         <div className="mb-10">
           <SectionHeading
             title="Get a Free Rental Assessment"
-            subtitle="Tell us about your property and we'll be in touch within 24 hours."
+            subtitle="Tell us about your property and the support you need. Let’s start a conversation."
             centered
           />
         </div>
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
+          initial={false}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}

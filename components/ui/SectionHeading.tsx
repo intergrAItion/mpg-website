@@ -17,7 +17,7 @@ export default function SectionHeading({
 }: SectionHeadingProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 24 }}
+      initial={false}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
@@ -39,7 +39,7 @@ export default function SectionHeading({
           className={`mt-6 text-base md:text-lg leading-relaxed max-w-2xl ${
             centered ? "mx-auto" : ""
           }`}
-          style={{ color: light ? "rgba(255,255,255,0.75)" : "#6B7280" }}
+          style={{ color: light ? "rgba(255,255,255,0.75)" : "#5B6470" }}
         >
           {subtitle}
         </p>

@@ -1,0 +1,22 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import { createRequire } from 'node:module';
+const loadPackage = createRequire(import.meta.url);
+const ts = loadPackage('typescript');
+const { renderToStaticMarkup } = loadPackage('react-dom/server');
+test('JSON-LD emits actual literal Unicode escapes and preserves round-trippable hostile-shaped text', () => {
+  const source = fs.readFileSync(path.resolve(import.meta.dirname, '../components/seo/JsonLd.tsx'), 'utf8');
+  const code = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.CommonJS, jsx: ts.JsxEmit.ReactJSX, esModuleInterop: true } }).outputText;
+  const compiled = { exports: {} };
+  new Function('require', 'module', 'exports', code)(loadPackage, compiled, compiled.exports);
+  const fixture = { description: '</script><div id=harmless-marker>literal</div>', quote: '" & 名' };
+  const element = compiled.exports.default({ data: fixture });
+  const bytes = element.props.dangerouslySetInnerHTML.__html;
+  assert.ok(bytes.includes('\\u003c/script>')); assert.ok(!bytes.includes('<'));
+  assert.deepEqual(JSON.parse(bytes), fixture);
+  const html = renderToStaticMarkup(element);
+  assert.equal((html.match(/<script\b/g) ?? []).length, 1);
+  assert.equal((html.match(/<div\b/g) ?? []).length, 0);
+});

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Check, X } from "lucide-react";
+import { Check } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 
 const included = [
@@ -11,31 +11,15 @@ const included = [
   "Lease administration and renewals",
   "Move-in and move-out inspections",
   "Monthly financial reporting",
-  "Legal and compliance oversight",
+  "Tenancy & Compliance Administration",
   "Regular property updates and reporting",
 ];
 
 const comparison = [
-  {
-    feature: "Fees",
-    typical: "10–12%",
-    mpg: "Below standard",
-  },
-  {
-    feature: "Communication",
-    typical: "Slow",
-    mpg: "Direct & fast",
-  },
-  {
-    feature: "Response Time",
-    typical: "Delayed",
-    mpg: "Prompt",
-  },
-  {
-    feature: "Transparency",
-    typical: "Limited",
-    mpg: "Full",
-  },
+  { feature: "Fees", typical: "The service and total cost", mpg: "A quote tailored to your property" },
+  { feature: "Communication", typical: "How you stay informed", mpg: "Tenant communication and property updates" },
+  { feature: "Maintenance", typical: "Who coordinates the details", mpg: "Contractor communication and follow-up" },
+  { feature: "Reporting", typical: "A clear view of your rental", mpg: "Monthly financial reporting" },
 ];
 
 export default function PricingContent() {
@@ -45,7 +29,7 @@ export default function PricingContent() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-2xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
@@ -64,11 +48,12 @@ export default function PricingContent() {
                 className="text-3xl md:text-4xl font-semibold"
                 style={{ fontFamily: "var(--font-cormorant-garamond), serif", color: "#C9A55A" }}
               >
-                Below Industry Standard
+                Fees Tailored to Your Property
               </div>
               <p className="mt-3 text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.7)" }}>
-                Our management fees are competitively priced below the industry
-                standard of 10–12%, giving you more of your rental income back.
+                Your property and the support you need shape the management quote. We explain
+                the ongoing fee and any separate tenant placement or administration costs,
+                so you can consider the service with confidence.
               </p>
             </div>
 
@@ -78,13 +63,13 @@ export default function PricingContent() {
                 className="text-sm font-semibold uppercase tracking-wide mb-5"
                 style={{ color: "#1A1A1A", fontFamily: "var(--font-dm-sans), sans-serif" }}
               >
-                What's Included:
+                What’s Included:
               </p>
               <ul className="space-y-3 mb-8">
                 {included.map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <Check size={16} style={{ color: "#C9A55A", flexShrink: 0, marginTop: 2 }} />
-                    <span className="text-sm leading-relaxed" style={{ color: "#6B7280" }}>
+                    <span className="text-sm leading-relaxed" style={{ color: "#5B6470" }}>
                       {item}
                     </span>
                   </li>
@@ -96,7 +81,7 @@ export default function PricingContent() {
                 style={{
                   backgroundColor: "white",
                   border: "1px solid #e5e7eb",
-                  color: "#6B7280",
+                  color: "#5B6470",
                 }}
               >
                 Tenant placement and onboarding fees are available and discussed
@@ -130,10 +115,10 @@ export default function PricingContent() {
       <section className="py-20 px-4" style={{ backgroundColor: "#F5F0E8" }}>
         <div className="max-w-4xl mx-auto">
           <div className="mb-10">
-            <SectionHeading title="Why We're Different" centered />
+            <SectionHeading title="Choosing Your Management Service" centered />
           </div>
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
@@ -141,24 +126,24 @@ export default function PricingContent() {
             style={{ border: "1px solid #e5e7eb" }}
           >
             <div className="grid grid-cols-3 bg-white">
-              <div className="p-4 font-semibold text-sm" style={{ color: "#6B7280" }}>
-                &nbsp;
+              <div className="min-w-0 wrap-anywhere p-2 sm:p-4 font-semibold text-sm" style={{ color: "#5B6470" }}>
+                What matters
               </div>
               <div
-                className="p-4 text-center font-semibold text-sm"
-                style={{ color: "#6B7280", borderLeft: "1px solid #e5e7eb" }}
+                className="min-w-0 wrap-anywhere p-2 sm:p-4 text-center font-semibold text-sm"
+                style={{ color: "#5B6470", borderLeft: "1px solid #e5e7eb" }}
               >
-                Typical Agency
+                What to consider
               </div>
               <div
-                className="p-4 text-center font-semibold text-sm"
+                className="min-w-0 wrap-anywhere p-2 sm:p-4 text-center font-semibold text-sm"
                 style={{
                   color: "#07341C",
                   borderLeft: "4px solid #C9A55A",
                   backgroundColor: "rgba(201,165,90,0.06)",
                 }}
               >
-                MacFarlane Property Group
+                How MPG helps
               </div>
             </div>
 
@@ -172,21 +157,21 @@ export default function PricingContent() {
                 }}
               >
                 <div
-                  className="p-4 text-sm font-medium"
+                  className="min-w-0 wrap-anywhere p-2 sm:p-4 text-sm font-medium"
                   style={{ color: "#1A1A1A" }}
                 >
                   {row.feature}
                 </div>
                 <div
-                  className="p-4 text-sm text-center"
-                  style={{ color: "#6B7280", borderLeft: "1px solid #e5e7eb" }}
+                  className="min-w-0 wrap-anywhere p-2 sm:p-4 text-sm text-center"
+                  style={{ color: "#5B6470", borderLeft: "1px solid #e5e7eb" }}
                 >
                   {row.typical}
                 </div>
                 <div
-                  className="p-4 text-sm text-center font-medium"
+                  className="min-w-0 wrap-anywhere p-2 sm:p-4 text-sm text-center font-medium"
                   style={{
-                    color: "#C9A55A",
+                    color: "#876628",
                     borderLeft: "4px solid #C9A55A",
                     backgroundColor: "rgba(201,165,90,0.04)",
                   }}

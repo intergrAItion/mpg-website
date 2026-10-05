@@ -1,159 +1,93 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
-  { href: "/blog", label: "Blog" },
-  { href: "/quote", label: "Get a Quote" },
-  { href: "/contact", label: "Contact" },
+  { href: "/", label: "Home" }, { href: "/about", label: "About" },
+  { href: "/services", label: "Services" }, { href: "/blog", label: "Blog" },
+  { href: "/quote", label: "Get a Quote" }, { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // A menu belongs to the route on which it was opened; navigation cannot leave it open.
+  const [menuPath, setMenuPath] = useState<string | null>(null);
   const pathname = usePathname();
+  const isMenuOpen = menuPath === pathname;
+  const navRef = useRef<HTMLElement>(null);
+  const toggleRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
-    setIsMenuOpen(false);
-  }, [pathname]);
+    if (!isMenuOpen) return;
+    const content = document.getElementById("site-content");
+    const previousInert = content?.inert ?? false;
+    const previousOverflow = document.body.style.overflow;
+    if (content) content.inert = true;
+    document.body.style.overflow = "hidden";
+    const breakpoint = window.matchMedia("(min-width: 1280px)");
+    const closeAtDesktop = () => { if (breakpoint.matches) setMenuPath(null); };
+    const handleKeys = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        event.preventDefault(); setMenuPath(null); toggleRef.current?.focus();
+      }
+      if (event.key === "Tab") {
+        const controls = Array.from(navRef.current?.querySelectorAll<HTMLElement>("a[href],button:not([disabled])") ?? [])
+          .filter(element => element.getClientRects().length > 0);
+        const first = controls[0], last = controls[controls.length - 1];
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
+      }
+    };
+    document.addEventListener("keydown", handleKeys);
+    breakpoint.addEventListener("change", closeAtDesktop);
+    return () => {
+      if (content) content.inert = previousInert;
+      document.body.style.overflow = previousOverflow;
+      document.removeEventListener("keydown", handleKeys);
+      breakpoint.removeEventListener("change", closeAtDesktop);
+    };
+  }, [isMenuOpen]);
 
   return (
-    <nav
-      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 min-h-[113px] md:min-h-[164px]"
-      style={{
-        backgroundColor: isScrolled
-          ? "rgba(7, 52, 28, 0.97)"
-          : "rgba(7, 52, 28, 1)",
-        backdropFilter: isScrolled ? "blur(8px)" : "none",
-        borderBottom: "1px solid rgba(201, 165, 90, 0.2)",
-      }}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between py-4 min-h-[113px] md:min-h-[164px]">
-          {/* Logo */}
-          <Link href="/" style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            padding: '0px',
-            margin: '0px',
-            flexShrink: 0
-          }}>
-            <Image
-              src="/logo-green.png"
-              alt="MacFarlane Property Group"
-              width={265}
-              height={136}
-              unoptimized
-              style={{objectFit: 'contain'}}
-            />
-          </Link>
-
-          {/* Desktop Nav Links */}
-          <div className="hidden md:flex items-center gap-6 lg:gap-8 flex-nowrap overflow-x-auto">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-sm font-medium tracking-wide transition-colors duration-200"
-                style={{
-                  fontFamily: "var(--font-dm-sans), sans-serif",
-                  letterSpacing: "0.05em",
-                  color: pathname === link.href ? "#C9A55A" : "rgba(255,255,255,0.85)",
-                }}
-                onMouseEnter={(e) => {
-                  (e.target as HTMLElement).style.color = "#C9A55A";
-                }}
-                onMouseLeave={(e) => {
-                  (e.target as HTMLElement).style.color =
-                    pathname === link.href ? "#C9A55A" : "rgba(255,255,255,0.85)";
-                }}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
-
-          {/* Desktop CTA */}
-          <div className="hidden md:block flex-shrink-0">
-            <Link
-              href="/contact"
-              className="btn-gold inline-flex items-center px-5 py-2.5 rounded-md text-sm font-medium transition-colors duration-200 whitespace-nowrap flex-shrink-0"
-              style={{
-                backgroundColor: "#C9A55A",
-                color: "#07341C",
-                fontFamily: "var(--font-dm-sans), sans-serif",
-                letterSpacing: "0.05em",
-              }}
-              onMouseEnter={(e) => {
-                (e.currentTarget as HTMLElement).style.backgroundColor = "#E0C078";
-              }}
-              onMouseLeave={(e) => {
-                (e.currentTarget as HTMLElement).style.backgroundColor = "#C9A55A";
-              }}
-            >
-              Get a Free Assessment
-            </Link>
-          </div>
-
-          {/* Mobile Hamburger */}
-          <button
-            className="md:hidden text-white p-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div
-          className="md:hidden fixed inset-0 top-[113px] z-40 flex flex-col px-6 py-8 gap-6"
-          style={{ backgroundColor: "#07341C" }}
-        >
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-lg font-medium transition-colors duration-200"
-              style={{
-                fontFamily: "var(--font-dm-sans), sans-serif",
-                color: pathname === link.href ? "#C9A55A" : "rgba(255,255,255,0.9)",
-              }}
-            >
+    <nav ref={navRef} aria-label="Primary" className="site-header fixed top-0 inset-x-0 z-50 border-b border-mpg-gold/20"
+      style={{ backgroundColor: isScrolled ? "rgba(7,52,28,0.97)" : "#07341C", backdropFilter: isScrolled ? "blur(8px)" : "none" }}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between gap-5">
+        <Link href="/" onClick={() => setMenuPath(null)} className="shrink-0">
+          <Image src="/logo-green.png" alt="MacFarlane Property Group" width={265} height={136} unoptimized className="header-logo object-contain" />
+        </Link>
+        <div className="hidden xl:flex items-center gap-6 whitespace-nowrap">
+          {navLinks.map(link => (
+            <Link key={link.href} href={link.href} aria-current={pathname === link.href ? "page" : undefined}
+              className={`text-sm font-medium tracking-wide hover:text-mpg-gold-light ${pathname === link.href ? "text-mpg-gold" : "text-white/90"}`}>
               {link.label}
             </Link>
           ))}
-          <Link
-            href="/contact"
-            className="btn-gold inline-flex items-center justify-center px-5 py-3 rounded-md text-sm font-medium mt-4"
-            style={{
-              backgroundColor: "#C9A55A",
-              color: "#07341C",
-              fontFamily: "var(--font-dm-sans), sans-serif",
-            }}
-          >
-            Get a Free Assessment
-          </Link>
         </div>
-      )}
+        <Link href="/contact" className="hidden xl:inline-flex btn-gold shrink-0 items-center px-5 py-2.5 rounded-md text-sm font-medium bg-mpg-gold text-mpg-green hover:bg-mpg-gold-light whitespace-nowrap">Get a Free Assessment</Link>
+        <button ref={toggleRef} type="button" className="xl:hidden text-white p-3 shrink-0" aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isMenuOpen} aria-controls="mobile-navigation" onClick={() => setMenuPath(isMenuOpen ? null : pathname)}>
+          {isMenuOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
+        </button>
+      </div>
+      <div id="mobile-navigation" className={`${isMenuOpen ? "flex" : "hidden"} xl:hidden mobile-navigation fixed inset-x-0 z-40 flex-col gap-4 px-6 py-6 bg-mpg-green overflow-y-auto`}>
+        {navLinks.map(link => (
+          <Link key={link.href} href={link.href} onClick={() => setMenuPath(null)} aria-current={pathname === link.href ? "page" : undefined}
+            className={`text-lg font-medium py-1 hover:text-mpg-gold-light ${pathname === link.href ? "text-mpg-gold" : "text-white/90"}`}>
+            {link.label}
+          </Link>
+        ))}
+        <Link href="/contact" onClick={() => setMenuPath(null)} className="btn-gold inline-flex items-center justify-center px-5 py-3 rounded-md text-sm font-medium mt-2 bg-mpg-gold text-mpg-green hover:bg-mpg-gold-light">Get a Free Assessment</Link>
+      </div>
     </nav>
   );
 }

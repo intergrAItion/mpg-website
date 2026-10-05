@@ -8,17 +8,17 @@ const values = [
   {
     icon: CheckCircle,
     heading: "Reliable",
-    description: "We do what we say we'll do, when we say we'll do it.",
+    description: "Careful coordination and follow-up for the everyday details.",
   },
   {
     icon: Eye,
     heading: "Transparent",
-    description: "Clear communication, honest reporting, no surprises.",
+    description: "Clear updates and reporting that help you understand your rental.",
   },
   {
     icon: Hand,
     heading: "Hands-On",
-    description: "Direct involvement at every stage, not managed from a distance.",
+    description: "Personal involvement in tenant assessment, administration and communication.",
   },
 ];
 
@@ -30,20 +30,18 @@ export default function AboutContent() {
         <div className="max-w-4xl mx-auto">
           <SectionHeading title="Who We Are" />
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-6 text-base md:text-lg leading-relaxed"
-            style={{ color: "#6B7280" }}
+            style={{ color: "#5B6470" }}
           >
-            MacFarlane Property Group is a modern property management company
-            focused on delivering reliable, cost-effective solutions for
-            landlords. We combine deep industry knowledge with
-            a hands-on, transparent approach, so your investment is protected
-            and your tenants are well-managed. We have dedicated teams based in
-            Cape Town, Mbombela, and Johannesburg,
-            enabling us to serve landlords and properties across all three regions.
+            MacFarlane Property Group helps landlords take the everyday administration of a rental
+            off their shoulders. Founded by Dean MacFarlane, MPG brings together careful tenant
+            assessment, lease coordination, maintenance communication and clear reporting.
+            We support landlords in Cape Town, Mbombela and Johannesburg, keeping you involved
+            in the decisions that matter to your property.
           </motion.p>
         </div>
       </section>
@@ -52,7 +50,7 @@ export default function AboutContent() {
       <section className="py-20 px-4" style={{ backgroundColor: "#F5F0E8" }}>
         <div className="max-w-4xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
@@ -60,30 +58,28 @@ export default function AboutContent() {
           >
             <div className="flex-shrink-0 text-center md:text-left">
               <div
-                className="text-5xl md:text-6xl font-semibold"
-                style={{ fontFamily: "var(--font-cormorant-garamond), serif", color: "#C9A55A" }}
+                className="text-4xl md:text-5xl font-semibold"
+                style={{ fontFamily: "var(--font-cormorant-garamond), serif", color: "#876628" }}
               >
-                10+
+                Hands-on
               </div>
               <div
                 className="text-sm font-medium mt-1"
-                style={{ color: "#6B7280", fontFamily: "var(--font-dm-sans), sans-serif" }}
+                style={{ color: "#5B6470", fontFamily: "var(--font-dm-sans), sans-serif" }}
               >
-                Years Industry Experience
+                Rental management
               </div>
             </div>
             <div>
-              <p className="text-base leading-relaxed mb-4" style={{ color: "#6B7280" }}>
-                Built on over a decade of experience in the property management
-                industry through close involvement in an established family-run
-                property business, MacFarlane Property Group combines proven
-                industry knowledge with a modern, responsive approach.
+              <p className="text-base leading-relaxed mb-4" style={{ color: "#5B6470" }}>
+                Good rental management brings the details together. From assessing an application
+                and coordinating a lease to arranging inspections and following up on maintenance,
+                MPG gives your property organised attention and helps you keep a clear view of the tenancy.
               </p>
-              <p className="text-base leading-relaxed" style={{ color: "#6B7280" }}>
-                Our background spans the full spectrum of property management,
-                from lease creation and tenant placement, to maintenance
-                oversight, property inspections, health and safety compliance,
-                and legal adherence under the Rental Housing Act.
+              <p className="text-base leading-relaxed" style={{ color: "#5B6470" }}>
+                Our approach combines personal involvement with clear communication. You have less
+                paperwork and follow-up to manage yourself, with updates that help you understand
+                what is happening at your rental.
               </p>
             </div>
           </motion.div>
@@ -95,32 +91,26 @@ export default function AboutContent() {
         <div className="max-w-4xl mx-auto">
           <SectionHeading title="Founded with Purpose" />
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-6 space-y-4"
           >
-            <p className="text-base md:text-lg leading-relaxed" style={{ color: "#6B7280" }}>
-              Dean MacFarlane comes from a family with generations of involvement in property.
-              From his great-grandfather through to his grandfather, his father, and now himself,
-              property has always been at the heart of the MacFarlane family. This deep-rooted
-              connection to the industry shapes everything MacFarlane Property Group stands for today.
+            <p className="text-base md:text-lg leading-relaxed" style={{ color: "#5B6470" }}>
+              Dean MacFarlane founded MPG to make property management a clearer, more manageable
+              part of a landlord’s life. The business brings care to tenant selection and structure
+              to the administration that continues throughout a tenancy.
             </p>
-            <p className="text-base md:text-lg leading-relaxed" style={{ color: "#6B7280" }}>
-              Dean has hands-on experience across multiple facets of the property industry,
-              including construction-side health and safety management and working alongside
-              his father in property management. This background spans the full spectrum of
-              residential and commercial property, from finding and placing tenants to managing
-              maintenance, conducting inspections, and ensuring legal compliance at every step.
+            <p className="text-base md:text-lg leading-relaxed" style={{ color: "#5B6470" }}>
+              Dean’s hands-on approach brings tenant assessment, lease arrangements, inspections
+              and maintenance communication into one management relationship. Clear records
+              and practical follow-up help landlords stay involved without managing each detail themselves.
             </p>
-            <p className="text-base md:text-lg leading-relaxed" style={{ color: "#6B7280" }}>
-              What sets Dean apart is his recognition that property management as an industry has
-              remained largely unchanged for decades. MacFarlane Property Group was founded on
-              the belief that tech-enabled solutions can close compliance gaps, improve reporting
-              accuracy, reduce management costs, and give landlords the detailed visibility they
-              deserve over their investments. The goal is simple: better management, lower fees,
-              and total transparency.
+            <p className="text-base md:text-lg leading-relaxed" style={{ color: "#5B6470" }}>
+              We coordinate the everyday details and keep landlords involved in important decisions.
+              The aim is a considered management relationship, with clear reporting, hands-on support
+              and competitive fees tailored to the property.
             </p>
           </motion.div>
         </div>
@@ -136,7 +126,7 @@ export default function AboutContent() {
               return (
                 <motion.div
                   key={val.heading}
-                  initial={{ opacity: 0, y: 24 }}
+                  initial={false}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
@@ -147,7 +137,7 @@ export default function AboutContent() {
                     className="w-10 h-10 rounded-md flex items-center justify-center mb-4"
                     style={{ backgroundColor: "rgba(201,165,90,0.1)" }}
                   >
-                    <Icon size={20} style={{ color: "#C9A55A" }} />
+                    <Icon size={20} style={{ color: "#876628" }} />
                   </div>
                   <h3
                     className="text-xl font-semibold mb-2"
@@ -155,7 +145,7 @@ export default function AboutContent() {
                   >
                     {val.heading}
                   </h3>
-                  <p className="text-sm leading-relaxed" style={{ color: "#6B7280" }}>
+                  <p className="text-sm leading-relaxed" style={{ color: "#5B6470" }}>
                     {val.description}
                   </p>
                 </motion.div>

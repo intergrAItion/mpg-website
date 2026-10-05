@@ -1,39 +1,38 @@
 ---
-title: "How to switch property managers without disrupting your tenants."
+title: "Switching property managers with confidence."
 date: "2026-03-28"
 slug: "switching-managers-without-disruption"
-excerpt: "Four steps, 48 hours, zero tenant complaints. The full playbook."
+excerpt: "An organised handover and clear tenant communication help you move to a new management relationship."
 category: "Operations"
-readTime: "5 min read"
+readTime: "2 min read"
 author: "Dean MacFarlane"
+updated: "2026-10-05"
 ---
 
-*Four steps, 48 hours, zero tenant complaints. The full playbook.*
+*An organised handover and clear tenant communication help you move to a new management relationship.*
 
-The single most common objection we hear from landlords thinking about switching managers is some version of: won't it cause chaos? The honest answer is no, provided whoever is running the switch knows what they are doing. Here is how we run it, and why most of our transitions complete inside 48 hours.
+Changing property managers can feel like another job on your list. Bringing the details together makes the next steps easier to understand, for you and for your tenants. Start with the current arrangements and agree a handover plan before changing everyday instructions.
 
-## The myth of switch disruption
+## Understand your current arrangement
 
-Most disruption stories trace back to one bad decision: switching cold-turkey, on the first of a month, without telling tenants. That is not switching. That is an ambush. The right way to switch is warm: notify, confirm, transfer, then go live. The tenant should experience exactly one thing, a friendly message that says your day-to-day contact is now this person, here are their details.
+Keep a copy of the management agreement and discuss the notice and handover arrangements with the people involved. Make a list of the properties, current tenancies and outstanding matters. This gives the incoming manager a useful starting point and helps you identify questions that need an answer.
 
-## The four steps, in order
+A planned handover has several participants. Agree responsibilities and dates with them rather than assuming every change can happen at once. Tell the new manager what has worked well and what you want to improve.
 
-The order matters more than people realise:
+## Bring the tenancy records together
 
-1. **You sign.** An e-signed appointment letter is all we need to start.
-2. **We notify your old manager.** We send the formal handover request and copy you in. You do not have to have the awkward call.
-3. **Funds and documents transfer.** Deposits, prepaid rents, leases, compliance certificates, contractor warranties. We collect everything and audit it.
-4. **You are live with MPG.** Tenants notified, direct line shared.
+Useful handover information may include signed leases, inspection records, property and access details, current statements and maintenance correspondence. Identify who holds each record and how it will be shared securely. Personal tenant information belongs in the handover process, not in public messages or website forms.
 
-The 48-hour clock starts at step 1 and stops at step 4. Most of the elapsed time is your old manager's response window, not ours.
+Keep a separate list of outstanding maintenance: the issue, the latest update, any quote or appointment already arranged, and the decision still needed. This helps the incoming manager understand work that is already in progress.
 
-> Switching managers is not dramatic. It is an administrative event. The drama only starts when someone skips a step.
+## Give tenants clear contact details
 
-## What actually happens to your tenants
+Tenants need to know who to contact, when that contact changes and how to raise a concern. Agree who sends that message and keep the information straightforward. Confirm any proposed payment-instruction changes through a trusted contact before acting on them.
 
-- They get one message on the day of the switch with their new contact details and a reminder that their lease and deposit are unchanged.
-- Their debit order is migrated to our trust account. No action required from them.
-- Maintenance tickets in flight are picked up where they were left, with a brief status note.
-- They keep the same lease, the same rental amount, and the same deposit balance.
+A change of manager does not, by itself, explain who will hold deposits, collect rent or issue payment instructions. Those responsibilities need to be established from the actual agreements and records. Clear coordination helps avoid contradictory messages.
 
-The most common tenant reply in our experience has been "OK, thanks." That is the target.
+## Use the handover to set expectations
+
+Discuss how you want to receive updates, which decisions should come to you and how an outstanding matter will be followed up. Keep a written record of the agreed next steps so you can see what has been completed and what still needs attention.
+
+MPG coordinates handovers, tenant communication and everyday rental administration, keeping landlords involved in important decisions. [Start a conversation](/contact) about your property, your current arrangements and the support you are looking for.

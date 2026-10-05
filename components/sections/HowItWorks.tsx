@@ -20,7 +20,7 @@ const steps = [
     number: "03",
     heading: "Ongoing Oversight",
     description:
-      "You stay informed while we handle the work. Regular updates, no surprises.",
+      "Clear reporting and property updates help you stay involved in the decisions that matter.",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function HowItWorks() {
           {steps.map((step, i) => (
             <motion.div
               key={step.number}
-              initial={{ opacity: 0, x: -30 }}
+              initial={false}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.15 }}
@@ -56,7 +56,7 @@ export default function HowItWorks() {
                 className="inline-block text-5xl md:text-6xl font-semibold mb-4 relative z-10"
                 style={{
                   fontFamily: "var(--font-cormorant-garamond), serif",
-                  color: "#C9A55A",
+                  color: "#876628",
                 }}
               >
                 {step.number}
@@ -70,7 +70,7 @@ export default function HowItWorks() {
               >
                 {step.heading}
               </h3>
-              <p className="text-sm leading-relaxed" style={{ color: "#6B7280" }}>
+              <p className="text-sm leading-relaxed" style={{ color: "#5B6470" }}>
                 {step.description}
               </p>
             </motion.div>

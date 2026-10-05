@@ -1,22 +1,26 @@
 # MacFarlane Property Group
 
-> MacFarlane Property Group is a tech-driven residential and commercial property management company serving landlords in Cape Town, Mbombela and Johannesburg. Competitive management fees, tailored to your property. The service brings together tenant sourcing and assessment, lease and move-in coordination, maintenance coordination, documented inspections and clear reporting to reduce landlords' everyday administration.
+> Hands-on property management in Cape Town, Mbombela and Johannesburg. Competitive fees tailored to your property, clear communication and organised rental administration. The service brings together tenant sourcing and assessment, lease and move-in coordination, maintenance coordination, documented inspections and financial reporting.
 
 Contact: dean@macfarlanepropertygroup.co.za · +27711720480
 
 ## Core pages
 
-- [Services](https://www.macfarlanepropertygroup.co.za/services) — Property management: tenant assessment and communication, maintenance coordination, lease administration, documented inspections and financial reporting.
-- [Quote](https://www.macfarlanepropertygroup.co.za/quote) — Competitive management fees, tailored to your property; request a free, no-obligation quote.
-- [Switch](https://www.macfarlanepropertygroup.co.za/switch) — Coordinated handovers and clear communication to help landlords switch with confidence.
-- [About](https://www.macfarlanepropertygroup.co.za/about) — Founded by Dean MacFarlane on generations of family property experience.
-- [Contact](https://www.macfarlanepropertygroup.co.za/contact) — Get a free rental assessment by phone, WhatsApp, or email.
+- [Services](https://www.macfarlanepropertygroup.co.za/services) — Tenant assessment, lease and compliance administration, maintenance coordination, documented inspections and financial reporting.
+- [Quote](https://www.macfarlanepropertygroup.co.za/quote) — Fees tailored to your property; request a free, no-obligation quote.
+- [Switch](https://www.macfarlanepropertygroup.co.za/switch) — An organised handover and clear tenant communication.
+- [About](https://www.macfarlanepropertygroup.co.za/about) — Meet MPG, founded by Dean MacFarlane.
+- [Contact](https://www.macfarlanepropertygroup.co.za/contact) — Start a conversation by phone, WhatsApp, email or the enquiry form.
+- [FAQ](https://www.macfarlanepropertygroup.co.za/faq) — Common landlord questions about fees, switching and tenant assessment.
+- [Cape Town](https://www.macfarlanepropertygroup.co.za/property-management-cape-town) — Property management for Cape Town landlords.
+- [Johannesburg](https://www.macfarlanepropertygroup.co.za/property-management-johannesburg) — Property management for Johannesburg landlords.
+- [Mbombela](https://www.macfarlanepropertygroup.co.za/property-management-mbombela) — Property management for Mbombela landlords.
 
 ## Journal
 
-- [The five-minute vetting checks every landlord should insist on.](https://www.macfarlanepropertygroup.co.za/blog/avoiding-bad-tenant-vetting) — A journal article on assessing prospective tenants.
-- [The South African rental market in 2026: what landlords need to know.](https://www.macfarlanepropertygroup.co.za/blog/cape-town-rental-market-2026) — Vacancy rates, rental growth, and where the pressure points are heading into the second half of the year.
-- [Building a contractor panel that actually shows up.](https://www.macfarlanepropertygroup.co.za/blog/maintenance-contractor-panel) — A journal article on contractor selection and maintenance coordination.
-- [How to switch property managers without disrupting your tenants.](https://www.macfarlanepropertygroup.co.za/blog/switching-managers-without-disruption) — A journal article on changing managers and communicating with tenants.
-- [Why we run property management on WhatsApp — and why it works.](https://www.macfarlanepropertygroup.co.za/blog/whatsapp-property-management) — A journal article on communication in property management.
-- [Why most property management fees are too high — and how to tell.](https://www.macfarlanepropertygroup.co.za/blog/why-property-management-fees-are-too-high) — A journal article on management fees and the services they cover.
+- [Property management fees: understanding the value.](https://www.macfarlanepropertygroup.co.za/blog/why-property-management-fees-are-too-high) — Look beyond the headline fee and understand the service, separate costs and support your rental needs.
+- [Switching property managers with confidence.](https://www.macfarlanepropertygroup.co.za/blog/switching-managers-without-disruption) — An organised handover and clear tenant communication help you move to a new management relationship.
+- [Choosing tenants with confidence: what to look for.](https://www.macfarlanepropertygroup.co.za/blog/avoiding-bad-tenant-vetting) — Supporting documents, affordability and credit history help build a clearer picture of a prospective tenant.
+- [Keeping rental maintenance on track.](https://www.macfarlanepropertygroup.co.za/blog/maintenance-contractor-panel) — Contractor communication, follow-up and clear updates help landlords manage work that needs attention.
+- [Clearer tenant communication with WhatsApp.](https://www.macfarlanepropertygroup.co.za/blog/whatsapp-property-management) — A convenient way to start a conversation, alongside clear updates and organised tenancy records.
+- [Planning your rental in 2026: a landlord’s checklist.](https://www.macfarlanepropertygroup.co.za/blog/cape-town-rental-market-2026) — Review your property, costs and management needs with a clearer plan for the year ahead.

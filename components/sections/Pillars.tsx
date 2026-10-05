@@ -6,21 +6,21 @@ import { DollarSign, Zap, MessageSquare } from "lucide-react";
 const pillars = [
   {
     icon: DollarSign,
-    heading: "Lower Fees",
+    heading: "Competitive Fees",
     description:
-      "Competitive management fees below the industry standard of 10–12%.",
+      "Management fees tailored to your property, with a clear explanation of the service and costs on enquiry.",
   },
   {
     icon: Zap,
-    heading: "Faster Response",
+    heading: "Hands-On Support",
     description:
-      "Direct, hands-on management with prompt communication and quick action.",
+      "Tenant communication, maintenance coordination and follow-up brought together in one management relationship.",
   },
   {
     icon: MessageSquare,
     heading: "Clear Communication",
     description:
-      "No chasing, no confusion. You stay informed without lifting a finger.",
+      "Property updates and clear reporting help you stay informed and make decisions with confidence.",
   },
 ];
 
@@ -34,7 +34,7 @@ export default function Pillars() {
             return (
               <motion.div
                 key={pillar.heading}
-                initial={{ opacity: 0, y: 30 }}
+                initial={false}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
@@ -47,7 +47,7 @@ export default function Pillars() {
                 >
                   <Icon size={20} style={{ color: "#C9A55A" }} />
                 </div>
-                <h3
+                <h2
                   className="text-xl font-semibold mb-3"
                   style={{
                     fontFamily: "var(--font-cormorant-garamond), serif",
@@ -55,8 +55,8 @@ export default function Pillars() {
                   }}
                 >
                   {pillar.heading}
-                </h3>
-                <p className="text-sm leading-relaxed" style={{ color: "#6B7280" }}>
+                </h2>
+                <p className="text-sm leading-relaxed" style={{ color: "#5B6470" }}>
                   {pillar.description}
                 </p>
               </motion.div>

@@ -1,39 +1,40 @@
 ---
-title: "The South African rental market in 2026: what landlords need to know."
+title: "Planning your rental in 2026: a landlord’s checklist."
 date: "2026-03-10"
 slug: "cape-town-rental-market-2026"
-excerpt: "Vacancy rates, rental growth, and where the pressure points are heading into the second half of the year."
+excerpt: "Review your property, costs and management needs with a clearer plan for the year ahead."
 category: "Market"
-readTime: "6 min read"
+readTime: "2 min read"
 author: "Dean MacFarlane"
+updated: "2026-10-05"
 ---
 
-*Vacancy rates, rental growth, and where the pressure points are heading into the second half of the year.*
+*Review your property, costs and management needs with a clearer plan for the year ahead.*
 
-The South African rental market has shifted meaningfully over the past eighteen months, and heading into the second half of 2026, landlords who understand the structural forces at play are in a substantially better position than those who are watching the headline numbers without context.
+A useful rental plan starts with the details of your own property and tenancy. Instead of relying on a broad market prediction, bring the relevant records together and identify the decisions that need attention. This checklist can help shape your next conversation with a property manager.
 
-## Cape Town: tight supply, sustained demand
+## Review the current tenancy
 
-Cape Town remains the market with the most favourable conditions for landlords. Vacancy rates in established suburban nodes have stayed low, and rental growth has continued to outpace inflation in the better-located stock. The primary driver is semigration. Households from Gauteng and KwaZulu-Natal continue to relocate to the Western Cape at a rate that the housing supply pipeline has not kept pace with.
+Keep the signed lease, inspection records and current statements together. Check the dates you need to discuss, any outstanding administration and the contact details the people involved are using. A clear view of the current position makes it easier to agree next steps.
 
-The consequence is upward pressure on rents across most price bands, with the mid-market segment performing particularly strongly. Properties between R10,000 and R22,000 per month that are well-maintained and professionally managed are leasing quickly and at asking price.
+Make a list of questions rather than guessing about a record you do not understand. Ask your manager to explain an unclear statement entry or an outstanding matter and record the answer with the relevant documents.
 
-The risk to watch in Cape Town is overpricing. A tight market tempts landlords to push rents beyond what tenants can absorb. Properties priced aggressively above market rate are sitting longer, sometimes for two or three months, which erodes the rental income advantage that prompted the price increase in the first place.
+## Make a practical maintenance plan
 
-## Johannesburg and Mbombela
+Bring reported issues, quotes, completed work and any follow-up into one list. Discuss which items need attention now and which need further information. Consider access arrangements and the effect of proposed work on the people using the property.
 
-Johannesburg's rental market is more nuanced. The northern suburbs and certain inner-city nodes continue to perform, but landlords in this market are contending with a larger supply of stock and a tenant base that is more willing to negotiate. Vacancy rates are higher than Cape Town, and landlords who are not proactively managing their properties are seeing longer void periods.
+A maintenance plan is easier to discuss when the proposed scope and costs are clear. Keep a record of approvals and completion information so future conversations have useful context.
 
-Mbombela is an expanding market worth watching. Infrastructure development, proximity to the Mozambique corridor, and a growing professional class are driving demand for quality rental stock in a market that has historically been underserved by professional management.
+## Review costs and pricing evidence
 
-## What landlords should watch in H2 2026
+Look at the management quote as a whole, including the ongoing fee and any separate placement or administration charges. Set those alongside the other costs you need to plan for at your rental.
 
-Three factors will shape the second half of the year:
+If you are considering a rental-price change, ask for current, relevant comparisons for properties with a similar location, type and condition. Check the dates and distinguish advertised asking prices from evidence of agreed rents. A broad national headline cannot explain every local property.
 
-**Affordability.** The cost of home ownership remains prohibitive for a large proportion of working South Africans. Deposit requirements, interest rates, and property prices continue to push households into the rental market who would otherwise have bought. This is a structural demand driver that is unlikely to reverse quickly.
+## Discuss your management needs
 
-**Maintenance costs.** Building material and labour costs have continued to rise. Landlords who have deferred maintenance will find that the bill is larger than expected and that the cost of a vacant property during a catch-up renovation is material. Staying ahead of maintenance is a financial strategy, not just a management preference.
+Think about which everyday details you want support with: tenant communication, lease arrangements, maintenance coordination, inspections or financial reporting. Decide how you want to receive updates and which decisions should come to you.
 
-**Tenant quality over quantity.** With demand solid in most nodes, the temptation is to lease quickly to the first acceptable applicant. The landlords we see performing best are running thorough vetting processes and accepting slightly longer vacancy periods in exchange for tenants who pay on time and stay for multiple years.
+Whether your rental is in Cape Town, Johannesburg or Mbombela, its location, tenancy and your priorities shape the conversation. Write down the agreed actions and revisit them when circumstances change.
 
-Our practical recommendation for the second half of 2026: price your property at market, not above it; run a thorough vetting process; and invest in the maintenance items you have been deferring before they become emergency callouts.
+MPG helps landlords bring structure to rental administration and stay informed. [Tell us about your property](/contact) to discuss your next steps, or explore our [management services](/services).
