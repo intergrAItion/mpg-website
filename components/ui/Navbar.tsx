@@ -59,7 +59,7 @@ export default function Navbar() {
   }, [isMenuOpen]);
 
   return (
-    <nav ref={navRef} aria-label="Primary" className="site-header fixed top-0 inset-x-0 z-50 border-b border-mpg-gold/20"
+    <nav ref={navRef} aria-label="Primary" className="site-header fixed top-0 inset-x-0 z-[60] border-b border-mpg-gold/20"
       style={{ backgroundColor: isScrolled ? "rgba(7,52,28,0.97)" : "#07341C", backdropFilter: isScrolled ? "blur(8px)" : "none" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between gap-5">
         <Link href="/" onClick={() => setMenuPath(null)} className="shrink-0">
