@@ -8,11 +8,11 @@ import JsonLd from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "Property Management in Johannesburg | MacFarlane Property Group",
   description:
-    "Property management in Johannesburg for landlords with single units, sectional-title blocks and multi-unit buildings — tenant vetting, rent collection, maintenance and compliance, below industry-standard fees.",
+    "Property management in Johannesburg that brings tenant selection, lease administration and reporting together. Competitive management fees, tailored to your property.",
   openGraph: {
     title: "Property Management in Johannesburg | MacFarlane Property Group",
     description:
-      "Property management in Johannesburg for landlords with single units, sectional-title blocks and multi-unit buildings — tenant vetting, rent collection, maintenance and compliance, below industry-standard fees.",
+      "Property management in Johannesburg that brings tenant selection, lease administration and reporting together. Competitive management fees, tailored to your property.",
     url: "https://www.macfarlanepropertygroup.co.za/property-management-johannesburg",
   },
   alternates: {
@@ -43,46 +43,38 @@ export default function JohannesburgPage() {
       <JsonLd data={citySchema} />
       <PageHero
         heading="Property Management in Johannesburg"
-        subheading="Management built for Johannesburg landlords — from single flats to multi-unit buildings."
+        subheading="An organised rental, informed decisions and less administration for you."
       />
 
       <section className="py-20 px-4 bg-white">
         <div className="max-w-3xl mx-auto space-y-6">
           <p className="text-base md:text-lg leading-relaxed" style={body}>
-            Johannesburg is South Africa&apos;s largest rental market, and it is also one of its
-            most varied. A landlord here might own a single apartment, a unit in a sectional-title
-            block, or a whole multi-unit building — and each of those needs managing differently.
-            MacFarlane Property Group runs one of its three dedicated teams for Johannesburg,
-            handling residential and commercial rentals across the city for owners who want their
-            properties run properly without doing it themselves.
+            Managing a Johannesburg rental means keeping track of tenants, paperwork and
+            the decisions that need your attention. MacFarlane Property Group brings those
+            responsibilities together, giving you a clearer view of your property and less
+            administration to handle yourself. From a single rental to several properties,
+            our approach centres on careful tenant selection, organised management and
+            communication that helps you stay informed.
           </p>
           <p className="text-base md:text-lg leading-relaxed" style={body}>
-            Scale is where most agencies quietly fall down. The more units you own, the more
-            small failures — a missed maintenance ticket, a slow reference check, an unexplained
-            deduction — compound into real cost. We counter that with discipline: tenants are
-            placed through the same rigorous five-check vetting on every application; rent
-            collection and arrears are tracked tightly; and every maintenance job runs on a
-            WhatsApp thread with a named contact, from first request to completion and a
-            satisfaction check. Our management fee sits below the 10–12% industry standard,
-            which matters more, not less, as your portfolio grows.
+            A tenant recommendation should help you make a considered choice. We look at
+            supporting documents, affordability and credit history to build a fuller picture
+            of an application, then explain our findings for your decision. We also coordinate
+            the lease and move-in arrangements, bringing the details together for a smoother
+            start to the tenancy.
           </p>
           <p className="text-base md:text-lg leading-relaxed" style={body}>
-            For owners of sectional-title units and multi-unit buildings, clear monthly reporting
-            is not a nicety — it is how you keep control of an asset you do not see every day. You
-            get monthly financial statements, proactive updates on what is outstanding, and legal
-            and compliance oversight under the Rental Housing Act and POPIA. And if your current
-            Johannesburg manager is not delivering, switching to MPG usually takes around 48 hours
-            with no disruption to your tenants and no change to their leases, rent or deposits.
+            During the tenancy, we coordinate tenant communication, maintenance and lease
+            administration, supported by inspections and monthly financial reporting. You
+            can keep sight of what needs attention without managing each conversation or
+            document. Competitive management fees are tailored to your property, and we
+            explain the proposed service and costs so you can decide what works for you.
           </p>
           <p className="text-base md:text-lg leading-relaxed" style={body}>
-            Johannesburg landlords also operate in a fast-moving market where good tenants have
-            options, so speed and professionalism at placement make a real difference. We keep the
-            process tight from first enquiry to signed lease, present each property well, and make
-            sure the tenant who moves in is the one who passed every check — not simply the one who
-            applied first. For owners of sectional-title units and multi-unit buildings, that same
-            consistency applied to every unit is what protects the value of the whole asset. It is
-            unglamorous, repeatable discipline: the same vetting, the same reporting and the same
-            responsiveness on unit one as on unit fifty, month after month.
+            Ready to put your Johannesburg rental on a more organised footing? Share your
+            property details in the form below and tell us what you would like from a manager.
+            If you are moving from another agency, we coordinate the handover and keep you
+            informed as you make the change.
           </p>
         </div>
       </section>
@@ -93,14 +85,12 @@ export default function JohannesburgPage() {
             What we handle in Johannesburg
           </h2>
           <p className="text-base leading-relaxed" style={body}>
-            Across Johannesburg we handle the full spectrum of property management: tenant
-            management — sourcing, screening, placement and ongoing relationships; maintenance
-            coordination through a vetted contractor panel; lease administration and renewals
-            under the Rental Housing Act; move-in and move-out inspections; monthly financial
-            reporting with proactive arrears management; and legal and compliance oversight
-            covering POPIA and the Rental Housing Act. Whether it is one unit or a full building,
-            it is everything required to keep a rental performing — handled for you, and reported
-            back clearly.
+            Tenant sourcing and assessment, tenant communication, maintenance coordination,
+            lease administration and renewals, move-in and move-out inspections, and monthly
+            financial reporting form the core of our management service. We keep tenancy
+            records organised and use documented inspections to record the property&apos;s
+            condition. It is practical support that connects the application, lease and
+            ongoing tenancy, with clear updates to help you make informed decisions.
           </p>
         </div>
       </section>

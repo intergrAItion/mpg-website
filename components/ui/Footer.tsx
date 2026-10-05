@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer style={{ backgroundColor: "#07341C" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1fr_0.75fr_1fr_max-content_0.75fr] gap-10">
           {/* Logo + tagline */}
           <div className="lg:col-span-1">
             <div style={{ marginBottom: '1rem' }}>

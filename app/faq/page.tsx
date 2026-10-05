@@ -25,27 +25,27 @@ export const metadata: Metadata = {
 const faqs: { q: string; a: string; extra?: React.ReactNode }[] = [
   {
     q: "What does a property manager actually do?",
-    a: `A property manager runs the day-to-day of a rental on the landlord's behalf. At MacFarlane Property Group that means the full spectrum: sourcing and placing tenants, communicating with them, logging maintenance and coordinating contractors, administering leases and renewals, carrying out move-in and move-out inspections, tracking rent and reporting on it monthly, and keeping the property compliant with the Rental Housing Act and POPIA. The point is simple — you own the investment, we handle the management, and you get clear reporting and total transparency without the day-to-day workload.`,
+    a: `A property manager takes care of the day-to-day running of a rental on your behalf. At MPG, that includes finding and assessing prospective tenants, coordinating maintenance, administering leases and renewals, arranging inspections and providing monthly financial reporting. We bring the details together and keep you informed, so you can give your property the attention it needs without managing every conversation yourself.`,
   },
   {
     q: "What are typical property management fees in South Africa?",
-    a: `The industry standard sits at roughly 10–12% of monthly rent. That figure isn't a law — it's a habit, and it has gone largely unchallenged for years. MacFarlane Property Group deliberately prices below that standard, because tech-enabled management lowers our cost of doing the work and we pass that back to you as more of your rental income retained. Tenant placement and onboarding are quoted to your specific needs, but the management fee itself is competitively below the 10–12% norm. Request a quote and we'll give you the honest number for your property.`,
+    a: `Fees vary with the property and the level of management you need. MPG offers competitive management fees, tailored to your property. We explain the ongoing management fee and any separate tenant placement or administration fees when you enquire, so you can consider the service with a clear view of the costs. Tell us about your rental and request a quote.`,
   },
   {
     q: "What is included in MPG's management fee?",
-    a: `Your monthly management fee covers tenant communication and relationship management, maintenance logging and contractor coordination, lease administration and renewals, move-in and move-out inspections, monthly financial reporting, legal and compliance oversight, and regular property updates and reporting — in short, the running of your rental end to end. Tenant placement and onboarding fees are handled separately and discussed on enquiry, based on your specific needs, so you only pay for what your property actually requires.`,
+    a: `The ongoing management service covers tenant communication, maintenance coordination, lease administration and renewals, move-in and move-out inspections, monthly financial reporting and property updates. It brings the everyday running of your rental into one organised relationship. Tenant placement, onboarding and any separate administration fees are discussed on enquiry, with a quote that explains the service and costs for your property.`,
   },
   {
     q: "How long does it take to switch property managers?",
-    a: `Most of our transitions complete inside 48 hours. The process is four steps: you sign a short e-signed appointment letter; we notify your existing manager and send the formal handover request, copying you in so you don't have to make the awkward call; funds and documents — deposits, prepaid rent, leases, compliance certificates and contractor warranties — transfer and are audited; and then you go live with MPG. The 48-hour clock runs from your signature to going live, and most of that time is your old manager's response window, not ours.`,
+    a: `The timing depends on your current management arrangements and the handover of the relevant records. We coordinate the handover so you can switch with confidence, keeping you informed as the details are brought together. Tell us about your property and current manager, and we can discuss the next steps and what to expect.`,
   },
   {
     q: "Will switching managers disrupt my tenants?",
-    a: `No — done properly, a switch is an administrative event, not a drama. Your tenants experience exactly one thing: a friendly message on the day letting them know their day-to-day contact is now MPG, with the new details. Their lease, rental amount and deposit balance stay exactly the same. Their debit order is migrated to our trust account with no action required from them, and any maintenance already in progress is picked up where it was left. In our experience the most common tenant reply is simply "OK, thanks" — which is exactly the target.`,
+    a: `Our aim is a smooth handover with clear communication for you and your tenants. We coordinate the management details, explain how tenants can contact MPG and review outstanding maintenance or tenancy matters as part of the transition. That organised approach helps keep the day-to-day running of your rental on track while you move to a new management relationship.`,
   },
   {
     q: "Which areas does MPG serve?",
-    a: `We have dedicated teams based in Cape Town, Mbombela, and Johannesburg, which lets us manage landlords and properties across all three regions rather than at arm's length. Each of these areas has its own local page, and if your property sits in or around one of them, we can almost certainly help. If you're not sure whether we cover your area, get in touch and we'll tell you honestly.`,
+    a: `MPG serves landlords in Cape Town, Johannesburg and Mbombela. Explore the city pages below for an overview of our service, or get in touch to discuss your property's location and what you need from a manager. We would be happy to talk through how we can help with your rental.`,
     extra: (
       <p className="text-sm" style={{ color: "#6B7280", fontFamily: "var(--font-dm-sans), sans-serif" }}>
         Explore local pages:{" "}
@@ -59,19 +59,19 @@ const faqs: { q: string; a: string; extra?: React.ReactNode }[] = [
   },
   {
     q: "How does MPG vet tenants?",
-    a: `Thorough vetting isn't complicated — it's a matter of discipline, and most agencies skip half of it. We run five checks on every applicant: a full credit report, not just an affordability score; three months of bank statements, watching for reversed debit orders, which are the strongest predictor of late rent; employment verification by phone; two landlord references, including at least one we source ourselves rather than the one the applicant hands us; and a short face-to-face site meeting. Together they take about five minutes per applicant and catch the overwhelming majority of problem tenants before they sign.`,
+    a: `A good tenancy starts with a careful assessment. We look beyond the application form, reviewing supporting documents, affordability and credit history to give you a clearer picture of a prospective tenant. We bring the findings together in a recommendation to help you make an informed decision, then coordinate the lease and move-in arrangements. It’s a considered, hands-on approach that takes the administrative burden off your shoulders.`,
   },
   {
     q: "How are maintenance issues handled?",
-    a: `Two things make maintenance work: the right contractors and the right communication. We run a curated contractor panel — vetted on registration, insurance, references and a run of trial jobs, then re-graded every quarter on callback rate, quote accuracy, response time and tenant satisfaction, with underperformers pruned. Every maintenance job then runs on a WhatsApp thread: the request is acknowledged, the contractor booking confirmed, completion noted, and a one-line satisfaction check sent. Tenants always know where the conversation is, and issues get resolved rather than sitting unattended.`,
+    a: `We take the coordination off your hands. Tenants can raise maintenance concerns with MPG, and we help organise contractor communication and follow-up, keeping you informed about work that needs attention. Clear updates make it easier to understand what is happening at your property and make decisions about the next steps, without managing each conversation yourself.`,
   },
   {
     q: "What legal compliance does MPG handle?",
-    a: `Compliance is built into how we manage, not bolted on. We handle lease administration and oversight under the Rental Housing Act, and we manage personal information in line with POPIA. Our background spans the full compliance picture — lease creation, inspections, health and safety, and legal adherence — and part of why the company was founded was the belief that tech-enabled management can close the compliance gaps older, manual approaches leave open. The result is fewer gaps, better records, and less legal exposure for you as the landlord.`,
+    a: `We support you with organised lease administration, documented inspections and clear reporting, helping you stay informed and keep important tenancy records in order. From preparing a lease to coordinating signing and recording the property's condition at move-in, we bring care and structure to the administration. You have a clearer view of the tenancy and less paperwork to manage yourself.`,
   },
   {
     q: "How do I get started?",
-    a: `The first step is a free rental assessment — no cost and no obligation. Tell us about your property by phone or WhatsApp on 071 172 0480, by email at dean@macfarlanepropertygroup.co.za, or through the enquiry form, and we'll come back to you, usually within a few hours. We'll look at your current setup, explain how we would manage it, and give you an honest quote. If you'd like to go ahead, we handle the rest.`,
+    a: `Get in touch and tell us about your property. You can call or WhatsApp us on 071 172 0480, email dean@macfarlanepropertygroup.co.za, or use the enquiry form. We will discuss what you need, explain how MPG can help and put together a quote for your rental. We look forward to hearing from you.`,
     extra: (
       <Link href="/contact" className="underline" style={{ color: "#C9A55A", fontWeight: 600, fontFamily: "var(--font-dm-sans), sans-serif" }}>
         Get in touch →

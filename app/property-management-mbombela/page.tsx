@@ -8,11 +8,11 @@ import JsonLd from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "Property Management in Mbombela | MacFarlane Property Group",
   description:
-    "Property management in Mbombela and the Lowveld — local, hands-on management of residential and commercial rentals, built on generations of family property experience and fees below the industry standard.",
+    "Property management for Mbombela and Lowveld landlords, with considered tenant assessment and organised tenancy support. Competitive management fees, tailored to your property.",
   openGraph: {
     title: "Property Management in Mbombela | MacFarlane Property Group",
     description:
-      "Property management in Mbombela and the Lowveld — local, hands-on management of residential and commercial rentals, built on generations of family property experience and fees below the industry standard.",
+      "Property management for Mbombela and Lowveld landlords, with considered tenant assessment and organised tenancy support. Competitive management fees, tailored to your property.",
     url: "https://www.macfarlanepropertygroup.co.za/property-management-mbombela",
   },
   alternates: {
@@ -49,41 +49,32 @@ export default function MbombelaPage() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-3xl mx-auto space-y-6">
           <p className="text-base md:text-lg leading-relaxed" style={body}>
-            Mbombela sits at the centre of the Lowveld, and it is a market where local knowledge
-            and a personal touch still count for a great deal. Landlords here are often managing
-            property from a distance, or juggling it alongside a full-time job, and what they need
-            is someone on the ground they can actually trust. MacFarlane Property Group runs one
-            of its three dedicated teams from Mbombela, managing residential and commercial rentals
-            across the region for owners who want their properties handled properly and reported
-            back honestly.
+            Letting out a property in Mbombela should leave room for the other things that
+            matter to you. MacFarlane Property Group offers hands-on rental management for
+            landlords in Mbombela and the Lowveld, bringing care to tenant selection and
+            structure to the everyday details. If you are balancing a rental with work,
+            family or other commitments, we help take the administration off your shoulders
+            while keeping you involved in important decisions.
           </p>
           <p className="text-base md:text-lg leading-relaxed" style={body}>
-            MacFarlane Property Group is built on generations of family involvement in property —
-            from Dean MacFarlane&apos;s great-grandfather through to his grandfather, his father, and
-            now himself. That inheritance shapes how we work in Mbombela: hands-on, reliable, and
-            direct, rather than managed at arm&apos;s length from a distant office. It also means we
-            bring modern systems to a traditionally old-fashioned industry — disciplined five-check
-            tenant vetting, tight rent collection and arrears management, and every maintenance job
-            run on a WhatsApp thread so nothing gets lost. Our management fee sits below the 10–12%
-            industry standard.
+            Feeling confident about a prospective tenant begins with understanding the
+            application. Our assessment draws together supporting documents, affordability
+            and credit history into a recommendation for you to consider. We then coordinate
+            the lease and move-in arrangements, helping turn a promising application into
+            an organised start to the tenancy.
           </p>
           <p className="text-base md:text-lg leading-relaxed" style={body}>
-            Whether you own a home you are letting out, a commercial unit, or a small portfolio
-            across the Lowveld, you get the same combination: local people who know the area,
-            backed by systems that keep everything visible. You get monthly financial reporting, a
-            named contact rather than a call-centre queue, and full legal and compliance oversight
-            under the Rental Housing Act and POPIA. And if your current manager is letting you down,
-            switching to MPG usually takes around 48 hours, with no disruption to your tenants.
+            Good management continues beyond the key handover. Tenant communication,
+            maintenance coordination, inspections and monthly financial reporting help you
+            keep a clear picture of your rental. We manage the paperwork and follow-up so
+            you can focus on your priorities. Our competitive management fees are tailored
+            to your property, with a clear explanation of the service and costs on enquiry.
           </p>
           <p className="text-base md:text-lg leading-relaxed" style={body}>
-            Because many Lowveld landlords are managing from elsewhere in the country, trust and
-            clear reporting matter more here than almost anywhere. We treat every property as if it
-            were our own, send you a straightforward monthly picture of what has come in and what
-            has been done, and pick up the phone when you actually need us rather than weeks later.
-            It is old-fashioned reliability run on modern systems — the kind of steady, personal
-            management that a family-rooted company is well placed to provide, and precisely what
-            MacFarlane Property Group was built to bring to a region that has too often been served
-            from a distance.
+            Tell us about your Mbombela or Lowveld property and the support you are looking
+            for. Use the enquiry form below to start a conversation about how MPG can help.
+            If you already have a manager, we can coordinate the handover so you can make
+            the change with confidence.
           </p>
         </div>
       </section>
@@ -94,13 +85,12 @@ export default function MbombelaPage() {
             What we handle in Mbombela
           </h2>
           <p className="text-base leading-relaxed" style={body}>
-            Across Mbombela and the surrounding Lowveld we handle the full spectrum of property
-            management: tenant management — sourcing, screening, placement and ongoing
-            relationships; maintenance coordination through a vetted contractor panel; lease
-            administration and renewals under the Rental Housing Act; move-in and move-out
-            inspections; monthly financial reporting with proactive arrears management; and legal
-            and compliance oversight covering POPIA and the Rental Housing Act. It is everything
-            required to keep a rental performing — handled for you, and reported back clearly.
+            For landlords in Mbombela and the surrounding Lowveld, our service includes
+            tenant sourcing and assessment, ongoing tenant communication, maintenance
+            coordination, lease administration and renewals, move-in and move-out inspections,
+            and monthly financial reporting. We bring the tenancy records together and
+            document the property&apos;s condition at inspections, helping you keep the details
+            in order with less day-to-day administration.
           </p>
         </div>
       </section>

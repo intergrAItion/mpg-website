@@ -8,11 +8,11 @@ import JsonLd from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "Property Management in Cape Town | MacFarlane Property Group",
   description:
-    "Property management in Cape Town for residential and commercial landlords — tenant vetting, rent collection, maintenance and compliance, with fees below the 10–12% industry standard.",
+    "Property management in Cape Town with careful tenant assessment, clear reporting and less everyday administration. Competitive management fees, tailored to your property.",
   openGraph: {
     title: "Property Management in Cape Town | MacFarlane Property Group",
     description:
-      "Property management in Cape Town for residential and commercial landlords — tenant vetting, rent collection, maintenance and compliance, with fees below the 10–12% industry standard.",
+      "Property management in Cape Town with careful tenant assessment, clear reporting and less everyday administration. Competitive management fees, tailored to your property.",
     url: "https://www.macfarlanepropertygroup.co.za/property-management-cape-town",
   },
   alternates: {
@@ -43,49 +43,39 @@ export default function CapeTownPage() {
       <JsonLd data={citySchema} />
       <PageHero
         heading="Property Management in Cape Town"
-        subheading="Local, hands-on management for Cape Town landlords — lower fees, faster response, total transparency."
+        subheading="Careful tenant selection, clear communication and more time for you."
       />
 
       <section className="py-20 px-4 bg-white">
         <div className="max-w-3xl mx-auto space-y-6">
           <p className="text-base md:text-lg leading-relaxed" style={body}>
-            Cape Town is one of South Africa&apos;s most active rental markets, and for
-            landlords that is both an opportunity and a responsibility. Strong, sustained
-            tenant demand means a well-presented property rarely sits empty for long — but it
-            also means the gap between a good tenant and a costly one comes down to how
-            carefully applicants are screened and how quickly issues are handled. MacFarlane
-            Property Group runs one of its three dedicated teams from Cape Town, managing
-            residential and commercial rentals across the city for landlords who would rather
-            own the investment than run it day to day.
+            Your Cape Town rental should fit into your life without taking over your day.
+            MacFarlane Property Group brings care and organisation to the management of your
+            property, from finding suitable tenants to keeping you informed throughout the
+            tenancy. Whether you let an apartment, a family home or several properties, we
+            help you stay involved in the decisions that matter while taking care of the
+            everyday administration.
           </p>
           <p className="text-base md:text-lg leading-relaxed" style={body}>
-            What Cape Town landlords tell us they want is simple: fewer voids, faster answers,
-            and honest numbers. We place tenants through a disciplined five-check vetting
-            process — full credit report, three months of bank statements, phone-verified
-            employment, independent landlord references, and a face-to-face meeting — then keep
-            rent collection and arrears management tight, and run every maintenance job on a
-            WhatsApp thread so nothing sits unattended. Our management fee sits below the 10–12%
-            industry standard, because tech-enabled management should cost less, not more, and
-            we pass that saving back to you.
+            Choosing a tenant deserves considered attention. We review applications and
+            supporting information, assess affordability and credit history, and bring our
+            findings together in a recommendation for you. With a clearer picture of a
+            prospective tenant and support with the lease and move-in arrangements, you can
+            approach a new tenancy with greater confidence.
           </p>
           <p className="text-base md:text-lg leading-relaxed" style={body}>
-            Whether you own a single flat or a growing Cape Town portfolio, the model is the
-            same: local people who understand the market, backed by systems that keep everything
-            visible. You get monthly financial reporting, proactive communication, and a named
-            contact rather than a call-centre queue. And if you are already with another manager
-            and it is not working, switching to MPG typically takes about 48 hours, with your
-            tenants&apos; leases, deposits and rent amounts entirely unchanged.
+            Once the tenancy is under way, clear communication keeps the relationship
+            manageable. Tenant enquiries, maintenance coordination, lease administration and
+            reporting sit within one organised service, giving you a useful view of your
+            rental without having to chase each detail yourself. Our management fees are
+            competitive and tailored to your property, with the service and costs explained
+            when you enquire.
           </p>
           <p className="text-base md:text-lg leading-relaxed" style={body}>
-            Cape Town landlords also value responsiveness, and that is where the model earns its
-            keep. Because we work from a dedicated local base rather than a distant head office, we
-            can move quickly on viewings, inspections and maintenance callouts — and because every
-            interaction is logged and reported, you are never left guessing what has actually
-            happened on your property. That combination matters whether you let a compact city
-            apartment or a larger family home: shorter vacancies, better-kept properties, faster
-            answers when something needs attention, and a management relationship you can genuinely
-            see into. For owners who have grown tired of chasing an agent for updates that never
-            arrive, that visibility alone is often the reason they switch.
+            If you are considering a change of manager, we coordinate the handover so you can
+            switch with confidence. Tell us about your Cape Town property using the enquiry
+            form below. We would be pleased to discuss your priorities and how MPG can make
+            managing your rental easier.
           </p>
         </div>
       </section>
@@ -96,13 +86,12 @@ export default function CapeTownPage() {
             What we handle in Cape Town
           </h2>
           <p className="text-base leading-relaxed" style={body}>
-            Across Cape Town we handle the full spectrum of property management: tenant
-            management — sourcing, screening, placement and ongoing relationships; maintenance
-            coordination through a vetted contractor panel; lease administration and renewals
-            under the Rental Housing Act; move-in and move-out inspections; monthly financial
-            reporting with proactive arrears management; and legal and compliance oversight
-            covering POPIA and the Rental Housing Act. It is everything required to keep a
-            rental performing — handled for you, and reported back clearly.
+            Our service brings together tenant sourcing and assessment, ongoing tenant
+            communication, maintenance coordination, lease administration and renewals,
+            move-in and move-out inspections, and monthly financial reporting. Documented
+            inspections and organised tenancy records help you understand your property&apos;s
+            condition and keep the important details in order. From application to move-in
+            and ongoing management, we handle the administration and keep you informed.
           </p>
         </div>
       </section>

@@ -83,7 +83,6 @@ const organizationSchema = {
     { "@type": "City", name: "Mbombela" },
     { "@type": "City", name: "Johannesburg" },
   ],
-  priceRange: "Below 10% of monthly rent",
   // TODO: add LinkedIn/Facebook URLs
   sameAs: [],
   contactPoint: {

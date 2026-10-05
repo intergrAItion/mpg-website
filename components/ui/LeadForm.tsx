@@ -96,7 +96,7 @@ export default function LeadForm() {
             }}
             onFocus={(e) => {
               (e.target as HTMLElement).style.borderColor = "#C9A55A";
-              (e.target as HTMLElement).style.boxShadow = "0 0 0 3px rgba(201,168,76,0.15)";
+              (e.target as HTMLElement).style.boxShadow = "0 0 0 3px rgba(201,165,90,0.15)";
             }}
             onBlur={(e) => {
               (e.target as HTMLElement).style.borderColor = "#e5e7eb";
@@ -121,7 +121,7 @@ export default function LeadForm() {
             }}
             onFocus={(e) => {
               (e.target as HTMLElement).style.borderColor = "#C9A55A";
-              (e.target as HTMLElement).style.boxShadow = "0 0 0 3px rgba(201,168,76,0.15)";
+              (e.target as HTMLElement).style.boxShadow = "0 0 0 3px rgba(201,165,90,0.15)";
             }}
             onBlur={(e) => {
               (e.target as HTMLElement).style.borderColor = "#e5e7eb";
@@ -149,7 +149,7 @@ export default function LeadForm() {
             }}
             onFocus={(e) => {
               (e.target as HTMLElement).style.borderColor = "#C9A55A";
-              (e.target as HTMLElement).style.boxShadow = "0 0 0 3px rgba(201,168,76,0.15)";
+              (e.target as HTMLElement).style.boxShadow = "0 0 0 3px rgba(201,165,90,0.15)";
             }}
             onBlur={(e) => {
               (e.target as HTMLElement).style.borderColor = "#e5e7eb";
@@ -174,7 +174,7 @@ export default function LeadForm() {
             }}
             onFocus={(e) => {
               (e.target as HTMLElement).style.borderColor = "#C9A55A";
-              (e.target as HTMLElement).style.boxShadow = "0 0 0 3px rgba(201,168,76,0.15)";
+              (e.target as HTMLElement).style.boxShadow = "0 0 0 3px rgba(201,165,90,0.15)";
             }}
             onBlur={(e) => {
               (e.target as HTMLElement).style.borderColor = "#e5e7eb";
@@ -200,7 +200,7 @@ export default function LeadForm() {
           }}
           onFocus={(e) => {
             (e.target as HTMLElement).style.borderColor = "#C9A55A";
-            (e.target as HTMLElement).style.boxShadow = "0 0 0 3px rgba(201,168,76,0.15)";
+            (e.target as HTMLElement).style.boxShadow = "0 0 0 3px rgba(201,165,90,0.15)";
           }}
           onBlur={(e) => {
             (e.target as HTMLElement).style.borderColor = "#e5e7eb";
@@ -225,7 +225,7 @@ export default function LeadForm() {
           }}
           onFocus={(e) => {
             (e.target as HTMLElement).style.borderColor = "#C9A55A";
-            (e.target as HTMLElement).style.boxShadow = "0 0 0 3px rgba(201,168,76,0.15)";
+            (e.target as HTMLElement).style.boxShadow = "0 0 0 3px rgba(201,165,90,0.15)";
           }}
           onBlur={(e) => {
             (e.target as HTMLElement).style.borderColor = "#e5e7eb";
@@ -272,7 +272,7 @@ export default function LeadForm() {
           }}
           onFocus={(e) => {
             (e.target as HTMLElement).style.borderColor = "#C9A55A";
-            (e.target as HTMLElement).style.boxShadow = "0 0 0 3px rgba(201,168,76,0.15)";
+            (e.target as HTMLElement).style.boxShadow = "0 0 0 3px rgba(201,165,90,0.15)";
           }}
           onBlur={(e) => {
             (e.target as HTMLElement).style.borderColor = "#e5e7eb";
