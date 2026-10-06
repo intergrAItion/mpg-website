@@ -184,3 +184,18 @@ body {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+.cookie-choice-button {
+  min-height: 44px;
+  padding: .75rem 1rem;
+  border: 1px solid #07341C;
+  border-radius: .375rem;
+  background: #07341C;
+  color: #F5F0E8;
+  font-size: .875rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.cookie-choice-button:hover { background: #1B4332; }
+/* Keep both optional choices clear of the floating contact control. */
+html[data-cookie-preferences-in-view] .cookie-aware-whatsapp { visibility: hidden; }

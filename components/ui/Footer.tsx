@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Phone, Mail, MessageCircle } from "lucide-react";
+import { CookiePreferencesButton } from "./CookieConsent";
 
 export default function Footer() {
   return (
@@ -166,7 +167,7 @@ export default function Footer() {
           <p className="text-xs" style={{ color: "rgba(255,255,255,0.7)" }}>
             © 2026 MacFarlane Property Group. All rights reserved.
           </p>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap justify-center items-center gap-4">
             <Link
               href="/legal#privacy"
               className="text-xs transition-colors duration-200 hover:text-yellow-400"
@@ -181,6 +182,7 @@ export default function Footer() {
             >
               Terms of Service
             </Link>
+            <CookiePreferencesButton />
           </div>
         </div>
       </div>

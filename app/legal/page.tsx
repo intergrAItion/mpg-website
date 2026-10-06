@@ -88,8 +88,23 @@ export default function LegalPage() {
               </ul>
               <p className="mt-2">
                 Please avoid including sensitive personal documents in your enquiry.
-                We use Google Analytics to understand website use. Its script loads
-                when you open a page and may use analytics cookies.
+                Optional Google Analytics stays off until you choose “Accept analytics”.
+                Before acceptance or after declining, we do not load its script or send
+                analytics requests. The site and enquiry form work without analytics.
+              </p>
+              <p className="mt-2">
+                We save only your versioned cookie choice in local storage and an
+                essential preference cookie. Your saved choice is valid for up to
+                180 days. If the choice is invalid,
+                expired or cannot be saved, analytics stays off. When accepted, analytics
+                receives page views without URL query strings or enquiry field values.
+              </p>
+              <p className="mt-2">
+                Use “Cookie preferences” in the footer to change your choice or withdraw
+                acceptance. Withdrawal stops future tracking and removes this site’s
+                accessible analytics cookies without reloading your enquiry. It cannot
+                retract events already sent or requests already in flight. Changes are
+                shared with other open tabs where browser support permits.
               </p>
             </div>
 

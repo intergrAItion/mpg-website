@@ -149,7 +149,7 @@ try {
   await page.screenshot({ path: path.join(output, 'screenshots/form-error-390.png') });
   success = true; await page.getByRole('button', { name: 'Send Enquiry' }).focus(); await page.keyboard.press('Enter');
   await page.getByRole('heading', { name: 'Thank you!' }).waitFor();
-  behaviour.success = await page.getByRole('status').evaluate(element => ({ text: element.textContent, focusInside: element.contains(document.activeElement), live: element.getAttribute('aria-live') }));
+  behaviour.success = await page.locator('main').getByRole('status').evaluate(element => ({ text: element.textContent, focusInside: element.contains(document.activeElement), live: element.getAttribute('aria-live') }));
   check(behaviour.success.focusInside && !behaviour.success.text.includes('24 hours'), 'form: success focus/copy'); check(calls === 2, 'form: exact send/retry count');
   await page.screenshot({ path: path.join(output, 'screenshots/form-success-390.png') });
   await page.goto(base + '/legal#privacy', { waitUntil: 'networkidle' }); await page.waitForTimeout(800);
