@@ -63,7 +63,16 @@ export default function Navbar() {
       style={{ backgroundColor: isScrolled ? "rgba(7,52,28,0.97)" : "#07341C", backdropFilter: isScrolled ? "blur(8px)" : "none" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between gap-5">
         <Link href="/" onClick={() => setMenuPath(null)} className="shrink-0">
-          <Image src="/logo-green.png" alt="MacFarlane Property Group" width={265} height={136} unoptimized className="header-logo object-contain" />
+          <Image
+            src="/logo-green.png"
+            alt="MacFarlane Property Group"
+            width={265}
+            height={136}
+            quality={90}
+            sizes="(min-width: 1280px) 230px, 160px"
+            loading="eager"
+            className="header-logo object-contain"
+          />
         </Link>
         <div className="hidden xl:flex items-center gap-6 whitespace-nowrap">
           {navLinks.map(link => (

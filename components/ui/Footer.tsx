@@ -16,7 +16,8 @@ export default function Footer() {
                 alt="MacFarlane Property Group"
                 width={400}
                 height={205}
-                unoptimized
+                quality={90}
+                sizes="(min-width: 1280px) 223px, 265px"
                 style={{objectFit: 'contain', width: '100%', height: 'auto', maxWidth: '265px'}}
               />
             </div>
