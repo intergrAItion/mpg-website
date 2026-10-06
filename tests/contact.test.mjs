@@ -16,7 +16,7 @@ function compile(file, resolve, bindings = {}) {
 const validation = compile('lib/contact-validation.ts', loadPackage);
 const origin = 'https://www.macfarlanepropertygroup.co.za';
 const valid = { name: 'Zoë Ndlovu & O’Connor', email: 'synthetic+enquiry@example.test', phone: '+44 (20) 7946-0958', properties: '3', location: 'Synthetic location', mapsLink: 'https://www.google.com/maps/place/Test?x=1&y=2', challenges: ['Maintenance delays'], message: 'Synthetic message only' };
-function harness({ provider = 'success', key = true, mode = 'production' } = {}) {
+function harness({ provider = 'success', key = true, mode = 'production', actualSdk = false } = {}) {
   const calls = [], logs = [];
   class Resend {
     emails = { send: async payload => {
@@ -27,13 +27,37 @@ function harness({ provider = 'success', key = true, mode = 'production' } = {})
       return { data: { id: 'synthetic-provider-id' }, error: null };
     } };
   }
-  const resolve = name => name === 'resend' ? { Resend } : name === '@/lib/contact-validation' ? validation : loadPackage(name);
+  const resolve = name => name === 'resend' && !actualSdk ? { Resend } : name === '@/lib/contact-validation' ? validation : loadPackage(name);
   const route = compile('app/api/contact/route.ts', resolve, {
     process: { env: { NODE_ENV: mode, ...(key ? { RESEND_API_KEY: 'synthetic-test-only' } : {}) } },
     console: { info: value => logs.push(value), log: value => logs.push(value), error: value => logs.push(value), warn: value => logs.push(value) },
   });
   return { calls, logs, post: route.POST };
 }
+test('installed Resend SDK preserves the wire payload and safe provider-error handling with mocked transport', async t => {
+  const requests = [];
+  let failed = false;
+  t.mock.method(globalThis, 'fetch', async (url, options) => {
+    assert.equal(url, 'https://api.resend.com/emails');
+    assert.equal(options.method, 'POST');
+    requests.push(JSON.parse(options.body));
+    return Response.json(failed ? { name: 'validation_error', message: `Private provider reason ${valid.email}` } : { id: 'synthetic-sdk-id' }, { status: failed ? 422 : 200 });
+  });
+  const h = harness({ actualSdk: true });
+  assert.equal((await h.post(request())).status, 200);
+  assert.equal(requests.length, 1);
+  assert.equal(requests[0].reply_to, valid.email);
+  assert.equal(requests[0].from, 'MPG Website <noreply@updates.macfarlanepropertygroup.co.za>');
+  assert.deepEqual(requests[0].to, ['dean@macfarlanepropertygroup.co.za']);
+  assert.match(requests[0].html, /Zoë Ndlovu &amp; O’Connor/);
+  assert.match(requests[0].text, /Zoë Ndlovu & O’Connor/);
+  failed = true;
+  const response = await h.post(request());
+  assert.equal(response.status, 503);
+  assert.ok(!(await response.text()).includes(valid.email));
+  assert.ok(!JSON.stringify(h.logs).includes(valid.email));
+  assert.equal(requests.length, 2);
+});
 function request(body = valid, { raw, headers = {}, chunks } = {}) {
   const init = { method: 'POST', headers: { Origin: origin, 'Content-Type': 'application/json', ...headers }, body: raw ?? JSON.stringify(body) };
   if (chunks) { init.body = new ReadableStream({ start(controller) { for (const chunk of chunks) controller.enqueue(chunk); controller.close(); } }); init.duplex = 'half'; }
